@@ -16,4 +16,4 @@ Prior to becoming the head coach of the Lady Cavs softball program, he assisted 
 
 Coach Cooper was born in Kankakee in 1972. Raised in Limestone and attended Limestone Grade School. He also attended Kankakee High School class of 1990. Coach Cooper is a former student of Kankakee Community College where he studied Law Enforcement. He worked for AT&T for 18 years.
 
-He and his wife, Lisa, reside in Kankakee. They have four children and six grandchildren.
+He and his wife, Lisa, reside in Kankakee. They have four children and seven grandchildren.
