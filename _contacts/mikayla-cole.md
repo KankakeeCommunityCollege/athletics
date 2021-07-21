@@ -3,7 +3,7 @@ name: Mikayla Cole
 contacts_title: Assistant Coach
 contacts_sport: softball
 display_order: 3
-portrait: assets/img/blank-contact.svg
+portrait: uploads/15_DSC_5960.JPG.jpg
 phone:
 email:
 ---
