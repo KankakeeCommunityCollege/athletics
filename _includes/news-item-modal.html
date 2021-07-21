@@ -12,6 +12,7 @@
         <h5 class="news__sub-heading news__sub-heading--spacing"> {{ post.sport-category }} &#183; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
         <h4 id="modalCenterTitle{{ forloop.index }}" class="news__heading">{{ post.post_title }}</h4>
         <p class="news__paragraph">{{ post.content }}</p>
+        <p><a class="btn btn-primary" href="{{ post.url }}">Page View</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
