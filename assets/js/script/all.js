@@ -1,3 +1,4 @@
+import '../../scss/main.scss';
 import initSlickSliders from './sliders.js';
 import moreClick from './moreButton.js';
 import accordion from './accordian.js';

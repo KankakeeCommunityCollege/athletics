@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-page
 ---
 
 <section class="sub-nav-marg">
@@ -13,8 +13,13 @@ layout: page
         <p>Date:
         <!--Article Date-->
         {{ page.date | date: "%m/%d/%Y" }}</p>
-        <img class="img-fluid editable" alt="" src="../../../assets/img/placeholder.png" />
-        <div class="editable">
+        <div class="text-center mb-3">
+          <img
+            src="{{ page.baseurl }}{{ page.news_thumb_image }}"
+            class="img-fluid"
+            alt="">
+        </div>
+        <div>
         {{ content }}
         </div>
 
