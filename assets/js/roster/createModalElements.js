@@ -125,7 +125,6 @@ function createModalFooter(content) {
 }
 
 function createModalElements(response) {
-  //console.log(response);
   const parent = document.getElementById('modalDiv');
 
   const data = response.result.values;
@@ -141,7 +140,7 @@ function createModalElements(response) {
     let jersey = rowData[1].trim();
     let name = rowData[2].trim();
 
-    const isNotFirstThreeColumns = i >= 4;
+    src == '_na_' ? src = 'blank-avatar' : null;
 
     let id = name.replace(/[\W_]+/g, '');
     const modal = createModal(parent, id);

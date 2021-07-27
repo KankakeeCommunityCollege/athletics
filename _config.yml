@@ -1,4 +1,6 @@
 title: "Kankakee Community College"
+port: 3000
+public-url: https://athletics.kcc.edu
 google-tag_key: 'GTM-KRL8533'
 collections:
   posts:
