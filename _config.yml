@@ -2,6 +2,9 @@ title: "Kankakee Community College"
 port: 3000
 public-url: https://athletics.kcc.edu
 google-tag_key: 'GTM-KRL8533'
+public-url: https://athletics.kcc.edu
+url: "https://athletics.kcc.edu" # the base hostname & protocol for your site
+port: 3000
 collections:
   posts:
     output: false
@@ -17,7 +20,7 @@ defaults:
     layout: post
     post_title: ''
     permalink: /:categories/:title/
-    baseurl: ../../../
+    baseurl: ../../../../
     categories: news
 - scope:
     path: ''
@@ -29,9 +32,6 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   KCC offers intercollegiate men's basketball, women's basketball, baseball, softball, men's soccer and volleyball. The Cavaliers compete in Region IV of the NJCAA.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://athletics.kcc.edu" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 # include:
 #   - "_pages"
 #   - "_posts"
@@ -42,7 +42,6 @@ future: true
 markdown: kramdown
 
 exclude:
-  - "gulpfile.js"
   - "node_modules"
   - "npm-debug.log"
   - "package.json"
@@ -50,12 +49,11 @@ exclude:
   - "README.md"
   - "Gemfile"
   - "Gemfile.lock"
-  - "gulpconfig.yml"
-  - "/docs/"
-  - "yarn.lock"
-  - "/assets/adobe/*"
-  - "gulp-tasks"
   - "athletics-bad-response-object-from-sheetsAPI-request.js"
+  - "webpack.config.js"
+  - "postcss.config.js"
+  - "buildtools/"
+  - "siteicon.png"
 
 uploads_dir: # specifies the default uploads directory for CloudCannon
   - "uploads/"
