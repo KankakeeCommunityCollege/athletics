@@ -5,7 +5,7 @@ categories:
   - baseball
   - news
 sport-category:
-news_thumb_image: /assets/img/IG3_5893.JPG
+news_thumb_image: /uploads/2021/ig3_5893_optimized.jpg
 news_thumb_alt:
 description: Congratulations Baseball Players
 ---

@@ -61,10 +61,10 @@ function createCells(tr, val, id) {
 }
 
 function checkData(data, headingRow) { // Makes sure each row of data has 11 items and adds the missing ones
-  const TABLE_COLUMNS = headingRow.length; // Number of columns of data in the Google Sheet
+  const tableColumns = headingRow.length; // Number of columns of data in the Google Sheet
 
   data.forEach(row => {
-    let missing = TABLE_COLUMNS - row.length;
+    let missing = tableColumns - row.length;
 
     Array.from({ length: missing }, (i, c) => row.push(''));
   });
