@@ -1,3 +1,5 @@
+import lzFunction from '../script/lazyload';
+
 function createModal(parent, id) {
   const modal = document.createElement('div');
   const modalId = id + 'Modal';
@@ -71,10 +73,15 @@ function createPlayerImage(name, src, body) {
   const img = document.createElement('img');
   let alt = 'Photo of player ' + name;
   let source = 'https://cdn.kcc.edu/athletics/roster-img/' + src + '.jpg';
-  div.classList.add('text-center', 'float-md-left');
-  img.setAttribute('alt', alt);
-  img.setAttribute('src', source);
+
+  img.alt = alt;
+  img.src = '/assets/img/placeholder_4by3.jpg';
+  img.setAttribute('data-src', source);
+  img.width = '290';
+  img.height = '393';
+  img.setAttribute('onerror', 'this.onerror=null;this.src=\'https://cdn.kcc.edu/athletics/roster-img/blank-avatar.jpg\'');
   img.classList.add('roster__img');
+  div.classList.add('text-center', 'float-md-left');
   div.appendChild(img);
   body.appendChild(div);
   return body;
@@ -132,7 +139,7 @@ function createModalElements(response) {
   const dataLength = data.length;
   const validData = data.slice(2, dataLength);
 
-  for (var i = 0; i < validData.length; i++) {
+  for (let i = 0, len = validData.length; i < len; i++) {
     let rowData = validData[i];
     let modalContent = [];
     let stat = headingData[i];
@@ -162,7 +169,7 @@ function createModalElements(response) {
 
     function wrapStats(playerStatsArray, body) {
       const p = document.createElement('p');
-      for (var x = 0; x < playerStatsArray.length; x++) {
+      for (let x = 0, len = playerStatsArray.length; x < len; x++) {
         let statItem = playerStatsArray[x];
         p.appendChild(statItem);
       }
@@ -173,6 +180,6 @@ function createModalElements(response) {
     const footer = createModalFooter(content);
 
   }
-
+  return lzFunction();
 }
 export default createModalElements;
