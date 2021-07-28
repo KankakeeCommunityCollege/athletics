@@ -60,8 +60,8 @@ function createCells(tr, val, id) {
   return td;
 }
 
-function checkData(data) { // Makes sure each row of data has 11 items and adds the missing ones
-  const TABLE_COLUMNS = 11; // Number of columns of data in the Google Sheet
+function checkData(data, headingRow) { // Makes sure each row of data has 11 items and adds the missing ones
+  const TABLE_COLUMNS = headingRow.length; // Number of columns of data in the Google Sheet
 
   data.forEach(row => {
     let missing = TABLE_COLUMNS - row.length;
@@ -82,7 +82,7 @@ function createTableElements(response) {
   let arrayLength = sheetData.length;
   let headingData = sheetData[1];
   let tableData = sheetData.slice(2, arrayLength); // is an array of arrays
-  let data = checkData(tableData);
+  let data = checkData(tableData, headingData);
 
   createModalElements(response);
   createHeadingRow(thead, headingData);
