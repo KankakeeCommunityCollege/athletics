@@ -1,7 +1,7 @@
 ---
 name: Peter Sinise
 contacts_title: Assistant Coach
-contacts_sport: soccer
+contacts_sport: women's soccer
 display_order: 4
 portrait: uploads/p-sinise.jpg
 phone:
