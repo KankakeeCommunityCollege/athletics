@@ -8,7 +8,7 @@ phone:
 email:
 ---
 
-Jennifer Hoekstra is entering her first year as co-coach of the volleyball team at KCC. She comes in with experience from both playing and coaching. She played at University of Utah from 2007-11. She was part of the Mountain West Conference Champioship Team in 2008 and made it to the Sweet 16. She carried her experience to coaching at Bradley-Bourbonnais Community High School varsity volleyball from 2012-15.
+Jennifer Hoekstra is entering her first year as co-coach of the volleyball team at KCC. She comes in with experience from both playing and coaching. She played at University of Utah from 2007-11. She was part of the Mountain West Conference Championship Team in 2008 and made it to the Sweet 16. She carried her experience to coaching at Bradley-Bourbonnais Community High School varsity volleyball from 2012-15.
 
 Hoekstra is excited to bring both her experience and passion for the game to the team.
 
