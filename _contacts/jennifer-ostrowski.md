@@ -8,8 +8,6 @@ phone:
 email:
 ---
 
-Jennifer (JO) Ostrowski is entering her first year as co-head coach for volleyball at KCC. She comes with experience from playing college volleyball. She played as a middle at KCC and Peru State College in Nebraska.&nbsp;
+Jennifer Ostrowski (JO) is entering her first year as an assistant volleyball coach at Kankakee Community College. She comes with experience from playing college volleyball. She played as a middle at KCC and Peru State College in Nebraska.
 
-JO is a full time kindergarten teacher at Chebanse Elementary School and absolutely loves it\! She can’t wait to bring her love for the game to the KCC team this year\!&nbsp;
-
-JO lives in Gilman, with her boyfriend. They have three awesome dogs that keep them busy.&nbsp;
+Jo is a full time kindergarten teacher at Chebanse Elementary School and absolutely loves it\! She can’t wait to bring her love for the game to the KKC team this year.<br>Jo lives in Gilman, IL with her boyfriend and their three dogs. Their awesome dogs keep them busy.
