@@ -3,7 +3,7 @@ name: Jennifer Ostrowski
 contacts_title: Assistant Coach
 contacts_sport: volleyball
 display_order: 1
-portrait: assets/img/blank-contact.svg
+portrait: uploads/JO.jpg
 phone:
 email:
 ---
