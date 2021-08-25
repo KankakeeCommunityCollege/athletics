@@ -8,8 +8,4 @@ phone:
 email: aschuh@kcc.edu
 ---
 
-Entering her first season with the Cavaliers, Coach Schuh is making her collegiate coaching debut. Coaching various youth teams in the past, she brings a fresh perspective for the Lady Cavaliers.
-
-Graduating from Eastern Illinois University, she will be an asset as she works closely on the field with the players, and off the field participating and assisting in academic planning for the athletes.
-
-Schuh currently resides in Bourbonnais.
+Entering her second season with the Cavaliers, Aubrey Schuh brings experience from coaching various youth teams. Coach Schuh brings a fresh perspective for the Lady Cavaliers and continues to grow in her responsibilities.<br><br>A graduate of Eastern Illinois University, Coach Schuh is asset to the program due to her close work on the field with the players, as well as her off-the-field participation and assistance in academic planning for the athletes. She currently resides in Bourbonnais.
