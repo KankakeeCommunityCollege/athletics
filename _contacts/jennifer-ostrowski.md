@@ -3,12 +3,11 @@ name: Jennifer Ostrowski
 contacts_title: Assistant Coach
 contacts_sport: volleyball
 display_order: 1
-portrait: assets/img/blank-contact.svg
-phone:
-email:
+portrait: uploads/JO.jpg
+phone: 815-802-8608
+email: jostrowski@kcc.edu
 ---
-Jennifer (JO) Ostrowski is entering her first year as an assistant volleyball coach at KCC. She comes with experience from playing college volleyball. She played as a middle at KCC and Peru State College in Nebraska.&nbsp;
 
-JO is a full time kindergarten teacher at Chebanse Elementary School and absolutely loves it\! She can’t wait to bring her love for the game to the KCC team this year\!&nbsp;
+Jennifer Ostrowski (JO) is entering her first year as an assistant volleyball coach at Kankakee Community College. She comes with experience from playing college volleyball. She played as a middle at KCC and Peru State College in Nebraska.
 
-JO lives in Gilman, IL with her boyfriend. They have three awesome dogs that keep them busy.&nbsp;
+Jo is a full time kindergarten teacher at Chebanse Elementary School and absolutely loves it\! She can’t wait to bring her love for the game to the Cavaliers team this year.<br>Jo lives in Gilman with her boyfriend and their three dogs. Their awesome dogs keep them busy.
