@@ -7,6 +7,7 @@ portrait: assets/img/blank-contact.svg
 phone: 888-888-8888
 email: exampleemail@kcc.edu
 ---
+
 Roosevelt Green is in his first season as an assistant coach for KCC. He joins the Cavaliers after two seasons as an assistant coach at Saint Xavier University in Chicago. As the lead recruiter, Green helped coach multiple players to all-conference recognition while also achieving a 20-win season. &nbsp;
 
 Prior to Saint Xavier, Green was an assistant coach at Moraine Valley Community College for four seasons. During that time, Moraine Valley achieved multiple 20-win seasons along with a conference championship.
