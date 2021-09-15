@@ -2,7 +2,7 @@
 name: Johnelle Slone
 contacts_title: Assistant Coach
 contacts_sport: men's basketball
-display_order: 1
+display_order: '2'
 portrait: assets/img/blank-contact.svg
 phone: 888-888-8888
 email: exampleemail@kcc.edu
