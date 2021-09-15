@@ -7,6 +7,7 @@ portrait: assets/img/blank-contact.svg
 phone: 888-888-8888
 email: exampleemail@kcc.edu
 ---
+
 Johnelle Slone is returning to KCC after previous runs as a player and assistant.
 
 Slone played basketball for the Cavaliers from 1991-93, on teams that advanced to the region championship game both seasons. He was also a KCC assistant coach for the 2006-07 and 2013-14 seasons.&nbsp;
