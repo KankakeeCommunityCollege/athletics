@@ -4,7 +4,7 @@ contacts_title: Assistant Coach
 contacts_sport: men's basketball
 display_order: 1
 portrait: assets/img/blank-contact.svg
-phone: 888-888-8888
+phone: 815-802-8600
 email: exampleemail@kcc.edu
 ---
 
