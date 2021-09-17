@@ -1,6 +1,6 @@
 ---
 name: Casey Meister
-contacts_title: Assistant Coach
+contacts_title: Head Coach
 contacts_sport: women's basketball
 display_order: '1'
 portrait: uploads/14-cmeister-asst.jpg
