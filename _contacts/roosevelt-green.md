@@ -5,7 +5,7 @@ contacts_sport: men's basketball
 display_order: 1
 portrait: assets/img/blank-contact.svg
 phone: 815-802-8600
-email: exampleemail@kcc.edu
+email:
 ---
 
 Roosevelt Green is in his first season as an assistant coach for KCC. He joins the Cavaliers after two seasons as an assistant coach at Saint Xavier University in Chicago. As the lead recruiter, Green helped coach multiple players to all-conference recognition while also achieving a 20-win season. &nbsp;
