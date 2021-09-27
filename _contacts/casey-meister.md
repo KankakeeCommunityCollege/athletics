@@ -3,7 +3,7 @@ name: Casey Meister
 contacts_title: Head Coach
 contacts_sport: women's basketball
 display_order: '1'
-portrait: uploads/ meister.jpg
+portrait: uploads/meister.jpg
 phone: 815‑802‑8614
 email: cmeister@kcc.edu
 ---
