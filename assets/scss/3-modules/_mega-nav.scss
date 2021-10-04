@@ -5,7 +5,6 @@
 .navbar {
   background-color: $primary-blue;
   margin-top: 56px; // make room for the global-nav in mobile view
-  z-index: 1032;
 }
 
 @media screen and (min-width: 992px) {
@@ -264,15 +263,17 @@
 }
 
 .center-logo {
-  right: 10px;
+  right: 5px;
   position: absolute;
-  top: 10px;
-  width: 100px;
+  top: 15px;
+  width: 110px;
 }
 
 @media screen and (min-width: 360px) {
   .center-logo {
-    right: 20px;
+    right: 10px;
+    top: 12px;
+    width: 120px;
   }
 }
 
@@ -289,12 +290,18 @@
   }
 }
 
+@media screen and (max-width: 991px) {
+  .center-logo {
+    filter: drop-shadow(1px 2px 6px rgba(0,0,0,.25));
+  }
+}
+
 @media screen and (min-width: 992px) {
   .center-logo {
-    top: auto;
+    top: 0;
     left: 50%; // center the absolutely positioned item
     margin-left: -105px;  // offset the width of the item to make true center
-    margin-top: -115px; // position it vertically
+    // margin-top: -115px; // position it vertically
     width: 210px;
   }
 }
