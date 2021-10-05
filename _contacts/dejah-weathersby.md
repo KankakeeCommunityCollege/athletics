@@ -2,7 +2,7 @@
 name: DeJah Weathersby
 contacts_title: Assistant Coach
 contacts_sport: women's basketball
-display_order: 1
+sort_number: 2
 portrait: uploads/dejah.jpg
 phone:
 email:

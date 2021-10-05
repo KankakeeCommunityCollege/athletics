@@ -2,7 +2,7 @@
 name: 'Roosevelt Green'
 contacts_title: Assistant Coach
 contacts_sport: men's basketball
-display_order: 3
+sort_number: 3
 portrait: assets/img/blank-contact.svg
 phone: 815-802-8600
 email:

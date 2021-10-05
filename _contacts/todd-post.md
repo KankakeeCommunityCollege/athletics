@@ -2,7 +2,7 @@
 name: Todd Post
 contacts_title: Head Coach
 contacts_sport: baseball
-display_order: 1
+sort_number: 1
 portrait: uploads/todd-post.jpg
 phone: 815-802-8616
 email: tpost@kcc.edu
