@@ -8,6 +8,7 @@
     <meta name="description" content="{{page.description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include preconnect.html %}
+    {% include styles/fonts.html %}
     {% if site.humans_file == true %}
     <!-- The human's, the human's!! -->
     <link rel="author" type="text/plain" href="/humans.txt" />
@@ -18,7 +19,9 @@
     {%- if page.layout == 'roster-page' or page.layout == 'schedule-page' -%}
     {% include styles/datatables.html %}
     {%- endif -%}
+    {% if page.slides %}
     {% include styles/slick.html %}
+    {% endif %}
     {% include styles/main.html %}
     <!--[if IE]>
       <style type="text/css">
