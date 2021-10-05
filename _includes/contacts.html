@@ -1,4 +1,4 @@
-{% assign sorted_contacts = site.contacts | sort: "display_order" %}
+{% assign sorted_contacts = site.contacts | sort: "sort_number" %}
 {% if page.title == "Baseball" %}
   {% assign coaches = sorted_contacts | where: "contacts_sport", "baseball" %}
 {% elsif page.title == "Men's Basketball" %}

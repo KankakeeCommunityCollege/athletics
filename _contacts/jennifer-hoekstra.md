@@ -2,7 +2,7 @@
 name: Jennifer Hoekstra
 contacts_title: Head Coach
 contacts_sport: volleyball
-display_order: 2
+sort_number: 2
 portrait: uploads/JH.JPG.jpg
 phone: 815-802-8608
 email: jhoekstra@kcc.edu.
