@@ -24,3 +24,7 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+
+.img__shadow--subtle {
+  filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+}

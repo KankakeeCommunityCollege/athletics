@@ -1,5 +1,10 @@
 //custom JS to switch the text in the "More..." button when the Season Preview get expanded.
+const moreButton = document.querySelector('.js-more-btn');
+
 function moreClick() {
+  moreButton.addEventListener('click', (e) => {
+    console.log(e.target)
+  });
   $(document).ready(function() {
     var trigger = $('.js-more-btn');
 
