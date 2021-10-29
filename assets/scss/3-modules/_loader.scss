@@ -1,0 +1,38 @@
+// Custom styling for loading-spinners
+
+.loader {
+  height: 75px;
+  width: 75px;
+}
+
+@media screen and (min-width: 992px) {
+  .loader {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.loader--slider {
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 48px;
+}
+
+// Styles for new loader.svg
+@keyframes spin-animation {
+  from {
+      transform: rotate(0);
+    }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader--animate {
+  animation-name: spin-animation;
+  animation-duration: 1s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+}

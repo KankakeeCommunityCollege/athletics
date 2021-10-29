@@ -243,5 +243,6 @@
 }
 
 .typography__alert {
+  color: inherit; // Inherit the Bootstrap 4 styles from `.alert-warning` class
   margin-bottom: 0;
 }
