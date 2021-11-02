@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{page.title}} - {{site.title}}</title>
-    <meta name="description" content="{{page.description}}">
+    <meta name="description" content="{{ page.description | strip }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include preconnect.html %}
     {% include styles/fonts.html %}
