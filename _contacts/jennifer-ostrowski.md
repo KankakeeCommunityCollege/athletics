@@ -1,6 +1,6 @@
 ---
 name: Jennifer Ostrowski
-contacts_title: Assistant Coach
+contacts_title: Head Coach
 contacts_sport: volleyball
 sort_number: 1
 portrait: uploads/JO.jpg
