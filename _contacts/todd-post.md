@@ -20,8 +20,6 @@ Post is a 1987 graduate of Danville Area Community College, where he played bask
 
 Coach Post transferred to Benedictine University in Lisle where he was a two-year First Team NICC All-Conference pitcher. In 1989, he was named to the All-Midwest Region first team, and Athlete of the Year at Benedictine in 1990. He graduated from Benedictine in 1990 with a bachelor's degree in physical education.
 
-Post has maintained a connection to professional baseball by working as an associate scout for the last 17 years. Since 2002, he has worked with the San Diego Padres.
-
 In addition to head coaching duties, Post works with players on hitting and defensive aspects of the game.
 
 Post also is KCC's athletic director. He resides in rural Kankakee with his wife, Julianne. Their son, Dylan, is a graduate of KCC and ISU. He is employed at Nucor Steel Company. Their daughter, Jordan, is a registered nurse at University of Chicago Hospital.
