@@ -8,10 +8,10 @@ phone:
 email:
 ---
 
-Coach Ulrey is entering his fourth season as an assistant at KCC. Prior to KCC, Ulrey was an assistant at NCAA Division II University of Missouri-St. Louis.
+Coach Ulrey is entering his fourth season as an assistant at KCC. For the Cavaliers, Ulrey works primarily with the hitters and catchers. Prior to KCC, Ulrey was an assistant at NCAA Division II University of Missouri-St. Louis. In the 2018 season, Ulrey helped coach UMSL to three GLVC All-Conference players.
 
-Ulrey's collegiate career started at KCC in 2013, where he started both years behind the plate. In his time at KCC, he attained All-Region honors and is in eight of KCC's career hitting records. Ulrey transferred to UMSL where he was a two-time GLVC All-Conference player and led the GLVC both years in runners caught stealing.
+Since joining KCC in 2018, Coach Ulrey has seen 12 hitters move on to four year schools: Three to NCAA Division I, four to NCAA Division II, one to NCAA DIII, four to NAIA. In two seasons the Cavaliers offense produced: 1 All-American, 7 All-Region players, 13 Top10 NJCAA offensive categories. The Cavaliers have averaged 8.6 runs and a .326 batting average.&nbsp;
 
-Coach Ulrey has worked with over 350 hitters and catchers in his four years of being an instructor at The Yard Sports Complex in Greenfield, Indiana.
+Ulrey’s collegiate career started at KCC in 2013, where he started both years behind the plate. In his time at KCC, he attained All-Region honors and is in 8 of KCC’s career hitting records. Ulrey transferred to UMSL where he was a two-time GLVC All-Conference player and led the GLVC both years in runners caught stealing. In 2020, UMSL selected Ulrey to the All-Decade Team. Ulrey collected 231 hits and posted a career .334 batting average.&nbsp;
 
-For the Cavaliers, Coach Ulrey will work primarily with the hitters and catchers. He has a Bachelor's degree in Criminal Justice from the University of Missouri-St. Louis.
+A native of New Palestine, Indiana, Coach Ulrey currently resides in St. Anne with his fiancé Sidney. He has a Bachelor’s degree in Criminal Justice from the University of Missouri-St. Louis.
