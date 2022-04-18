@@ -6,7 +6,7 @@ categories:
   - general
   - news
 sport-category: baseball
-news_thumb_image: assets/img/placeholder.png
+news_thumb_image: /uploads/matt-litrell-D51_6664.jpg
 news_thumb_alt:
 description: A brief intro to your article
 ---
