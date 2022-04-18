@@ -7,7 +7,7 @@ categories:
   - baseball
 sport-category: news
 news_thumb_image: /assets/img/16-9_thumb.png
-news_thumb_alt:
+news_thumb_alt: Cavaliers Logo
 description: Congratulations Owen Jackson
 ---
 Another award for Jackson. This time from the JBB\! Congratulations Owen\!
