@@ -33,7 +33,7 @@ Very excited to have Samantha Porras joining the Lady Cavs this fall. Samantha w
 
 &nbsp;
 
-**Aiyana Lopez- **
+**Aiyana Lopez-&nbsp;**
 
 The rich keep on getting richer\! We are excited to bring on Aiyana Lopez a stand out winger at Kankakee High School\! Lopez is bringing to the Lady Cavs a can dot spirit along with her attacking third creativity. Aiyana Lopez final third creativity will be vital for the Lady Cavs this upcoming fall\! We are excited to bring on such a talent like Aiyana Lopez.
 
