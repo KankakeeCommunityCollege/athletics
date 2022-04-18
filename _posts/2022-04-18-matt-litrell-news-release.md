@@ -7,8 +7,8 @@ categories:
   - news
 sport-category: baseball
 news_thumb_image: /uploads/matt-litrell-D51_6664.jpg
-news_thumb_alt:
-description: A brief intro to your article
+news_thumb_alt: 'Matt Littrell 2nd baseman #13'
+description: KCC Baseball Alumni
 ---
 “A familiar announcement every game for two years during 2016-2017 spring seasons, batting lead-off for the Cavaliers 2nd baseman \#13 Matt Littrell.” Roy Cordes announces.
 
