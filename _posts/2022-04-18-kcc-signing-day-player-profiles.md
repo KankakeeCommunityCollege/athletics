@@ -4,9 +4,7 @@ date: 2022-04-18 00:00:00
 categories:
   - general
   - news
-  - soccer
-  - women's soccer
-sport-category: general
+sport-category: General News
 news_thumb_image: /assets/img/16-9_thumb.png
 news_thumb_alt: Cavaliers Logo
 description: Signing Day Players
