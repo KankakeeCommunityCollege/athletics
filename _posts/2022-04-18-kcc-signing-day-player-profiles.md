@@ -23,7 +23,7 @@ Alayna Valone a standout winger at Reed Custer High School will add some speed a
 
 **Scotty Eldridge-**
 
-The defense for the Cavilers is in good hands with incoming freshman Scotty Eldridge. Eldridge brings to the Cavilers a defensive tenacity that is hard to find. Hard nose for winning 50/50 balls coupled with his smart decision making out of the back, will allow the Cavs to be very dynamic moving forward in the attack.
+The defense for the Cavaliers is in good hands with incoming freshman Scotty Eldridge. Eldridge brings to the Cavaliers a defensive tenacity that is hard to find. Hard nose for winning 50/50 balls coupled with his smart decision making out of the back, will allow the Cavs to be very dynamic moving forward in the attack.
 
 &nbsp;
 
