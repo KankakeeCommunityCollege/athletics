@@ -5,7 +5,7 @@ categories:
   - baseball
   - news
 sport-category: Baseball
-news_thumb_image: /uploads/matt-litrell-D51_6664.jpg
+news_thumb_image: /uploads/matt-littrell-1.jpg
 news_thumb_alt: 'Matt Littrell 2nd baseman #13'
 description: KCC Baseball Alumni
 ---
