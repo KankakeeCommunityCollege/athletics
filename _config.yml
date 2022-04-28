@@ -1,5 +1,6 @@
 title: "Kankakee Community College"
 port: 3000
+timezone: America/Chicago
 public-url: https://athletics.kcc.edu
 url: "https://athletics.kcc.edu" # the base hostname & protocol for your site
 google-tag_key: 'GTM-KRL8533'
