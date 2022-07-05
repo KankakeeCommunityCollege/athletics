@@ -3,7 +3,7 @@ name: Lindsay Thompson
 contacts_title: Head Coach
 contacts_sport: volleyball
 sort_number: 1
-portrait: uploads/Lindsay-Thompson_KCC-volleyball-coach-6.jpg
+portrait: uploads/Lindsay-Thompson_KCC-volleyball-coach.jpg
 phone: 815-802-8608
 email: jostrowski@kcc.edu
 ---
