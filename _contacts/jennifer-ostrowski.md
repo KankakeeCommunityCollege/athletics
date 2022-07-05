@@ -5,7 +5,7 @@ contacts_sport: volleyball
 sort_number: 1
 portrait: uploads/Lindsay-Thompson_KCC-volleyball-coach.jpg
 phone: 815-802-8608
-email: jostrowski@kcc.edu
+email: lthompson@kcc.edu
 ---
 
 Lindsay Thompson is entering her first year as the head women’s volleyball coach for the Cavaliers. She is a graduate of Hanover Central High School in Cedar Lake, Indiana, where she played varsity volleyball all four years. Thompson went on to play collegiate volleyball at KCC for two years, including earning All-American honors her sophomore year (2010).
