@@ -22,6 +22,7 @@ function createTabPane(tabName, i) {
   const tabLabel = tabName.toLowerCase().replace(/\s|\//g, '-')
   const tabId = tabLabel + '-tab';
   const tabIsFirstTab = i == 0;
+
   h2.classList.add('main-heading', 'typography__main-heading--margin-top', 'text-center');
   h2.innerHTML = tabName;
   tabIsFirstTab ? tabPane.classList.add('show', 'active') : null;
@@ -44,13 +45,14 @@ function createTabLinks(tabName, ul, i) {
   const li = document.createElement('li');
   const a = document.createElement('a');
   const tabIsFirstTab = i == 0;
+  
   li.classList.add('nav-tabs');
   a.classList.add('nav-link');
   tabIsFirstTab ? setActive() : ariaSelected = 'false';
-  a.setAttribute('href', '#' + tabLabel);
+  a.href = `#${tabLabel}`
   a.setAttribute('data-toggle', 'tab');
   a.setAttribute('aria-selected', ariaSelected);
-  a.setAttribute('id', tabId);
+  a.id = tabId;
   a.setAttribute('role', 'tab');
   a.setAttribute('aria-controls', tabLabel);
   a.innerHTML = tabName;
@@ -88,7 +90,6 @@ function createTabHTML(response) {
     //                ['<cell-value>', '<cell-value>', '<cell-value>'] // row
     //            ]
     //
-    console.log(tabValues);
     //
     let tableData;
     let blurb = null;
