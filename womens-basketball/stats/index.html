@@ -5,19 +5,17 @@ title: Women's Basketball Stats
 description: "Kankakee Community College Cavaliers Women's Basketball statistics."
 base: womens-basketball
 sub-nav_hidden: true
+njcaa_stats:
+  years: 
+    - 2018-19
+    - 2019-20
+    - 2020-21
+    - 2021-22
+  prefix: http://njcaa.org/sports/wbkb/
+  suffix: /div2/teams/kankakeecommunitycollege
+  sport: Basketball
 ---
 
-<!--
-<section class="container sub-nav-marg">
-  <div class="row">
-      <div class="col-md-12">
-        <div class="editable">
-
-        </div>
-      </div>
-  </div>
-</section>
--->
 <div class="container margin__alert--2">
   <div class="row">
     <div class="col">
@@ -29,7 +27,7 @@ sub-nav_hidden: true
   <div class="row">
     <div class="col">
       <span id="page-top" class="link__offset" aria-hidden="true"></span>
-      <a class="btn btn-primary buttons__margin-btm" target="_blank" rel="noopener" href="http://njcaa.org/sports/wbkb/2018-19/div2/teams/kankakeecommunitycollege">Women's Basketball Stats on NJCAA Region 4 Website </a>
+      {% include stats-button-group.html %}
       <!-- Baseball statistics tabbed navigation -->
       <div id="data">
         {% include loader.html %}

@@ -5,17 +5,17 @@ title: Baseball Stats
 description: "Kankakee Community College Cavaliers Baseball statistics."
 base: baseball
 sub-nav_hidden: true
+njcaa_stats:
+  years: 
+    - 2018-19
+    - 2019-20
+    - 2020-21
+    - 2021-22
+  prefix: http://region4sports.com/sports/bsb/
+  suffix: /teams/kankakeecommunitycollege?view=lineup
+  sport: Baseball
 ---
 
-<!--
-<nav role="navigation" class="sub-nav-marg nav flex-column">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-</nav>
-
--->
 <div class="container margin__alert--2">
   <div class="row">
     <div class="col">
@@ -26,8 +26,9 @@ sub-nav_hidden: true
 <section class="container">
   <div class="row">
     <div class="col">
+      <!-- Span element used as target for page-top jump link -->
       <span id="page-top" class="link__offset" aria-hidden="true"></span>
-      <a class="btn btn-link buttons__margin-btm" target="_blank" rel="noopener" href="http://region4sports.com/sports/bsb/2018-19/teams/kankakeecommunitycollege?view=lineup">View Baseball Stats on NJCAA Region 4 Website </a>
+      {% include stats-button-group.html %}
       <!-- Baseball statistics tabbed navigation -->
       <div id="data">
         {% include loader.html %}
