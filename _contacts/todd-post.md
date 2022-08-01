@@ -10,9 +10,9 @@ email: tpost@kcc.edu
 
 Head Coach Todd Post brings enthusiasm and a passion for the game to the field every day.
 
-Post has completed 21 seasons as the Cavaliers head coach, with a record of 833-379-8. Prior to becoming head coach in 2001, he was the assistant coach for seven years.
+Post has completed 21 seasons as the Cavaliers head coach, with a record of 876-396-8. Prior to becoming head coach in 2001, he was the assistant coach for seven years.
 
-During Coach Post's tenure, the Cavaliers have averaged more than 41 wins per season, and 170 players have gone on to play at the next level. Since 2001, 69 Cavs have been named All-Region, 37 have been named All-Americans, and 13 have signed professional contracts.
+During Coach Post's tenure, the Cavaliers have averaged more than 40 wins per season, and 175 players have gone on to play at the next level. Since 2001, 68 Cavs have been named All-Region, 35 have been named All-Americans, and 13 have signed professional contracts.
 
 In 2017 Post coached the Cavaliers to the NJCAA Division II National Championship, defeating Mercer County C.C. (N.J.), 11-5 in Enid, Okla. The Cavaliers finished with a record of 54-11-1. In 2009, they finished 3rd at the World Series with a record of 52-14-1. In all, the Cavs have won seven Region IV Championships and have made five World Series appearances. Post was inducted into the Region IV Hall of Fame in spring 2020.
 
@@ -22,4 +22,4 @@ Coach Post transferred to Benedictine University in Lisle where he was a two-yea
 
 In addition to head coaching duties, Post works with players on hitting and defensive aspects of the game.
 
-Post also is KCC's athletic director. He resides in rural Kankakee with his wife, Julianne. Their son, Dylan, is a graduate of KCC and ISU. He is employed at Nucor Steel Company. Their daughter, Jordan, is a registered nurse at University of Chicago Hospital.
+Post also is KCC's athletic director. He resides in rural Kankakee with his wife, Julianne. Their son, Dylan, is a graduate of KCC and ISU. He is employed at Nucor Steel Company. Their daughter, Jordan, is a registered nurse at Riverside Medical Center. She is married to Shawn Kulach and have 2 children Jace and Braelynn.
