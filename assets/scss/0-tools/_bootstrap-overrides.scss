@@ -43,3 +43,12 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
 .alert-warning {
   border-color: #856404;
 }
+
+.dropdown-toggle::after {
+  transition: transform ease-in-out .5s;
+  transform-origin: 50% 50%;
+}
+
+.show > .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
