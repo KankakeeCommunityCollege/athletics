@@ -87,26 +87,30 @@ slides:
     <div class="row schedule-row">
       <div class="col-md-12">
         <h2 class="main-heading">
-          <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
+          <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" aria-hidden="true">&nbsp;Upcoming Games
+        </h2>
           <div class="btn-group schedule__button-margin" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-primary mb-3 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">View All Schedules</button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <a class="dropdown-item" href="{{ page.baseurl }}/baseball/schedule">Baseball Schedule</a>
-              <a class="dropdown-item" href="{{ page.baseurl }}/mens-basketball/schedule">Men's Basketball Schedule</a>
-              <a class="dropdown-item" href="{{ page.baseurl }}/womens-basketball/schedule">Women's Basketball Schedule</a>
-              <a class="dropdown-item" href="{{ page.baseurl }}/soccer/schedule">Men's Soccer Schedule</a>
-              <a class="dropdown-item" href="{{ page.baseurl }}/womens-soccer/schedule">Women's Soccer Schedule</a>
-              <a class="dropdown-item" href="{{ page.baseurl }}/softball/schedule">Softball Schedule</a>
-              <a class="dropdown-item" href="{{ page.baseurl }}/volleyball/schedule">Volleyball Schedule</a>
+            <div class="dropdown">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                All schedules
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="{{ page.baseurl }}/baseball/schedule">Baseball Schedule</a>
+                <a class="dropdown-item" href="{{ page.baseurl }}/mens-basketball/schedule">Men's Basketball Schedule</a>
+                <a class="dropdown-item" href="{{ page.baseurl }}/womens-basketball/schedule">Women's Basketball Schedule</a>
+                <a class="dropdown-item" href="{{ page.baseurl }}/soccer/schedule">Men's Soccer Schedule</a>
+                <a class="dropdown-item" href="{{ page.baseurl }}/womens-soccer/schedule">Women's Soccer Schedule</a>
+                <a class="dropdown-item" href="{{ page.baseurl }}/softball/schedule">Softball Schedule</a>
+                <a class="dropdown-item" href="{{ page.baseurl }}/volleyball/schedule">Volleyball Schedule</a>
+              </div>
             </div>
+            <a
+              class="btn btn-primary mb-3 ml-2"
+              href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Watch Home Games Live</a>
           </div>
-          <a
-            class="btn btn-primary mb-3 ml-2"
-            href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Watch Home Games Live</a>
-        </div>
       <div id="scheduleDiv" class="slick games" style="padding:15px">
         {% include loading-slider.html %}
       </div>
