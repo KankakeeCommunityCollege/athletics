@@ -3,7 +3,7 @@ name: Jennifer Ostrowski
 contacts_title: Assistant Coach
 contacts_sport: volleyball
 sort_number: 2
-portrait: assets/img/blank-contact.svg
+portrait: uploads/jen-ostrowski-1.jpg
 phone:
 email: jostrowski@kcc.edu
 ---
