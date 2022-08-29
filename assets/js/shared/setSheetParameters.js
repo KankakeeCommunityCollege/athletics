@@ -9,23 +9,18 @@ const SOFTBALL_STATS_SHEET_ID = '1qZHyYT_fJE6jajEUjFJK8Z8yKYbu76YnJ9ec3Vzk-KM';
 const VOLLEYBALL_STATS_ID = '1tzACDaWtF9Vohd20ooWsTxSyRaAxAKvpnvxmoO6biAI';
 const WOMENS_BASKETBALL_STATS_SHEET_ID = '1-RkDZ4YpX4XGFvOL7jgXuCm_rLD843NjzPoWJ-Otnf8';
 // Conditions
-const urlIsBaseball = checkUrlForString('/baseball');
-const urlIsMensBasketball = checkUrlForString('/mens-basketball');
-const urlIsWomensSoccer = checkUrlForString('/womens-soccer');
-const urlIsSoccer = checkUrlForString('/soccer');
-const urlIsWomensBasketball = checkUrlForString('/womens-basketball');
-const urlIsSoftball = checkUrlForString('/softball');
-const urlIsVolleyball = checkUrlForString('/volleyball');
-const urlIsRoster = checkUrlForString('/roster');
-const urlIsSchedule = checkUrlForString('/schedule');
-const urlIsStats = checkUrlForString('/stats');
-const urlIsIndex = window.location.pathname === '/';
-
-function checkUrlForString(string) {
-  const url = window.location.href.replace(/(^\w+:|^)\/\//, '');
-
-  return url.indexOf(string) !== -1 ? true : false;
-}
+const path = window.location.pathname;
+const urlIsBaseball = path.search('/baseball') !== -1;
+const urlIsMensBasketball = path.search('/mens-basketball') !== -1;
+const urlIsWomensSoccer = path.search('/womens-soccer') !== -1;
+const urlIsSoccer = path.search('/soccer') !== -1;
+const urlIsWomensBasketball = path.search('/womens-basketball') !== -1;
+const urlIsSoftball = path.search('/softball') !== -1;
+const urlIsVolleyball = path.search('/volleyball') !== -1;
+const urlIsRoster = path.search('/roster') !== -1;
+const urlIsSchedule = path.search('/schedule') !== -1;
+const urlIsStats = path.search('/stats') !== -1;
+const urlIsIndex = path === '/';
 
 function setId(params, i) {
   return params.spreadsheetId = i;  // `spreadsheetId` setting is specific to Google Sheets API
@@ -36,7 +31,7 @@ function setRange(params, r) {
 }
 
 function setStatParams(params) {
-  setRange(params, []);  // This is to set the range it all data in all the sheets of the workbook
+  setRange(params, []);  // This is to set the range to all data in all the sheets of the workbook
   return params.includeGridData = false;  // `includeGridData' setting is specific to Google Sheets API
 }
 

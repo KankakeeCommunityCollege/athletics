@@ -76,7 +76,7 @@ function createTabHTML(response) {
   const ul = createTabsUl();
   const tabContent = createTabContent();
 
-  for (let i = 0; i < sheetData.length; i++) {
+  for (let i = 0, len = sheetData.length; i < len; i++) {
     let tabData = sheetData[i]; // JS Object
     //console.log(tabData);
     let tabName = tabData.range.match(/^'.+'!/g).toString().replace(/'|!/g, ''); // Extract the Name from the A1 Range ('Sheet 1',!A1-H999) notation in the Object.
