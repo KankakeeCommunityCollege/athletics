@@ -1,5 +1,6 @@
-import start from './statsSheetsAPI.js';
 
-document.addEventListener('DOMContentLoaded', function() {
-  gapi.load('client', start);
+window.addEventListener('load', () => {
+  import('./statsSheetsAPI').then(({ default: start }) => {
+    gapi.load('client', start);
+  }).catch(err => console.error(`Error loading module: ${err}`, err))
 });

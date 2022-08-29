@@ -96,7 +96,7 @@ function createTabTable(parent, tableData, tabName, blurb) {
 
   const table = createTableElement(parent);
 
-  for (let i = 0; i < tableData.length; i++) {
+  for (let i = 0, len = tableData.length; i < len; i++) {
     let rowData = tableData[i];
     const tr = createTableRow(rowData, table);
     //createBodyRow(tbody, tableData[i], id);
