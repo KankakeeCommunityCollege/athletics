@@ -1,10 +1,13 @@
 ---
-layout: stats-page
+layout: default
 baseurl: ../../
 title: Men's Basketball Stats
 description: "Kankakee Community College Cavaliers Men's Basketball statistics."
 base: mens-basketball
 sub-nav_hidden: true
+body_class: page ## <landing|page>
+include_datatables: true
+include_gapi: true
 njcaa_stats:
   years: 
     - 2018-19
@@ -39,7 +42,7 @@ njcaa_stats:
     <div class="col">
       <span id="page-top" class="link__offset" aria-hidden="true"></span>
       {% include stats-button-group.html %}
-      <div id="data">
+      <div id="Stats">
         {% include loader.html %}
       </div>
     </div>

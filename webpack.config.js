@@ -26,7 +26,7 @@ module.exports = {
     'games': './assets/js/games/games.js',
     'table': './assets/js/table/table.js',
     'roster': './assets/js/roster/roster.js',
-    'stats': './assets/js/stats/stats.js'
+    // 'stats': './assets/js/stats/stats.js'
   },
   output: {
     filename: '[name].[fullhash].bundle.js',

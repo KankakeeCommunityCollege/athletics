@@ -1,28 +1,19 @@
 import '../../scss/main.scss';
-// import initSlickSliders from './sliders.js';
-// import moreClick from './moreButton.js';
-// import accordion from './accordion.js';
-// import setFooterDate from './footerDate.js';
-import start from './campusAlertsSheetsAPI.js';
-import getCachedResponse from './getCachedResponse.js';
 
-function loadModule(...args) {
-  const module = args[0];
-  let defaultFn;
+window.addEventListener('load', () => {
 
-  args.length > 1 ? defaultFn = args[1] : args[0];
-  import(`./${module}`).then(({ default: defaultFn }) => defaultFn());
-}
+  if (!window.sessionStorage.getItem('Alert-Content')) {
+    import('./campusAlertsSheetsAPI').then(({ default: start }) => gapi.load('client', start));
+  } else {
+    import('./getCachedResponse').then(({ default: getCachedResponse }) => getCachedResponse());
+  }
 
-document.addEventListener('DOMContentLoaded', function () {
-  Promise.resolve()
-    .then(() => document.querySelector('.baseballSlider') ? loadModule('sliders', 'initSlickSliders') : null )
-    .then(() => document.querySelector('img[data-src]') ? loadModule('lazyload', 'lzFunction') : null )
-    .then(() => document.querySelector('.js-more-btn') ? loadModule('moreButton', 'moreClick') : null )
-    .then(() => document.getElementById('accordion') ? loadModule('accordion') : null )
-    .then(() => loadModule('footerDate', 'setFooterDate'))
+  if (document.querySelector('.baseballSlider')) import('./sliders').then(({ default: initSlickSliders }) => initSlickSliders());
+  if (document.querySelector('img[data-src')) import('./lazyload').then(({ default: lzFunction }) => lzFunction());
+  if (document.querySelector('.js-more-btn')) import('./moreButton').then(({ default: moreClick }) => moreClick());
+  if (document.getElementById('accordion')) import('./accordion').then(({ default: accordion }) => accordion());
 
-  ! window.sessionStorage.getItem('Alert-Content') ? // Checks if our cached alert is already in sessionStorage
-    gapi.load('client', start) // If not, build the alert from a new Google API response
-  : getCachedResponse(); // Otherwise, build the alert from our cached response
+  if (document.getElementById('Stats')) import('../stats/statsSheetsAPI').then(({default: start}) => gapi.load('client', start))
+
+  import('./footerDate').then(({ default: setFooterDate }) => setFooterDate());
 });

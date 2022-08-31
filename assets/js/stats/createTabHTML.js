@@ -72,7 +72,7 @@ function createTabHTML(response) {
   //console.log(response); // response the JS Object containing Sheet workbook's data that's returned from the Sheets API.
   // 'response' is actually a batchResponse from API's `.batchGet()` method
   let sheetData = response.result.valueRanges; // Array of JS Objects. Each Object represents a Sheet tab.
-  const parent = document.getElementById('data');
+  const parent = document.getElementById('Stats');
   const ul = createTabsUl();
   const tabContent = createTabContent();
 

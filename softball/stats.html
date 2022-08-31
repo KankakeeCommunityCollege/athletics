@@ -1,19 +1,22 @@
 ---
-layout: stats-page
+layout: default
 baseurl: ../../
-title: Women's Basketball Stats
-description: "Kankakee Community College Cavaliers Women's Basketball statistics."
-base: womens-basketball
+title: Softball Stats
+description: "Kankakee Community College Cavaliers Softball statistics."
+base: Softball
 sub-nav_hidden: true
+body_class: page ## <landing|page>
+include_datatables: true
+include_gapi: true
 njcaa_stats:
   years: 
     - 2018-19
     - 2019-20
     - 2020-21
     - 2021-22
-  prefix: http://njcaa.org/sports/wbkb/
+  prefix: http://stats.njcaa.org/sports/sball/
   suffix: /div2/teams/kankakeecommunitycollege
-  sport: Basketball
+  sport: Softball
 ---
 
 <div class="container margin__alert--2">
@@ -29,7 +32,7 @@ njcaa_stats:
       <span id="page-top" class="link__offset" aria-hidden="true"></span>
       {% include stats-button-group.html %}
       <!-- Baseball statistics tabbed navigation -->
-      <div id="data">
+      <div id="Stats">
         {% include loader.html %}
       </div>
     </div>
