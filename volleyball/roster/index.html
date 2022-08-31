@@ -1,11 +1,13 @@
 ---
-layout: roster-page
+layout: default
 baseurl: ../../
 title: Volleyball Roster
 description: "Kankakee Community College Cavaliers Volleyball roster."
 base: volleyball
 body_class: page ## <landing|page>
 include_datatables: true
+include_gapi: true
+include_sub-nav: true
 ---
 
 <div class="container margin__alert--2">
@@ -19,7 +21,7 @@ include_datatables: true
   <div class="container container__table">
     <div class="row">
       <div class="col-md-12">
-        <div id="data">
+        <div id="Roster">
           {% include loader.html %}
         </div>
         <div id="modalDiv"></div>

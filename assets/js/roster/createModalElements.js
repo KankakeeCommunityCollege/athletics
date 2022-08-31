@@ -1,4 +1,4 @@
-import lzFunction from '../script/lazyload';
+import lzFunction from '../src/lazyload';
 
 function createModal(parent, id) {
   const modal = document.createElement('div');

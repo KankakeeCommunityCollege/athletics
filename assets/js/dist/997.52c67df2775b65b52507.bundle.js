@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkcc_athletics=self.webpackChunkkcc_athletics||[]).push([[997],{3997:function(e,t,c){c.r(t),t.default=function(){var e=(new Date).getFullYear();document.getElementById("currentYear").innerHTML=e}}}]);

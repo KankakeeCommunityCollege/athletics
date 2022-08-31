@@ -1,5 +1,5 @@
 ---
-layout: roster-page
+layout: default
 baseurl: ../../
 title: Softball Roster
 description: "Kankakee Community College Cavaliers Softball roster."
@@ -8,6 +8,8 @@ sheet_key: "14pczY6IjNEy3zdqyNRhCZFLfWLEP4Uv3EGwIp7uXrLo"
 sheet_number: "5"
 body_class: page ## <landing|page>
 include_datatables: true
+include_gapi: true
+include_sub-nav: true
 ---
 
 <div class="container margin__alert--2">
@@ -21,7 +23,7 @@ include_datatables: true
   <div class="container container__table">
     <div class="row">
       <div class="col-md-12">
-        <div id="data">
+        <div id="Roster">
           {% include loader.html %}
         </div>
         <div id="modalDiv"></div>

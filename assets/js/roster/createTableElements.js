@@ -72,7 +72,7 @@ function checkData(data, headingRow) { // Makes sure each row of data has 11 ite
 }
 
 function createTableElements(response) {
-  const parent = document.getElementById('data');
+  const parent = document.getElementById('Roster');
   const table = createTableElement(parent);
   const thead = createTableHeadingElement(table);
   const tbody = createTableBodyElement(table);

@@ -21,12 +21,10 @@ module.exports = {
   mode: devMode ? 'development' : 'production',
   plugins,
   entry: {
-    'main': './assets/js/script/all.js',
+    'main': './assets/js/src/all.js',
     'ytCarousel': './assets/js/ytCarousel/initYouTubeCarousel.js',
     'games': './assets/js/games/games.js',
     'table': './assets/js/table/table.js',
-    'roster': './assets/js/roster/roster.js',
-    // 'stats': './assets/js/stats/stats.js'
   },
   output: {
     filename: '[name].[fullhash].bundle.js',

@@ -4,6 +4,7 @@
   {% include script/facebook-widget.html %}
   {% include global-nav.html %}
   {% include mega-nav.html %}
+  {% if page.include_sub-nav == true %}{% include sub-nav.html %}{% endif %}
   {{ content }}
   {% include footer.html %}
   {% if page.include_gapi == true %}{% include script/google-api.html %}{% endif %}

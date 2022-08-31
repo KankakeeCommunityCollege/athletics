@@ -13,7 +13,8 @@ window.addEventListener('load', () => {
   if (document.querySelector('.js-more-btn')) import('./moreButton').then(({ default: moreClick }) => moreClick());
   if (document.getElementById('accordion')) import('./accordion').then(({ default: accordion }) => accordion());
 
-  if (document.getElementById('Stats')) import('../stats/statsSheetsAPI').then(({default: start}) => gapi.load('client', start))
+  if (document.getElementById('Stats')) import('../stats/statsSheetsAPI').then(({ default: start }) => gapi.load('client', start));
+  if (document.getElementById('Roster')) import('../roster/rosterSheetsAPI').then(({ default: start }) => gapi.load('client', start));
 
   import('./footerDate').then(({ default: setFooterDate }) => setFooterDate());
 });
