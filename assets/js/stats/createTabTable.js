@@ -1,22 +1,21 @@
 function addColSpan(tr, td, val, reg, span) {
-  val = val.replace(reg, '');
   td.setAttribute('colspan', span);
   td.classList.add('table__red-category');
-  tr.appendChild(td);
-  td.innerHTML = val;
+  td.innerHTML = val.replace(reg, '');;
+  tr.append(td);
   return td;
 }
 
 function appendRow(tr, td, val) {
   const highlightRegExp = /^__(.+)__$/g;
-  const highlightTest = val.search(highlightRegExp);
-  const valContainsHighlighting = highlightTest != -1;
-  if (valContainsHighlighting) {
+
+  if (val.search(highlightRegExp) !== -1) {
     td.classList.add('table__highlighted-cell');
     val = val.replace(/^__|__$/g, '');
   }
-  tr.appendChild(td);
+
   td.innerHTML = val;
+  tr.append(td);
   return td;
 }
 
@@ -27,83 +26,69 @@ function testColSpanAmount(tr, td, val) {
     '^\\*\\*\\*\\*\\s': '4',
     '^\\*\\*\\*\\*\\*\\s': '5'
   };
-  for (var test in colSpanTest) {
-    if (colSpanTest.hasOwnProperty(test)) {
-      let reg = new RegExp(test, 'g');
-      let matchIsTrue = reg.test(val);
-      matchIsTrue ?
-        addColSpan(tr, td, val, reg, colSpanTest[test])
-      : null;
-    }
+  for (const test in colSpanTest) {
+    let reg = new RegExp(test, 'g');
+    let match = reg.test(val);
+
+    if (match) addColSpan(tr, td, val, reg, colSpanTest[test]);
   }
   return td;
 }
 
 function createCells(tr, val) {
-  val = val.trim();
-  const colSpanRegExp = /^\*\*[^\d\w]\*?\*?/g;
-  const colTest = val.search(colSpanRegExp);
-  const valContainsColSpan = colTest != -1;
   const td = document.createElement('td');
-  valContainsColSpan ?
-    testColSpanAmount(tr, td, val)
-  : appendRow(tr, td, val);
+  const colSpanRegExp = /^\*\*[^\d\w]\*?\*?/g;
+
+  if (val.search(colSpanRegExp) !== -1) {
+    testColSpanAmount(tr, td, val);
+  } else {
+    appendRow(tr, td, val);
+  }
+
   return td;
 }
 
 function createTableRow(data, table) {
   const tr = document.createElement('tr');
-  table.appendChild(tr);
-  for (var i = 0; i < data.length; i++) {
-    createCells(tr, data[i]);
-  }
-  return table;
+
+  data.forEach(cell => createCells(tr, cell));
+  return table.append(tr);
+  
 }
 
 function createTableElement(parent) {
   const table = document.createElement('table');
   const tbody = document.createElement('tbody');
   const a = document.createElement('a');
-  a.setAttribute('href', '#page-top');
+
+  a.href = '#page-top';
   a.innerHTML = 'Back to top';
   table.classList.add('table', 'table-striped', 'table-hover');
   table.setAttribute('width', '100%');
-  table.setAttribute('id', 'responsiveTable');
-  table.appendChild(tbody);
-  parent.appendChild(table);
-  parent.appendChild(a);
+  table.id = 'responsiveTable';
+  table.append(tbody);
+  parent.append(table);
+  parent.append(a);
   return tbody;
 }
 
 function createStatIntro(blurb) {
-  let introWrapper = document.createElement('div');
-  introWrapper.innerHTML = blurb;
-  return introWrapper;
+  let div = document.createElement('div');
+
+  div.innerHTML = blurb;
+  return div;
 }
 
 function createTabTable(parent, tableData, tabName, blurb) {
-  //console.log(blurb);
-  const blurbIsNotNull = blurb !== null;
-  let copy;
+  const copy = (blurb === null) ? null : createStatIntro(blurb);
 
-  blurbIsNotNull ?
-    copy = createStatIntro(blurb)
-  : copy = null;
-
-  blurbIsNotNull ?
-    parent.appendChild(copy)
-  : null;
+  if (blurb !== null) parent.append(copy);
 
   const table = createTableElement(parent);
 
-  for (let i = 0, len = tableData.length; i < len; i++) {
-    let rowData = tableData[i];
-    const tr = createTableRow(rowData, table);
-    //createBodyRow(tbody, tableData[i], id);
-  }
-  //console.log(table);
-
-  //console.log(parent);
+  tableData.forEach(row => {
+    createTableRow(row, table);
+  })
   return parent;
 }
 export default createTabTable;
