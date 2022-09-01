@@ -24,7 +24,6 @@ module.exports = {
     'main': './assets/js/src/all.js',
     'ytCarousel': './assets/js/ytCarousel/initYouTubeCarousel.js',
     'games': './assets/js/games/games.js',
-    'table': './assets/js/table/table.js',
   },
   output: {
     filename: '[name].[fullhash].bundle.js',

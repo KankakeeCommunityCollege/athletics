@@ -127,7 +127,7 @@ function createTableBodyRows(tbody, data) {
 }
 
 function createTableElements(response) {
-  const parent = document.getElementById('data');
+  const parent = document.getElementById('Schedule');
   const table = createTableElement(parent);
   const thead = createTableHeadingElement(table);
   const tbody = createTableBodyElement(table);

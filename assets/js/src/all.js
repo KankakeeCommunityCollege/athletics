@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
 
   if (document.getElementById('Stats')) import('../stats/statsSheetsAPI').then(({ default: start }) => gapi.load('client', start));
   if (document.getElementById('Roster')) import('../roster/rosterSheetsAPI').then(({ default: start }) => gapi.load('client', start));
+  if (document.getElementById('Schedule')) import('../schedule/scheduleSheetsAPI').then(({ default: start }) => gapi.load('client', start));
 
   import('./footerDate').then(({ default: setFooterDate }) => setFooterDate());
 });

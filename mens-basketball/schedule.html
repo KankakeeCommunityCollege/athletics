@@ -1,11 +1,13 @@
 ---
-layout: schedule-page
+layout: default
 baseurl: ../../
 title: Men's Basketball Schedule
 description: "Kankakee Community College Cavaliers Men's Basketball schedule."
 base: mens-basketball
 body_class: page ## <landing|page>
 include_datatables: true
+include_gapi: true
+include_sub-nav: true
 ---
 
 <div class="container margin__alert--2">
@@ -35,7 +37,7 @@ include_datatables: true
             rel="noopener noreferrer"
           >Watch Home Games Live</a>
         </p>
-        <div id="data">
+        <div id="Schedule">
           {% include loader.html %}
         </div>
       </div>

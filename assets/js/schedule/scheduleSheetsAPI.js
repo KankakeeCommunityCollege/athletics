@@ -10,11 +10,10 @@ function start() {
   };
   const sheetParams = setSheetParameters();
   //console.log(sheetParams);
-  let headingData, rowData;
+
   // Initializes the client with the API key and the Translate API.
   gapi.client.init(params).then(function() {
     // Executes an API request, and returns a Promise.
-    function execute() {
       return gapi.client.sheets.spreadsheets.values.get(sheetParams)
         .then(function(response) {
           let createTablePromise = new Promise((resolve, reject) => {
@@ -27,7 +26,7 @@ function start() {
               // Do Slick Slider Stuff here
               $('#responsiveTable').DataTable( {
                 responsive: true, // Activate responsive powers GO!
-                paging: false, // Don't paginate. Schedule schould all be on one page
+                paging: false, // Don't paginate. Schedule should all be on one page
                 'order': [], // Do not order = 'order': []
                 'columnDefs': [
                   { 'visible': false, 'targets': [1,8] }
@@ -43,8 +42,6 @@ function start() {
         function(err) {
           console.error("Execute error", err);
         });
-    }
-    execute();
   });
 }
 // Loads the JavaScript client library and invokes `start` afterwards.
