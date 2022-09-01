@@ -3,46 +3,30 @@
 import setSheetParameters from '../shared/setSheetParameters.js';
 import createTableElements from './createTableElements.js';
 
-function start() {
-  const params = {
-    'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
-    'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest']
-  };
-  const sheetParams = setSheetParameters();
-  //console.log(sheetParams);
+const PARAMS = {
+  'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
+  'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest']
+};
+const sheetParams = setSheetParameters();
 
-  // Initializes the client with the API key and the Translate API.
-  gapi.client.init(params).then(function() {
-    // Executes an API request, and returns a Promise.
-      return gapi.client.sheets.spreadsheets.values.get(sheetParams)
-        .then(function(response) {
-          let createTablePromise = new Promise((resolve, reject) => {
-            //console.log(response);
-            createTableElements(response);
-            resolve();
-          });
-          createTablePromise.then(() => {
-            let dataTablesPromise = new Promise((resolve, reject) => {
-              // Do Slick Slider Stuff here
-              $('#responsiveTable').DataTable( {
-                responsive: true, // Activate responsive powers GO!
-                paging: false, // Don't paginate. Schedule should all be on one page
-                'order': [], // Do not order = 'order': []
-                'columnDefs': [
-                  { 'visible': false, 'targets': [1,8] }
-                ]
-              });
-              resolve();
-            });
-            dataTablesPromise.then(() => {
-              document.querySelector('input[type="search"].form-control').setAttribute('placeholder', 'Search schedule...');
-            });
-          });
-        },
-        function(err) {
-          console.error("Execute error", err);
-        });
-  });
+function start() {
+  //console.log(sheetParams);
+  gapi.client.init(PARAMS).then(() => {
+    return gapi.client.sheets.spreadsheets.values.get(sheetParams);
+  }).then(response => {
+    createTableElements(response);
+  }).then(() => {
+    $('#responsiveTable').DataTable({
+      responsive: true, // Activate responsive powers GO!
+      paging: false, // Don't paginate. Schedule should all be on one page
+      'order': [], // Do not order = 'order': []
+      'columnDefs': [
+        { 'visible': false, 'targets': [1, 8] }
+      ]
+    });
+  }).then(() => {
+    document.querySelector('input[type="search"].form-control').setAttribute('placeholder', 'Search schedule...');
+  }, err => console.error(`Execute error ${err.message}`, err));
 }
 // Loads the JavaScript client library and invokes `start` afterwards.
 //    Usage:
