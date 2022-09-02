@@ -1,144 +1,116 @@
-var winCount = 0;
-var lossCount = 0;
-var tieCountValue = 0;
-var tieCount;
+const PARENT = document.getElementById('Schedule');
 const monthNames = [ // Define an array of the months to convert JS # value of month into short text version
   'Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'
 ];
 
 function createTableElement(parent) {
   const table = document.createElement('table');
+
   table.classList.add('display', 'table', 'table-striped', 'table-hover');
   table.setAttribute('width', '100%');
-  table.setAttribute('id', 'responsiveTable');
+  table.id = 'responsiveTable';
   parent.innerHTML = '';
-  parent.appendChild(table);
+  parent.append(table);
   return table;
 }
 
 function createTableHeadingElement(table) {
   const thead = document.createElement('thead');
-  table.appendChild(thead);
+
+  table.append(thead);
   return thead;
 }
 
 function createTableBodyElement(table) {
   const tbody = document.createElement('tbody');
-  table.appendChild(tbody);
+
+  table.append(tbody);
   return tbody;
 }
 
 function createHeadingCells(tr, val) {
   const th = document.createElement('th');
-  tr.appendChild(th);
-  val = val + ':';
-  th.innerHTML = val;
+  
+  th.innerHTML = val += ':';
+  tr.append(th);
   return th;
 }
 
 function createHeadingRow(thead, data) {
   const tr = document.createElement('tr');
-  thead.appendChild(tr);
-  for (var i = 0; i < data.length; i++) {
-    createHeadingCells(tr, data[i]);
-  }
+
+  thead.append(tr);
+  data.forEach(cell => createHeadingCells(tr, cell));
   return tr;
 }
 
-function createCells(tr, val) {
+function createCells(tr, val, isFirstCell, location) {
   const td = document.createElement('td');
-  tr.appendChild(td);
+  const className = location == 'Home' ? 'tables--red' : 'tables--blue';
+
+  if (isFirstCell) td.classList.add(className);
+
   td.innerHTML = val;
+  tr.append(td);
   return td;
 }
 
-function createDateCells(tr, val, location) {
-  const td = document.createElement('td');
-  const red = '#c61f48';
-  const blue = '#0f3b63';
-  const gameIsAtHome = location.trim() == 'Home';
-  let color;
-  tr.appendChild(td);
-  gameIsAtHome ? color = red
-  : color = blue;
-  td.setAttribute('align', 'center');
-  td.style.cssText = 'color:#ffffff;background-color:' + color + ';'
-  td.innerHTML = val;
-  return td;
+let winCount = 0;
+let lossCount = 0;
+let tieCountValue = 0;
+
+function addRecordCountToData(data) {
+  let status = data[6].trim();
+
+  if (status == 'W') winCount += 1;
+  if (status == 'L') winCount += 1;
+  if (status == 'T') winCount += 1;
+
+  let tieCount = (tieCountValue === 0) ? '' : ` - ${tieCountValue}`;
+  let record = (status == '') ? '' : `${winCount} - ${lossCount}${tieCount}`;
+
+  data[9] = record
+  return data;
 }
 
 function createBodyRow(tbody, data) {
   const tr = document.createElement('tr');
-  let record;
-  let status = data[6].trim();
-  //console.log(status);
-  status == 'W' ? winCount += 1
-  : status == 'L' ? lossCount += 1
-  : status == 'T' ? tieCountValue += 1
-  : null;
+  const location = data[5];
 
-  tieCountValue === 0 ? tieCount = ''
-  : tieCount = ' - ' + tieCountValue;
-
-  status == '' ? record = '' : record = winCount + ' - ' + lossCount + tieCount;
-  //console.log('RECORD = ' + record);
-
-  data[9] = record;
-
-  tbody.appendChild(tr);
-  for (var i = 0; i < data.length; i++) {
-    let location = data[5];
-
-    data[i] === data[0] ? createDateCells(tr, data[i], location)
-    : createCells(tr, data[i]);
-
-  }
+  data = addRecordCountToData(data);
+  tbody.append(tr);
+  data.forEach((cell, i) => createCells(tr, cell, i === 0, location))
   return tr;
 }
 
 function formatDate(date) {
-  let dateArray = date.split(/\//);
-  //console.log(dateArray);
-  let day = dateArray[1];
-  let monthNumber = dateArray[0] - 1;
-  let month = monthNames[ monthNumber ];
-  let formatedDate = month + '&nbsp;' + day;
-  return formatedDate;
+  let [month, day] = date.split(/\//);
+  const formattedDate = `${monthNames[month - 1]}&nbsp;${day}`;
+
+  return formattedDate;
 }
 
 function createTableBodyRows(tbody, data) {
-  for (let i = 0, len = data.length; i < len; i++) { // Iterates over the spreadsheets rows
-    let rowData = data[i];
-    let start = rowData[0];
-    let end = rowData[1];
-    let endDate = '';
+  data.forEach(row => {
+    let [start, end, , , , , , , ,] = row;
+    const startDate = start !== '' ? formatDate(start) : ' ';
+    const endDate = end !== '' ? formatDate(end) : '' ;
 
-    if ( rowData[0] === '' ) {
-      rowData[0] = ' '
-    } else {
-      end ? endDate = ' - ' + formatDate(end)
-      : null;
-      rowData[0] = formatDate(start) + endDate;
-    }
-
-    createBodyRow(tbody, data[i]);
-    //console.log(end);
-  }
+    row[0] = `${startDate}${endDate === '' ? '' : ' - ' + endDate}`;
+    createBodyRow(tbody, row);
+  });
 }
 
 function createTableElements(response) {
-  const parent = document.getElementById('Schedule');
-  const table = createTableElement(parent);
+  const table = createTableElement(PARENT);
   const thead = createTableHeadingElement(table);
   const tbody = createTableBodyElement(table);
-  // Handle the results here (response.result has the parsed body).
-  //console.log("Response", response.result);
-  let sheetData = response.result.values;
-  let arrayLength = sheetData.length;
-  let headingData = sheetData[0];
-  let tableData = sheetData.slice(1, arrayLength); // is an array of arrays
 
-  headingData[9] = 'Record';
+  const sheetData = response.result.values;
+  const headingData = sheetData[0]; // This is the first row in the spreadsheet data
+  const tableData = sheetData.slice(1, sheetData.length); // is an array of arrays
+
+  headingData[9] = 'Record'; // Add the final "Record" column which is calculated from Wins/Losses/Ties
   createHeadingRow(thead, headingData);
   createTableBodyRows(tbody, tableData);
 }
