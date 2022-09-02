@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkcc_athletics=self.webpackChunkkcc_athletics||[]).push([[665],{6665:function(e,n,t){t.r(n);var c=document.querySelector(".js-more-btn");n.default=function(){c.addEventListener("click",(function(e){var n=e.target;"More ..."==n.innerHTML?n.innerHTML="Close":n.innerHTML="More ..."}))}}}]);
