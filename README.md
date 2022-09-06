@@ -1,44 +1,58 @@
-# KCC Athletics Site Development
-
-#### Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
-
-Development of the new KCC Athletics site based off of design mockups
+# KCC Athletics
 
 ## Requirements
-	- Jekyll - `$ gem install jekyll bundler`
-	- Bundler - `$ gem install bundler`
-	- Nodejs - I recommend using NVM (Node Version Manager): https://github.com/creationix/nvm
-	- .nvmrc file in this repo will make NVM use Node v8.9.4 (to avoid compatibility issues)
-		- Or, if you must - Use the Nodejs installer: https://nodejs.org/
-	- Gulp - `$ npm install --global gulp-cli` - mac users may need sudo
+
+- Jekyll
+- Nodejs:
+  - Use [NVM](https://github.com/nvm-sh/nvm) and `nvm use` to use this projects `.nvmrc` file.
+    Or use a bash function to automatically detect the `.nvmrc` file.
 
 ## Installation
-	$ git clone https://github.com/KankakeeCommunityCollege/athletics-mockup.git
-	$ cd athletics-mockup
 
-### Wait a second! I need a Gemfile:
-This project intentionally has no Gemfile to make CloudCannon builds faster. However, to properly install this project, you need a Gemfile. Rename Gemfile.txt as your Gemfile using the following command in terminal:
-
-	$ cp Gemfile.txt Gemfile
-
-Now you can proceed with installation:
-
-	$ npm install		// May need to prefix command with sudo (if not using NVM)
-	$ bundle install
+```bash
+git clone git@github.com:KankakeeCommunityCollege/athletics.git
+cd athletics
+npm i
+bundle i
+```
 
 ## Development
-	$ gulp
+
+Never push a development build to GitHub!
+
+```bash
+npm run development
+```
 
 ## Production
 
-Production build minifies CSS and JavaScript and compresses image files.
+Productions builds also create a server at `localhost:3000` to preview the production build.
 
-A gulp production build should be run before committing and pushing any CSS, JS, or new images to the Github repository.
+If the build looks good, kill the processes in terminal (<kbd>control</kbd> + <kbd>C</kbd>,)
+add, commit, and push all changed files &mdash; including new JS bundles & chunks.
 
-Trying to push non-minified CSS and JS may result in merge conflicts.  If you have a merge conflict, especially on main.css or all.min.js, try running `$ gulp --production` before trying to push again
+```bash
+npm run production
+```
 
-	$ gulp --production
+## Publishing Workflow
 
-## The gulpfile.js and gulpconfig.yml
+This repository uses two main branches:
+- `master`
+- `publish`
 
-See the comments within gulpfile.js and gulpconfig.yml for detailed explanation of what happens on running `$ gulp` or `$ gulp --production`
+Any edits pushed to the `publish` branch will go live after a successful build in CloudCannon (which handles FTP.)
+
+### In CloudCannon
+
+CloudCannon syncs with the `master` branch where edits are staged. When ready, the edits can be published by merging the changes into the `publish` branch.
+
+CloudCannon has a mechanism to merge branches; this gives certain users the ability to make their (or others) changes live.
+
+### Locally
+
+When developing locally, you need to use the same two branches to make your changes go live.
+
+You may develop changes in your own branch, if you prefer. Simply merge your branch into the `master` and `publish` branches once ready. Also, be sure to delete merged branches if they were pushed to GitHub.
+
+You may also develop locally in the `master` branch. When ready, commit and push your edits to the `master` branch. Then checkout the `publish` branch, merge the edits (from `master`) and push the changes to publish.
