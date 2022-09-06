@@ -11,6 +11,7 @@ const CAMPUS_ALERTS_DIV_ID_STRING = 'emergencyAlerts';  // ID of the div to hous
 const ALERTS_VISIBLE_CLASS = 'position__offset-alert--visible';
 
 function injectAlert(target, alert) {
+
   target.innerHTML = alert;
   return target.classList.add(ALERTS_VISIBLE_CLASS);
 }
@@ -25,8 +26,8 @@ function createAlertsHtml(response) {  // Incoming response from our Google Shee
   let d = new Date;
   let s = new Date(start);
   let e = new Date(end);
-  const alertIsActive = expire === 'FALSE' || expire === 'TRUE' && s.getTime() <= d.getTime() && e.getTime() > d.getTime();
-  const indexPageOnly = allPages === 'TRUE' || allPages === 'FALSE' && window.location.pathname == '/';
+  const alertIsActive = (expire === 'FALSE' || expire === 'TRUE' && s.getTime() <= d.getTime() && e.getTime() > d.getTime());
+  const indexPageOnly = (allPages === 'TRUE' || allPages === 'FALSE' && window.location.pathname == '/');
   let alert = `
 <div class="container">
   <div class="row">
@@ -39,8 +40,7 @@ function createAlertsHtml(response) {  // Incoming response from our Google Shee
 </div>`;
 
   [d,s,e].map(d => d.setHours(0, 0, 0, 0));
-  return alertIsActive && indexPageOnly ? injectAlert(TARGET, alert) : null;
-  
+  if (alertIsActive && indexPageOnly) injectAlert(TARGET, alert);
 }
 
 export default createAlertsHtml;

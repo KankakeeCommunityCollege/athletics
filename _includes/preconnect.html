@@ -1,20 +1,41 @@
-<!-- preconnect to assets -->
+<!-- preconnects and preloads to assets -->
 <!-- fonts -->
-<!-- preconnect to the Eurostile typekit font -->
+<!-- preconnect to Eurostile typekit font -->
 <link rel="preconnect" href="https://use.typekit.net">
-<!-- Google fonts -->
+<!-- preconnect to Google fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Google Cusom Search -->
+<!-- preconnect to Google Custom Search -->
 <link rel="preconnect" href="https://clients1.google.com">
 <link rel="preconnect" href="https://www.google.com">
-<!-- Google API -->
+<!-- preload Bootstrap 4 resources -->
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+{%- if page.url == '/' -%}
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+{%- endif -%}
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+{%- if page.include_gapi == true -%}
+<!-- preload the Google API -->
 <link rel="preload" as="script" href="https://apis.google.com/js/api.js">
+{%- endif -%}
+{%- if page.include_datatables == true -%}
+<!-- preload DataTables styles and scripts -->
+<link rel="preload" as="style" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+<link rel="preload" as="style" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.bootstrap4.min.css">
+<link rel="preload" as="script" href="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js">
+<link rel="preload" as="script" href="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js">
+<link rel="preload" as="script" href="https://cdn.datatables.net/responsive/2.2.2/js/dataTables.responsive.min.js">
+{%- endif -%}
 {%- if site.theme_config != true -%}
+<!-- preload the main custom stylesheet -->
 <link rel="preload" as="script" href="{{page.baseurl}}assets/js/dist/main{% if site.data.hash %}.{{ site.data.hash }}{% endif %}.bundle.js">
 {%- endif -%}
 {% if page.slides %}
+<!--  preload Slick.js stylesheets  -->
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js">
 <!-- preload the first slide since it is visible on pageload -->
 <link rel="preload" as="image" href="{{ page.baseurl }}{{ page.slides[0].image }}">
 {% endif %}
-<!-- End of preconnects -->
+<!-- End of preconnects and preloads -->

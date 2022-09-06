@@ -1,12 +1,14 @@
 ---
 layout: default
-baseurl: ../
-title: News
-description: "News from Kankakee Community College Cavaliers Athletics."
+baseurl: ../../
+title: Women's Basketball News
+description: "Kankakee Community College Cavaliers Women's Basketball news."
+base: womens-basketball
+sub-nav_hidden: true
 body_class: page ## <landing|page>
 include_datatables: false
 include_gapi: false
-include_sub-nav: false
+include_sub-nav: true
 ---
 
 <div class="container margin__alert--2">
@@ -23,8 +25,10 @@ include_sub-nav: false
           <div>
             <ul>
               {% for post in site.posts %}
-                {% include news-item.html %}
-                {% include news-item-modal.html %}
+                {% if post.categories contains 'womens-basketball' or post.categories contains 'general' %}
+                  {% include news-item.html %}
+                  {% include news-item-modal.html %}
+                {% endif %}
               {% endfor %}
             </ul>
           </div>

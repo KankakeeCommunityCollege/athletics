@@ -1,0 +1,93 @@
+---
+layout: default
+baseurl: ../../
+base: facilities
+title: Sports Facilities
+description: "Kankakee Community College sports facilities are top-notch! Facilities are Ryan Gymnasium, Baseball field, Softball field and Soccer field."
+body_class: page ## <landing|page>
+include_datatables: false
+include_gapi: false
+include_sub-nav: true
+---
+
+<!-- Facilities-specific sub-nav -->
+<div class="container-fluid sub-nav">
+  <div class="container-fluid positioning__sub-nav--container">
+    <div class="row filler">&#160;</div>
+    <div class="row sub-nav-row mx-auto">
+      <div class="col-md-6 text-center">
+        <h1 class="page-heading">Sports Facilities</h1>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="{{page.baseurl}}{{page.base}}/sports-facilities/#gym" class="nav-link sub-nav-link">Activities Center</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{page.baseurl}}{{page.base}}/sports-facilities/#baseball-field" class="nav-link sub-nav-link">Baseball Field</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{page.baseurl}}{{page.base}}/sports-facilities/#softball-field" class="nav-link sub-nav-link">Softball Field</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{page.baseurl}}{{page.base}}/sports-facilities/#soccer-field" class="nav-link sub-nav-link">Soccer Field</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container margin__alert--2">
+  <div class="row">
+    <div class="col">
+      {% include emergency-alert.html %}
+    </div>
+  </div>
+</div>
+<main>
+  <div class="container">
+    <div class="row row-marg">
+      <div class="col-md-4">
+          <img class="img-fluid img-radius" src="{{page.baseurl}}uploads/gymnasium.jpg" alt="Photo of the George H. Ryan Activities Center" />
+      </div>
+      <div class="col-md-8">
+        <h3 id="gym" name="gym" class="blue-heading link__offset">George H. Ryan Activities Center</h3>
+        <p class="editable">The George H. Ryan Activities Center is the home of the KCC men’s and women’s basketball and women's volleyball teams.</p>
+        <p class="editable">Located southeast of the main building, it includes regulation size basketball and volleyball courts with a seating capacity of 1,200 spectators. The gym also provides the college with a large, attractive facility for recreational classes, cultural events, and commencement programs.</p>
+      </div>
+    </div>
+    <div class="row row-marg">
+      <div class="col-md-4">
+          <img class="img-fluid img-radius" src="{{page.baseurl}}uploads/aerial-baseball-field.jpg" alt="Aerial Photograph of KCC's baseball field" />
+      </div>
+      <div class="col-md-8">
+        <h3 id="baseball-field" name="baseball-field" class="blue-heading link__offset">Baseball Field</h3>
+        <p class="editable">From manicured baselines to lush infield and outfield grass, the beautiful Cavaliers baseball field is a valued home for KCC players.</p>
+        <p class="editable">The Cavs' baseball home is located in the northwest corner of the college campus. It has a seating capacity of 1,000. Playing dimensions are 330 feet down the lines, 380 feet in the power alleys and 405 feet to straightaway center.</p>
+      </div>
+    </div>
+    <div class="row row-marg">
+      <div class="col-md-4">
+          <img class="img-fluid img-radius" src="{{page.baseurl}}uploads/aerial-softball-field.jpg" alt="Aerial Photograph of KCC's softball field" />
+      </div>
+      <div class="col-md-8">
+        <h3 id="softball-field" name="softball-field" class="blue-heading link__offset">Softball Field</h3>
+        <p class="editable">The Cavalier softball field is one of the finest facilities in community college softball.</p>
+        <p class="editable">What sets this field apart from others is the hitting background. It consist of two rows of pine trees that give the hitter an excellent view of the ball and is a pleasing backdrop for the softball fan.</p>
+        <p class="editable">Recent additions to the facility include an extensive scoreboard, spacious dugouts with a press box, underground watering system, outfield fence and bleachers seating for 110 Cavalier fans!</p>
+        <p class="editable">The outfield fences are measured at 205 feet. The KCC softball field is located at the south-east corner of campus with ample parking.</p>
+      </div>
+    </div>
+    <div class="row row-marg">
+      <div class="col-md-4">
+          <img class="img-fluid img-radius" src="{{page.baseurl}}uploads/soccer-field.jpg" alt="Photo of KCC's soccer field" />
+      </div>
+      <div class="col-md-8">
+        <h3 id="soccer-field" name="soccer-field" class="blue-heading link__offset">Soccer Field</h3>
+        <p class="editable">
+            KCC men's soccer team plays on one of the finest natural grass fields in all of Illinois. Situated along the scenic Kankakee River, the beautifully manicured pitch is a full size regulation 120x80 field.&nbsp;<br /><br />With the recent additions of bench shelters and bleachers, KCC boasts one of the premier soccer fields of any NCAA or NJCAA facilities in Illinois.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>

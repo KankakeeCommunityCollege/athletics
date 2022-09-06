@@ -10,6 +10,16 @@ $secondaryfont-weight-boldish: 500;
 $secondaryfont-weight-bold: 700;
 $secondaryfont-weight-black: 900;
 
+$font-family-headings: 'Roboto', sans-serif;
+$font-size-base: 1rem;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-boldish: 500;
+$font-weight-bolder: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
 //Image path for most of global style sheet
 $imagedir:'/assets/img/';
 
@@ -38,6 +48,8 @@ $fa-color: $primary-red;
 $slide-bg: $white;            // Background color for the upcoming games slick slides
 $sub-nav-heading: $white;     // Font color for h1.page-heading heading of sub-nav
 $nav-link: $white;            // Color for nav-link-main links in mega-nav
+
+$color-grey-heading: $grey-1;      // Grey headings used within page content
 
 // $navbar-toggler-border-color will only change the border color around the hamburger menu:
 // The 3 hamburger lines are coloured in a url(data:...) svg. SCSS cannot inject a variable color into the url(data:svg)
