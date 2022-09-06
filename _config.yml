@@ -81,3 +81,9 @@ _options: # The CloudCannon options key
     hidden: true
   baseurl: # We don't want users changing these!!
     hidden: true
+  include_gapi:
+    hidden: true
+  include_datatables:
+    hidden: true
+  include_sub-nav:
+    hidden: true
