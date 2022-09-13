@@ -12,41 +12,16 @@ include_gapi: false
 include_sub-nav: true
 ---
 
-<!-- About-specific sub-nav -->
-<div class="container-fluid sub-nav">
-  <div class="container-fluid positioning__sub-nav--container">
-    <div class="row filler">&#160;</div>
-    <div class="row sub-nav-row mx-auto">
-      <div class="col-md-4 text-center">
-        <h1 class="page-heading long-heading">Support KCC Athletics</h1>
-      </div>
-      <div class="col-md-8">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/cash-bash" class="nav-link sub-nav-link">Cash Bash</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/cavalier-club" class="nav-link sub-nav-link">Cavalier Club</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/donate" class="nav-link sub-nav-link">Donate</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+{% include sub-nav-support.html %}
 <div class="container margin__alert--2">
   <div class="row">
     <div class="col">
       {% include emergency-alert.html %}
     </div>
   </div>
-</div>
-<main>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
+  <div class="row">
+    <div class="col">
+      <main>
         <h2 class="typography__h2">{{ page.title }}</h2>
         <div class="editable">
             <p>
@@ -92,7 +67,7 @@ include_sub-nav: true
             <h3 class="typography__h3">Cavalier Club Members</h3>
             <p>The players and coaches of the 2017-18 Cavaliers athletic program wish to extend sincere thanks to the following people and businesses who have helped support the athletic program at KCC. We appreciate your donations and hope to give you in return a great season of collegiate athletics.</p>
         </div>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

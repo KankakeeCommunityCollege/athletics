@@ -10,7 +10,7 @@ base: volleyball
 body_class: landing ## <landing|page>
 include_datatables: false
 include_gapi: true
-include_sub-nav: false
+include_sub-nav: true
 slides:
   - image: /uploads/3n3a4474.jpg
     alt-text:
@@ -47,37 +47,7 @@ slides:
   </div>
 </div>
 <div class="container slider-container">
-  <div class="row slider-row">
-    <div class="col-md-12 baseballSlider">
-      {% for slide in page.slides %}
-        {% if forloop.first == true %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              <h3 class="sub-heading">{{slide.text1}}</h3>
-              <h3 class="slide-heading">{{slide.text2}}</h3>
-            </div>
-          </a>
-        </div>
-        {% else %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              <h3 class="sub-heading">{{slide.text1}}</h3>
-              <h3 class="slide-heading">{{slide.text2}}</h3>
-            </div>
-          </a>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+  {% include hero-slider.html %}
 </div>
 
 <!--  Content  -->
@@ -101,7 +71,7 @@ slides:
   </div>
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games<!--  <a href="{{ page.baseurl }}volleyball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="" aria-hidden="true"/>&nbsp;Upcoming Games</h2>
         <a class="btn btn-primary mb-3 ml-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
         <a class="btn btn-primary mb-3 ml-2" href="./schedule/">View Schedule</a>
         <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
@@ -111,16 +81,18 @@ slides:
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News <a href="{{ page.baseurl }}volleyball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}volleyball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
-              {% for post in site.posts %}
-                {% if post.categories contains 'volleyball' or post.categories contains 'general' %}
-                  {% include news-item.html %}
-                  {% include news-item-modal.html %}
-                {% endif %}
+              {% assign volleyball_posts = site.posts | where_exp: "item", "item.categories contains 'volleyball' or item.categories contains 'general'" %}
+              {% for post in volleyball_posts limit: 7 %}
+                {% include news-item.html %}
+                {% include news-item-modal.html %}
               {% endfor %}
-          </ul>
+            </ul>
+            <div class="text-center mb-3">
+              <a href="{{ page.baseurl }}volleyball/news" class="btn btn-primary">More Articles</a>
+            </div>
           </div>
       </div>
       <div class="col-md-4">

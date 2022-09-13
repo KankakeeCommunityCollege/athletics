@@ -6,7 +6,7 @@ function createTableElement(parent) {
   table.setAttribute('width', '100%');
   table.setAttribute('id', 'responsiveTable');
   parent.innerHTML = '';
-  parent.appendChild(table);
+  parent.append(table);
   return table;
 }
 
@@ -87,7 +87,7 @@ function createTableElements(response) {
   createModalElements(response);
   createHeadingRow(thead, headingData);
 
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 0, len = data.length; i < len; i++) {
     let rowData = data[i];
     let name = rowData[2];
     let id = name.replace(/[\W_]+/g, '');

@@ -10,7 +10,7 @@ base: womens-soccer
 body_class: landing ## <landing|page>
 include_datatables: false
 include_gapi: true
-include_sub-nav: false
+include_sub-nav: true
 slides:
   - image: uploads/2021/wsoccer_d81_0533.jpg
     alt-text:
@@ -37,41 +37,7 @@ slides:
   </div>
 </div>
 <div class="container slider-container">
-  <div class="row slider-row">
-    <div class="col-md-12 baseballSlider">
-      {% for slide in page.slides %}
-        {% if forloop.first == true %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          {% if slide.text1 or slide.text2 %}
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              {% if slide.text1 %}<h3 class="sub-heading">{{slide.text1}}</h3>{% endif %}
-              {% if slide.text2 %}<h3 class="slide-heading">{{slide.text2}}</h3>{% endif %}
-            </div>
-          </a>
-          {% endif %}
-        </div>
-        {% else %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          {% if slide.text1 or slide.text2 %}
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              {% if slide.text1 %}<h3 class="sub-heading">{{slide.text1}}</h3>{% endif %}
-              {% if slide.text2 %}<h3 class="slide-heading">{{slide.text2}}</h3>{% endif %}
-            </div>
-          </a>
-          {% endif %}
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+  {% include hero-slider.html %}
 </div>
 
 <!--  Content  -->
@@ -84,7 +50,7 @@ slides:
   <!-- season preview -->
     <div class="row schedule-row{% if page.season_preview == false %} editor-content{% endif %}">
       <div class="col">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&nbsp;Season Preview</h2>
         <div class="season-preview__content-bg">
           <div class="editable">
             <p>Looking to build on a successful inaugural season which ended at the Region IV Quarterfinals in 2021, the Lady Cavs are looking to take the next step this year.</p>
@@ -100,7 +66,7 @@ slides:
     </div>
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <!-- <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games <!-- <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
         <a class="btn btn-primary mb-3 ml-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
         <a class="btn btn-primary mb-3 ml-2" href="./schedule/">View Schedule</a>
         <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
@@ -110,27 +76,29 @@ slides:
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News <a href="{{ page.baseurl }}womens-soccer/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}womens-soccer/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
-              {% for post in site.posts %}
-                {% if post.categories contains "women's soccer" or post.categories contains "general" %}
-                  {% include news-item.html %}
-                  {% include news-item-modal.html %}
-                {% endif %}
+              {% assign wsoccer_posts = site.posts | where_exp: "item", "item.categories contains 'womens-soccer' or item.categories contains 'general'" %}
+              {% for post in wsoccer_posts limit: 7 %}
+                {% include news-item.html %}
+                {% include news-item-modal.html %}
               {% endfor %}
             </ul>
+            <div class="text-center mb-3">
+              <a href="{{ page.baseurl }}womens-soccer/news" class="btn btn-primary">More Articles</a>
+            </div>
           </div>
       </div>
       <div class="col-md-4">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&nbsp;Social Media</h2>
         {% include facebook-widget.html %}
       </div>
     </div>
     <!-- <div class="row">
       <div class="col-md-12">
         <div id="wrapper">
-          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon" />&#160;Videos
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon" />&nbsp;Videos
         	<div id="yt_list" class="yt_list">
         	</div>
         		<a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
@@ -161,7 +129,7 @@ YouTube Modal
 <section class="coach-section">
   <div class="container">
     <div class="row text-left">
-      <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&#160;Coaches</h4>
+      <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&nbsp;Coaches</h4>
     </div>
     <div class="row editor-link">
       <div class="col editor-link mb-3">

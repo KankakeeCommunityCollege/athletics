@@ -1,5 +1,3 @@
-import lzFunction from '../src/lazyload';
-
 function createModal(parent, id) {
   const modal = document.createElement('div');
   const modalId = id + 'Modal';
@@ -178,8 +176,6 @@ function createModalElements(response) {
     }
     wrapStats(playerStatsArray, body);
     const footer = createModalFooter(content);
-
   }
-  return lzFunction();
 }
 export default createModalElements;

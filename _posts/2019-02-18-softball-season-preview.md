@@ -3,6 +3,7 @@ post_title: Softball 2019 Season Preview
 date: 2019-02-18 07:00:00
 categories:
   - softball
+  - news
 sport-category: Softball
 news_thumb_image: /assets/img/cavaliers-16x9-thumb.png
 news_thumb_alt:

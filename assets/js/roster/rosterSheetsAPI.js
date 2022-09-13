@@ -25,6 +25,7 @@ function start() {
     });
   }).then(() => {
     document.querySelector('input[type="search"].form-control').setAttribute('placeholder', 'Search roster...');
+    import('../src/lazyload').then(({ default: lzFunction }) => lzFunction());
   }, err => console.error(`Execute error: ${err.message}`, err))
 }
 // Loads the JavaScript client library and invokes `start` afterwards.

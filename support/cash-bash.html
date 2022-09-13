@@ -8,51 +8,26 @@ body_class: page ## <landing|page>
 include_datatables: false
 include_gapi: false
 include_sub-nav: true
+feature_image: ../../uploads/cashbash.jpg
+feature_image_alt: Cash Bash Graphic
 ---
 
-<!-- About-specific sub-nav -->
-<div class="container-fluid sub-nav">
-  <div class="container-fluid positioning__sub-nav--container">
-    <div class="row filler">&#160;</div>
-    <div class="row sub-nav-row mx-auto">
-      <div class="col-md-4 text-center">
-        <h1 class="page-heading long-heading">Support KCC Athletics</h1>
-      </div>
-      <div class="col-md-8">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/cash-bash" class="nav-link sub-nav-link">Cash Bash</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/cavalier-club" class="nav-link sub-nav-link">Cavalier Club</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/donate" class="nav-link sub-nav-link">Donate</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+{% include sub-nav-support.html %}
 <div class="container margin__alert--2">
   <div class="row">
     <div class="col">
       {% include emergency-alert.html %}
     </div>
   </div>
-</div>
-<main>
-  <div class="container">
-    <div class="row">
-      <div class="col sub-nav__content--wrapper">
+  <div class="row">
+    <div class="col sub-nav__content--wrapper">
+      <main>
         <div class="row facilities__row--bottom-margin">
-          <div class="col-md-4 img-wrapper">
-              <img class="img-fluid img-ease editable" src="../../uploads/cashbash.jpg" alt="Cash Bash Graphic" />
+          <div class="col-md-4">
+              <img class="img-fluid" src="{{ page.feature_image }}" alt="{{ page.feature_image_alt }}" />
           </div>
           <div class="col-md-8">
-            <h3 class="blue-heading editable">
-              Cash Bash
-            </h3>
+            <h3 class="blue-heading">{{ page.title }}</h3>
             <div class="editable">
               <p>Our in-person Cavalier Cash Bash will be Saturday, Feb. 19, 2022 starting at 6:30 pm.</p>
               <p>There's a $5,000 grand prize, plus 23 other cash prize winners.&nbsp;</p>
@@ -61,7 +36,7 @@ include_sub-nav: true
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

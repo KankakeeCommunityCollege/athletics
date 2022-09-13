@@ -3,6 +3,7 @@ post_title: Player of the Week 4/1-4/7
 date: 2019-04-15 07:00:00
 categories:
   - softball
+  - news
 sport-category: Softball
 news_thumb_image: /uploads/image-2019-04-15.jpg
 news_thumb_alt:

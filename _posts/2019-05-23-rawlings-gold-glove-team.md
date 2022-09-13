@@ -3,6 +3,7 @@ post_title: Rawlings Gold Glove Team
 date: 2019-05-23 07:00:00
 categories:
   - baseball
+  - news
 sport-category: Baseball
 news_thumb_image: uploads/njcaaregionivweb.jpg
 news_thumb_alt:

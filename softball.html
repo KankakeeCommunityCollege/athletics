@@ -10,7 +10,7 @@ season_preview: true
 body_class: landing ## <landing|page>
 include_datatables: false
 include_gapi: true
-include_sub-nav: false
+include_sub-nav: true
 slides:
   - image: /uploads/2021/softball-pitch_DSC_3376.jpg
     alt-text:
@@ -42,37 +42,7 @@ slides:
   </div>
 </div>
 <div class="container slider-container">
-  <div class="row slider-row">
-    <div class="col-md-12 baseballSlider">
-      {% for slide in page.slides %}
-        {% if forloop.first == true %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              <h3 class="sub-heading">{{slide.text1}}</h3>
-              <h3 class="slide-heading">{{slide.text2}}</h3>
-            </div>
-          </a>
-        </div>
-        {% else %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              <h3 class="sub-heading">{{slide.text1}}</h3>
-              <h3 class="slide-heading">{{slide.text2}}</h3>
-            </div>
-          </a>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+  {% include hero-slider.html %}
 </div>
 
 <!--  Content  -->
@@ -158,16 +128,18 @@ slides:
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News <a href="{{ page.baseurl }}softball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}softball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
-              {% for post in site.posts %}
-                {% if post.categories contains 'softball' or post.categories contains 'general' %}
-                  {% include news-item.html %}
-                  {% include news-item-modal.html %}
-                {% endif %}
+              {% assign softball_posts = site.posts | where_exp: "item", "item.categories contains 'softball' or item.categories contains 'general'" %}
+              {% for post in softball_posts limit: 7 %}
+                {% include news-item.html %}
+                {% include news-item-modal.html %}
               {% endfor %}
-          </ul>
+            </ul>
+            <div class="text-center mb-3">
+              <a href="{{ page.baseurl }}softball/news" class="btn btn-primary">More Articles</a>
+            </div>
           </div>
       </div>
       <div class="col-md-4">

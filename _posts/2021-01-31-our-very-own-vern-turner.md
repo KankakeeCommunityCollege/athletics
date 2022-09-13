@@ -4,7 +4,7 @@ date: 2021-01-31 00:00:00
 categories:
   - general
   - news
-sport-category:
+sport-category: General News
 news_thumb_image: /uploads/Vern-Turner-in-center-officiating-at-the-McDonald-All-American-Game-2016.jpg
 news_thumb_alt: Vern Turner officiating at the McDonald All American Game in 2016
 description: KCC employee  gets honored for officiating

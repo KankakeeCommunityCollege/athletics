@@ -87,3 +87,5 @@ _options: # The CloudCannon options key
     hidden: true
   include_sub-nav:
     hidden: true
+  sport_sub_nav:
+    hidden: true
