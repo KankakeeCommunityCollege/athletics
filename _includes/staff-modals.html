@@ -1,0 +1,21 @@
+{% assign staff_members = site.staff | sort: 'order' %}
+{% for member in staff_members %}
+<div class="modal fade" id="modalCoach{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="modalCoach{{ forloop.index }}Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <img alt="Photo of Casey Meister" class="img-fluid float-left coach-modal-img" src="{{ member.image }}" />
+        <h5 id="modalCoach{{ forloop.index }}Title" class="coach-name">{{ member.name }}</h5>
+        <h6 class="coach-title">{{ member.contacts_title }}</h6>
+        {{ member.content | markdownify }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

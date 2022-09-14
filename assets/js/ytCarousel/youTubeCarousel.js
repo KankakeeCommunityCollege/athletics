@@ -2,9 +2,9 @@ const YT_PLAYER = document.getElementById('yt_player');
 const YT_LIST = document.getElementById('yt_list');
 const BASE_URL = 'https://athletics.kcc.edu';
 
-const PLAYLIST_ID = 'PLEnNvZd4X-lVSveRGpbsXLCmf7hYXX97q';
+const PLAYLIST_ID = 'UUsWah4rJ6mYqMYcIDw4l6Zg'; // This playlistId corresponds to the KCC Athletics uploads (<https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg/videos?view=0>)
 const YT_API_KEY = 'AIzaSyCDtQhcIZrqG_uw3OAJvQ5zhtLYWvInZV4';
-const MAX_RESULTS = '10'; // Integer from 0 - 50 (string)
+const MAX_RESULTS = '20'; // Integer from 0 - 50 (string)
 const URL = [ // See <https://developers.google.com/youtube/v3/docs/playlistItems/list#parameters> for available parameters
   `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet`,
   `&playlistId=${PLAYLIST_ID}`,

@@ -10,7 +10,7 @@ const SLICK_PARAMS = {
 
 // DO NOT PLACE IN A DOCUMENT READY FUNTION - it will break
 function initSlickSliders() {
-  $('.baseballSlider').slick(SLICK_PARAMS);
+  $('#heroSlider').slick(SLICK_PARAMS);
 }
 
 export default initSlickSliders;

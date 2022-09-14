@@ -4,6 +4,7 @@ baseurl: ../../
 base: facilities
 title: Fitness Center
 description: Fitness Center for Kankakee Community College. Community membership available.
+accordion_expanded: false
 body_class: page ## <landing|page>
 include_datatables: false
 include_gapi: false
@@ -32,27 +33,23 @@ _options:
     styles: /assets/css/content.css
 ---
 
-<!-- Facilities-specific sub-nav -->
-<div class="container-fluid sub-nav">
-  <div class="container-fluid positioning__sub-nav--container">
-    <div class="row filler">&#160;</div>
-    <div class="row sub-nav-row mx-auto">
-      <div class="col-md-6 text-center">
-        <h1 class="page-heading">Fitness Center</h1>
-      </div>
-      <div class="col-md-6">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/fitness-center/#membership" class="nav-link sub-nav-link membershipTarget">Membership</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/fitness-center/#personal-trainers" class="nav-link sub-nav-link trainersTarget">Personal Trainers & Staff</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/fitness-center/#testimonials" class="nav-link sub-nav-link testimonialsTarget">Testimonials</a>
-          </li>
-        </ul>
-      </div>
+<div class="container-fluid sub-nav positioning__sub-nav--container">
+  <div class="row sub-nav-row mx-auto pt-4">
+    <div class="col-md-6 text-center">
+      <h1 class="page-heading">Fitness Center</h1>
+    </div>
+    <div class="col-md-6">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#membership" class="nav-link sub-nav-link membershipTarget">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#personal-trainers" class="nav-link sub-nav-link trainersTarget">Personal Trainers & Staff</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#testimonials" class="nav-link sub-nav-link testimonialsTarget">Testimonials</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -88,7 +85,7 @@ _options:
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col">
 
         <div class="editable">
           <p>The KCC Fitness Center offers total body fitness to KCC students as well as members of the community. The 3,500 square-foot facility features state-of-the-art equipment from Life Fitness, the No. 1 brand of fitness equipment in health clubs worldwide, offering a full range of training options.</p>
@@ -97,9 +94,9 @@ _options:
           <p><span>Dependent age will be noted as under 18 yrs.</span></p>
           <p>Monthly and annual membership packages are available for individuals, families and couples. KCC students can enroll for college credit. KCC&rsquo;s athletes also use the center as part of their training. For more information, phone 815-802-8610.</p>
         </div>
+        {% include accordion.html %}
       </div>
     </div>
   </div>
 
-{% include accordian.html %}
 </main>

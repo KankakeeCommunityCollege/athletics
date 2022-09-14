@@ -1,0 +1,30 @@
+<div class="row editor-link">
+  <div class="col editor-link mb-3">
+    <a href="cloudcannon:collections/_staff/" class="btn btn-success editor-button">Edit Staff</a>
+  </div>
+</div>
+<div class="row">
+  {% assign staff_members = site.staff | sort: 'order' %}
+  {% for member in staff_members %}
+  <div class="col-md-6 coaches__col-bottom-margin">
+    <div class="row">
+      <div class="col-4">
+        <a data-toggle="modal" href="#modalCoach{{ forloop.index }}">
+          <img src="{{ page.baseurl }}{% if member.image %}{{ member.image }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}" alt="{{ member.members_title }} {{ member.name }}" class="img-fluid coach-img modal-link" title="Photo of {{ member.contacts_title }} {{ member.name }}" />
+        </a>
+      </div>
+      <div class="col-8 coaches__info">
+        <a data-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link">
+          <h5 class="coach-name">{{ member.name }}</h5>
+          <h6 class="coach-title">{{ member.contacts_title }}</h6>
+        </a>
+        <p>
+          {% if member.phone %}<a href="tel:1{{ member.phone | replace: '-', '' }}">{{ member.phone }}</a><br />{% endif %}
+          {% if member.email %}<a href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
+        </p>
+        <a data-toggle="modal" class="btn btn-primary" href="#modalCoach{{ forloop.index }}">View Bio</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

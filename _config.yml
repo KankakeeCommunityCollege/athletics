@@ -9,6 +9,10 @@ collections:
     output: false
   alerts:
     output: false
+  accordions:
+    output: false
+  staff:
+    output: false
   contacts:
     output: false
 defaults:
