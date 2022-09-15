@@ -1,58 +1,52 @@
-import lzFunction from './lazyload.js'; // IMPORT THE LAZYLOAD MODULE!!!
-import initSlick from './initSlick.js';  // Initializes slick-slider methods on the slider built bellow.
-import watchForVideoClicks from './watchForVideoClicks.js';
-import watchForModalClose from './watchForModalClose.js';
-
-const BASE_URL = 'https://athletics.kcc.edu';
-const YT_API_K = 'AIzaSyCDtQhcIZrqG_uw3OAJvQ5zhtLYWvInZV4';
 const YT_PLAYER = document.getElementById('yt_player');
 const YT_LIST = document.getElementById('yt_list');
+const BASE_URL = 'https://athletics.kcc.edu';
 
-function createItemArr(item, itemArr = []) {
-  for (var ytProp in item) {
-    if (item.hasOwnProperty(ytProp)) {
-      itemArr.push(item[ytProp]);
-    }
-  }
-  return itemArr;
+const PLAYLIST_ID = 'UUsWah4rJ6mYqMYcIDw4l6Zg'; // This playlistId corresponds to the KCC Athletics uploads (<https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg/videos?view=0>)
+const YT_API_KEY = 'AIzaSyCDtQhcIZrqG_uw3OAJvQ5zhtLYWvInZV4';
+const MAX_RESULTS = '20'; // Integer from 0 - 50 (string)
+const URL = [ // See <https://developers.google.com/youtube/v3/docs/playlistItems/list#parameters> for available parameters
+  `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet`,
+  `&playlistId=${PLAYLIST_ID}`,
+  `&key=${YT_API_KEY}`,
+  `&maxResults=${MAX_RESULTS}`
+];
+
+function createSlideHTML(item) {
+  
+  let [, , title, desc, thumbs, , , , vid,] = Object.values(item.snippet);
+
+  return `
+<div class="yt-list__item">
+  <a class="yt-list__a" data-videoid="${vid.videoId}" data-toggle="modal" data-target="#exampleModalCenter" href="#" tabindex="-1">
+    <img class="img-fluid" src="${BASE_URL}/assets/img/yt-loading.png" data-src="${thumbs.medium.url}" alt="${desc.replace('\n', '')}">
+  </a>
+  <h3 class="yt-list__title">${title}</h3>
+</div>`;
 }
 
-function yt() {
-  const limit = 8;
-  const yt_id ='PLEnNvZd4X-lVSveRGpbsXLCmf7hYXX97q';
-  const request = gapi.client.request({
-    'method': 'GET',
-    'path': '/youtube/v3/playlistItems',
-    'params': {
-      'part': 'snippet',
-      'playlistId': yt_id,
-      'maxResults': limit,
-      'pageToken': '',
-      'key': YT_API_K
-    }
-  });
-
-  request.execute( (response) => {
-    //console.log(response);
-    response.items.forEach((item) => {
-      const [ , , title, , thumbs, , , , vid ] = createItemArr(item.snippet);
-      const html = `
-        <div class="item">
-          <a class="video-link" data-videoid="${vid.videoId}" data-toggle="modal" data-target="#exampleModalCenter" href="#" tabindex="-1">
-            <img class="img-fluid" src="${BASE_URL}/assets/img/yt-loading.png" data-src="${thumbs.medium.url}">
-          </a>
-          <h3 class="video-carousel__title">${title}</h3>
-        </div>`;
-      //console.log(html);
+function processResponse(resp) {
+  return new Promise(resolve => {
+    resp.items.forEach((item, i, arr) => {
+      const html = createSlideHTML(item);
+  
       YT_LIST.insertAdjacentHTML('beforeend', html);
+      if (i == (arr.length - 1)) return resolve();
     });
-    initSlick(YT_LIST, BASE_URL);
-    lzFunction();
-    watchForVideoClicks(YT_PLAYER);
-    watchForModalClose(YT_PLAYER);
   });
 }
-// Loads the JavaScript client library and invokes `start` afterwards.
-//    Usage:
-//  gapi.load('client', yt);
-export default yt;
+
+function youTubeCarousel() {
+  // YouTube Data API may be used (1) via gapi.js or (2) using a GET HTTP request
+  fetch(URL.join('')) // Uses YouTube Data API to fetch the videos held in our playlist
+    .then(response => response.json())
+    .then(result => processResponse(result)) // Build slider HTML & inject into page
+    .then(() => {
+      import('./initSlick').then(({ default: initSlick }) => initSlick(YT_LIST, BASE_URL)); // Initialize the slick carousel
+      import('../src/lazyload').then(({ default: lzFunction }) => lzFunction()); // Lazy loads the video preview images/thumbs.
+      import('./watchForVideoClicks').then(({ default: watchForVideoClicks }) => watchForVideoClicks(YT_PLAYER)); // Play the video in a modal when its clicked/
+      import('./watchForModalClose').then(({ default: watchForModalClose }) => watchForModalClose(YT_PLAYER)); // Stop the video when the modal is closed.
+    })
+}
+
+export default youTubeCarousel;

@@ -16,7 +16,7 @@
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="{{page.baseurl}}favicon.ico"/>
     {% include styles/bootstrap.html %}
-    {%- if page.layout == 'roster-page' or page.layout == 'schedule-page' -%}
+    {%- if page.include_datatables == true -%}
     {% include styles/datatables.html %}
     {%- endif -%}
     {% if page.slides %}

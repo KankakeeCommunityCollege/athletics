@@ -1,0 +1,38 @@
+---
+layout: default
+baseurl: ../../
+title: Men's Basketball News
+description: "Kankakee Community College Cavaliers Men's Basketball news."
+base: mens-basketball
+sport_sub_nav: true
+sub-nav_hidden: true
+body_class: page ## <landing|page>
+include_datatables: false
+include_gapi: false
+include_sub-nav: true
+---
+
+<div class="container margin__alert--2">
+  <div class="row">
+    <div class="col">
+      {% include emergency-alert.html %}
+    </div>
+  </div>
+</div>
+<section class="container">
+  <div class="row">
+      <div class="col-md-12">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News</h2>
+          <div>
+            <ul>
+              {% for post in site.posts %}
+                {% if post.categories contains 'mens-basketball' or post.categories contains 'general' %}
+                  {% include news-item.html %}
+                  {% include news-item-modal.html %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+      </div>
+  </div>
+</section>

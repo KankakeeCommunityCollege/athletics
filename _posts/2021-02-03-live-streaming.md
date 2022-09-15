@@ -2,9 +2,9 @@
 post_title: Live Streaming Now Available
 date: 2021-02-03 00:00:00
 categories:
-  - news
   - general
-sport-category:
+  - news
+sport-category: General News
 news_thumb_image: /uploads/download.png
 news_thumb_alt:
 description: Watch home games live on YouTube!

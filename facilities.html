@@ -1,28 +1,32 @@
 ---
-layout: landing-page
+layout: default
 baseurl: ../
 title: Facilities
-description: "Kankakee Community College is proud to welcome athletes and community members to our first-class facilities: Ryan Gymnasium, Baseball field, Softball field, Soccer field and the Fitness Center."
+description: >-
+  Kankakee Community College is proud to welcome athletes and community members 
+  to our first-class facilities: Ryan Gymnasium, Baseball field, Softball field, 
+  Soccer field and the Fitness Center.
 base: facilities
+body_class: landing ## <landing|page>
+include_datatables: false
+include_gapi: false
+include_sub-nav: false
 ---
-<!-- Facilities-specific sub-nav -->
-<div class="container-fluid sub-nav">
-  <div class="container-fluid positioning__sub-nav--container">
-    <div class="row filler">&#160;</div>
-    <div class="row sub-nav-row mx-auto">
-      <div class="col-md-6 text-center">
-        <h1 class="page-heading">{{ page.base }}</h1>
-      </div>
-      <div class="col-md-6">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/sports-facilities" class="nav-link sub-nav-link">Sports Facilities</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/fitness-center" class="nav-link sub-nav-link">Fitness Center</a>
-          </li>
-        </ul>
-      </div>
+
+<div class="container-fluid sub-nav positioning__sub-nav--container">
+  <div class="row sub-nav-row mx-auto pt-4">
+    <div class="col-md-6 text-center">
+      <h1 class="page-heading">Facilities</h1>
+    </div>
+    <div class="col-md-6">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a href="{{page.baseurl}}{{page.base}}/sports-facilities" class="nav-link sub-nav-link">Sports Facilities</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{page.baseurl}}{{page.base}}/fitness-center" class="nav-link sub-nav-link">Fitness Center</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -33,21 +37,6 @@ base: facilities
     </div>
   </div>
 </div>
-
-{% comment %}
-<section class="hero-section sub-nav-marg">
-  <div class="container hero-container">
-    <div class="row hero-row">
-      <div class="col-md-12">
-        <div class="position__video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/QsNTe6nYTu0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endcomment %}
-
 <main>
   <div class="container">
     {% for alert in site.alerts limit: 1 %}

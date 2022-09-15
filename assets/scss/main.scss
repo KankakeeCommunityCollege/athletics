@@ -12,11 +12,12 @@
 @import '1-base/buttons';
 @import '1-base/lists';
 @import '1-base/datatables';
+@import '1-base/iframe';
 
 // Modular components
 @import '3-modules/mega-nav';
 @import '3-modules/global-nav';
-@import '3-modules/sliders';
+@import '3-modules/hero-slider';
 @import '3-modules/footer';
 @import '3-modules/hero-banner';
 @import '3-modules/img-hover';
@@ -25,12 +26,12 @@
 @import '3-modules/schedule-page';
 @import '3-modules/news';
 @import '3-modules/schedule';
-@import '3-modules/alert';
 @import '3-modules/error';
 @import '3-modules/season-preview';
 @import '3-modules/schedule-slider';
 @import '3-modules/img';
 @import '3-modules/loader';
+@import '3-modules/accordion';
 
 // Layout items
 // @import "4-layout/header";

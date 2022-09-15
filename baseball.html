@@ -1,10 +1,14 @@
 ---
-layout: sport-page
+layout: default
 baseurl: ../
 title: Baseball
 season_preview: true
 description: "Official Baseball page for the Kankakee Community College Cavaliers. The Cavaliers play in NJCAA Divisioin II."
 base: baseball
+body_class: landing ## <landing|page>
+include_datatables: false
+include_gapi: true
+include_sub-nav: true
 slides:
   - image: uploads/2021/IMG_9780.jpg
     alt-text:
@@ -52,47 +56,10 @@ slides:
     </div>
   </div>
 </div>
-<div class="container slider-container">
-  <div class="row slider-row">
-    <div class="col-md-12 baseballSlider">
-      {% for slide in page.slides %}
-        {% if forloop.first == true %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              <h3 class="sub-heading">{{slide.text1}}</h3>
-              <h3 class="slide-heading">{{slide.text2}}</h3>
-            </div>
-          </a>
-        </div>
-        {% else %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              <h3 class="sub-heading">{{slide.text1}}</h3>
-              <h3 class="slide-heading">{{slide.text2}}</h3>
-            </div>
-          </a>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+<div class="container px-0 positioning__max-width-1300--xxl">
+  {% include hero-slider.html %}
 </div>
-
-<!--  Content  -->
 <section class="container content-marg">
-  {% for alert in site.alerts %}
-    {% if alert.display_alert == true %}
-      {% include athletics-alert.html %}
-    {% endif %}
-  {% endfor %}
     <div class="row schedule-row{% if page.season_preview == false %} editor-content{% endif %}">
       <div class="col">
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
@@ -123,55 +90,23 @@ slides:
           =================================================================== -->
         <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
           {% include loading-slider.html %}
-          
-        {% comment %}
-        <!-- TEMPORARY MESSAGE DUE TO COVID COMPLICATIONS -->
-        <div class="baseball slick games" style="padding:15px">
-          <div class="schedule-slider">
-            <div>
-              <div class="row schedule-slider__row">
-                <div class="schedule-slider__l text-center col-2" style="background-color:#999"></div>
-                <div class="schedule-slider__r col-10">
-                  <div class="schedule-slider__sport--wrapper"><span class="schedule-slider__sport d-block">&nbsp;</span></div>
-                  <br /><span class="schedule-slider__where d-block"><strong>Baseball will resume in 2021</strong></span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="row schedule-slider__row">
-                <div class="schedule-slider__l text-center col-2" style="background-color:#999"></div>
-                <div class="schedule-slider__r col-10">
-                  <div class="schedule-slider__sport--wrapper"><span class="schedule-slider__sport d-block">&nbsp;</span></div>
-                  <br /><span class="schedule-slider__where d-block">Please check for upcoming games closer to the start of the season.</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="row schedule-slider__row">
-                <div class="schedule-slider__l text-center col-2" style="background-color:#999"></div>
-                <div class="schedule-slider__r col-10">
-                  <div class="schedule-slider__sport--wrapper"><span class="schedule-slider__sport d-block">&nbsp;</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END TEMPORARY MESSAGE -->
-          {% endcomment %}
         </div>
       </div>
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News  <a href="{{ page.baseurl }}baseball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News  <a href="{{ page.baseurl }}baseball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
-              {% for post in site.posts %}
-                {% if post.categories contains 'baseball' or post.categories contains 'general' %}
-                  {% include news-item.html %}
-                  {% include news-item-modal.html %}
-                {% endif %}
+              {% assign baseball_posts = site.posts | where_exp: "item", "item.categories contains 'baseball' or item.categories contains 'general'" %}
+              {% for post in baseball_posts limit: 7 %}
+                {% include news-item.html %}
+                {% include news-item-modal.html %}
               {% endfor %}
             </ul>
+            <div class="text-center mb-3">
+              <a href="{{ page.baseurl }}baseball/news" class="btn btn-primary">More Articles</a>
+            </div>
           </div>
       </div>
       <div class="col-md-4">
@@ -179,36 +114,8 @@ slides:
         {% include facebook-widget.html %}
       </div>
     </div>
-    <!-- <div class="row">
-      <div class="col-md-12">
-        <div id="wrapper">
-          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon" />&#160;Videos
-        	<div id="yt_list" class="yt_list">
-        	</div>
-        		<a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
-
-
-    YouTube Modal
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                		<iframe id="yt_player"></iframe>
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-
-     -->
-</div></section>
+  </div>
+</section>
 <!-- Coaches Section -->
 <section class="coach-section">
   <div class="container">

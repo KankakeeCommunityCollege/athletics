@@ -2,9 +2,9 @@
 post_title: NJCAA Academic Honors
 date: 2021-06-14 00:00:00
 categories:
-  - news
   - general
-sport-category:
+  - news
+sport-category: General News
 news_thumb_image: /assets/img/16-9_thumb.png
 news_thumb_alt:
 description: Teams and athletes academic achievements

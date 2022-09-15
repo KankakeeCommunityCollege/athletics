@@ -33,3 +33,15 @@ th {
   font-weight: $secondaryfont-weight-bold;
   font-size: 1.2em;
 }
+
+.tables--red {
+  text-align: center;
+  background-color: $primary-red;
+  color: $white;
+}
+
+.tables--blue {
+  text-align: center;
+  background-color: $primary-blue;
+  color: $white;
+}

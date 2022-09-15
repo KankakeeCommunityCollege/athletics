@@ -2,39 +2,27 @@ import createScheduleElements from './createScheduleElements.js';
 import setSheetParameters from '../shared/setSheetParameters.js'; // In the `assets/js/shared/` folder -- module is used by other bundles
 import slickParamsObject from './createSlickParamsObject.js';
 
-function catchUndefinedResponses(response) {
-  const FIRST_ROW_OF_DATA = response.result.values[1]; // Top row is the header, second row is our data
-  const RESPONSE_IS_BAD_RESPONSE = FIRST_ROW_OF_DATA[0] == "#N/A"; // What Sheets shows while calculating a spreadsheet
-  const reloadGAPIClienOnce = (function () {
-    let executed = false;
-    return function () {
-      if (!executed) {
-        executed = true;
-        gapi.load('client', start);
-      }
-    };
-  })();
-
-  if (RESPONSE_IS_BAD_RESPONSE) {
-    reloadGAPIClienOnce();
-    return console.error(`Bad response from Google Sheets:\n${response}`);
-  }
-}
+const PARAMS = {
+  'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
+  'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest']
+};
+const sheetParams = setSheetParameters();
+let secondAttempt = false;
 
 function start() {
-  const params = {
-    'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
-    'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest']
-  };
-  //const t0 = performance.now();
-  const sheetParams = setSheetParameters();
-  //console.log(sheetParams);
-  // Initializes the client with the API key
-  // No O Auth is needed for read-only public sheets.
-  gapi.client.init(params).then( () => {
+  gapi.client.init(PARAMS).then(() => {
     return gapi.client.sheets.spreadsheets.values.get(sheetParams);
   }).then((response) => {
-    catchUndefinedResponses(response);
+    // If `response.result.values[1] == '#N/A' is true, the response was returned before the current games were fully calculated
+    let responseIsBad = (response.result.values[1] == '#N/A');
+    // Sheets has to run IMPORTRANGE() and SORT() functions that take time to complete...
+    if (responseIsBad) {  // Sometimes the response is sent back prior to completion of IMPORTRANGE() and SORT()
+      console.error(`Bad response from Google API: \n${response}`, response);
+      if (!secondAttempt) {
+        secondAttempt = true;
+        return gapi.load('client', start); // If the response is bad, try once more (the second attempt works)
+      }
+    }
     createScheduleElements(response);
   }).then(() => {
     $('.schedule-slider').slick(slickParamsObject());

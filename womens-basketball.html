@@ -1,11 +1,15 @@
 ---
-layout: sport-page
+layout: default
 baseurl: ../
 title: Women's Basketball
 description: >-
   Official Women's Basketball page for the Kankakee Community College
   Cavaliers.  The Cavaliers play in NJCAA Division II, Region 4.
 base: womens-basketball
+body_class: landing ## <landing|page>
+include_datatables: false
+include_gapi: true
+include_sub-nav: true
 slides:
   - image: /uploads/womens-basketball-2021-1.jpg
     alt-text:
@@ -36,52 +40,13 @@ slides:
     </div>
   </div>
 </div>
-<div class="container slider-container">
-  <div class="row slider-row">
-    <div class="col-md-12 baseballSlider">
-      {% for slide in page.slides %}
-        {% if forloop.first == true %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              <h3 class="sub-heading">{{slide.text1}}</h3>
-              <h3 class="slide-heading">{{slide.text2}}</h3>
-            </div>
-          </a>
-        </div>
-        {% else %}
-        <div>
-          <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-          </a>
-          <a href="{{ slide.url }}">
-            <div class="heading-container">
-              <h3 class="sub-heading">{{slide.text1}}</h3>
-              <h3 class="slide-heading">{{slide.text2}}</h3>
-            </div>
-          </a>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+<div class="container px-0 positioning__max-width-1300--xxl">
+  {% include hero-slider.html %}
 </div>
-
-<!--  Content  -->
 <section class="container content-marg">
-  {% for alert in site.alerts %}
-    {% if alert.display_alert == true %}
-      {% include athletics-alert.html %}
-    {% endif %}
-  {% endfor %}
-
-<!--ADDED SEASON PREVIEW SECTION - 10-9-18 JN-->
       <div class="row schedule-row">
       <div class="col">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&nbsp;Season Preview</h2>
         <div class="season-preview__content-bg">
           <div class="editable">
             <p>The Lady Cavaliers will step on the court looking a little different this year, they have a new head coach for the first time in 26 years.</p>
@@ -101,7 +66,7 @@ slides:
 
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <!-- <a href="{{ page.baseurl }}womens-basketball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games <!-- <a href="{{ page.baseurl }}womens-basketball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
         <a class="btn btn-primary mb-3 ml-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
         <a class="btn btn-primary mb-3 ml-2" href="./schedule/">View Schedule</a>
         <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
@@ -111,58 +76,31 @@ slides:
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News <a href="{{ page.baseurl }}womens-basketball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}womens-basketball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
-              {% for post in site.posts %}
-                {% if post.categories contains 'womens-basketball' or post.categories contains 'general' %}
-                  {% include news-item.html %}
-                  {% include news-item-modal.html %}
-                {% endif %}
+              {% assign wbball_posts = site.posts | where_exp: "item", "item.categories contains 'womens-basketball' or item.categories contains 'general'" %}
+              {% for post in wbball_posts limit: 7 %}
+                {% include news-item.html %}
+                {% include news-item-modal.html %}
               {% endfor %}
             </ul>
+            <div class="text-center mb-3">
+              <a href="{{ page.baseurl }}womens-basketball/news" class="btn btn-primary">More Articles</a>
+            </div>
           </div>
       </div>
       <div class="col-md-4">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&nbsp;Social Media</h2>
         {% include facebook-widget_wbb.html %}
       </div>
     </div>
-    <!-- <div class="row">
-      <div class="col-md-12">
-        <div id="wrapper">
-          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos
-        	<div id="yt_list" class="yt_list">
-        	</div>
-        		<a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
-
-
-    YouTube Modal
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                		<iframe id="yt_player"></iframe>
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-
-     -->
 </section>
 <!-- Coaches Section -->
 <section class="coach-section">
   <div class="container">
     <div class="row text-left">
-      <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&#160;&#160;Coaches</h4>
+      <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&nbsp;&nbsp;Coaches</h4>
     </div>
     <div class="row editor-link">
       <div class="col editor-link mb-3">

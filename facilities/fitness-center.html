@@ -1,0 +1,102 @@
+---
+layout: default
+baseurl: ../../
+base: facilities
+title: Fitness Center
+description: Fitness Center for Kankakee Community College. Community membership available.
+accordion_expanded: false
+body_class: page ## <landing|page>
+include_datatables: false
+include_gapi: false
+include_sub-nav: true
+_options:
+  _block:
+    format: p
+    bold: true
+    italic: true
+    underline: true
+    subscript: true
+    superscript: true
+    indent: true
+    outdent: true
+    image: true
+    table: true
+    left: align-left
+    center: center-this-text
+    right: align-right
+    removeformat: true
+    link: true
+    numberedlist: true
+    bulletedlist: true
+    undo: true
+    redo: true
+    styles: /assets/css/content.css
+---
+
+<div class="container-fluid sub-nav positioning__sub-nav--container">
+  <div class="row sub-nav-row mx-auto pt-4">
+    <div class="col-md-6 text-center">
+      <h1 class="page-heading">Fitness Center</h1>
+    </div>
+    <div class="col-md-6">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#membership" class="nav-link sub-nav-link membershipTarget">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#personal-trainers" class="nav-link sub-nav-link trainersTarget">Personal Trainers & Staff</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#testimonials" class="nav-link sub-nav-link testimonialsTarget">Testimonials</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container margin__alert--2">
+  <div class="row">
+    <div class="col">
+      {% include emergency-alert.html %}
+    </div>
+  </div>
+</div>
+<section>
+  <div class="container hero-container">
+    <div class="row hero-row">
+      <div class="col-md-12">
+        <img src="../../uploads/D41_3957fchome.jpg" class="img-fluid hero editable" alt="Photo of the George S. Ryan Activities Center" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="about-main mt-3">
+  <div class="container">
+    {% for alert in site.alerts limit: 1 %}
+      {% if alert.display_alert == true %}
+        {% include athletics-alert.html %}
+      {% endif %}
+    {% endfor %}
+    <div class="row">
+      <div class="col">
+        <div class="editable mb-4">
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+
+        <div class="editable">
+          <p>The KCC Fitness Center offers total body fitness to KCC students as well as members of the community. The 3,500 square-foot facility features state-of-the-art equipment from Life Fitness, the No. 1 brand of fitness equipment in health clubs worldwide, offering a full range of training options.</p>
+          <p>Membership begins when payment is received. You will receive notification when it is time to renew your membership.</p>
+          <p>The Daily Pass rate is $5.</p>
+          <p><span>Dependent age will be noted as under 18 yrs.</span></p>
+          <p>Monthly and annual membership packages are available for individuals, families and couples. KCC students can enroll for college credit. KCC&rsquo;s athletes also use the center as part of their training. For more information, phone 815-802-8610.</p>
+        </div>
+        {% include accordion.html %}
+      </div>
+    </div>
+  </div>
+
+</main>

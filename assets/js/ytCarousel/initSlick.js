@@ -6,8 +6,8 @@ function initSlick(el, BASE_URL) {
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: false,
-    prevArrow: `<img class="a-left control-c prev slick-prev" src="${BASE_URL}/assets/img/blue-prev.svg">`,
-    nextArrow: `<img class="a-right control-c next slick-next" src="${BASE_URL}/assets/img/blue-next.svg">`,
+    prevArrow: `<img class="a-left control-c prev slick-prev yt-list__prev" src="${BASE_URL}/assets/img/blue-prev.svg">`,
+    nextArrow: `<img class="a-right control-c next slick-next yt-list__next" src="${BASE_URL}/assets/img/blue-next.svg">`,
     responsive: [
       {
         breakpoint: 1024,

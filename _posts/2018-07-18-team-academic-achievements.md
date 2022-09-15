@@ -2,9 +2,9 @@
 post_title: Team Academic All Americans
 date: 2018-07-18 07:00:00
 categories:
-  - news
   - baseball
   - softball
+  - news
 sport-category: General
 news_thumb_image: /assets/img/cavaliers-16x9-thumb.png
 news_thumb_alt:

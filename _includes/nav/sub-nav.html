@@ -1,0 +1,21 @@
+<!--  Sub Navitgation  -->
+<div class="container-fluid sub-nav">
+  <div class="container-fluid positioning__sub-nav--container">
+    <div class="row filler">&#160;</div>
+    <div class="row sub-nav-row mx-auto">
+      <div class="col-md-6 text-center">
+        <h1 class="page-heading">{{ page.title }}</h1>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav justify-content-center">
+        {% assign links = 'news, schedule, roster, stats, coaches' | split: ', ' %}
+          {% for link in links %}
+          <li class="nav-item">
+            <a href="{{page.baseurl}}{{page.base}}/{% if forloop.last %}#{% endif %}{{ link }}" class="nav-link sub-nav-link">{{ link | capitalize }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

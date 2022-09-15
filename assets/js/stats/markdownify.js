@@ -1,37 +1,26 @@
 function replaceItem(markdown, el, regEx) {
-  let newMarkdown;
   switch (el) {
     case 'h3':
-      newMarkdown = markdown.replace(regEx, '<h3 class="blue-heading mt-4 mb-3">$<text></h3>');
-      return newMarkdown;
+      return markdown.replace(regEx, '<h3 class="blue-heading mt-4 mb-3">$<text></h3>');
       break;
     case 'p':
-      newMarkdown = markdown.replace(regEx, '<p>$<text></p>');
-      return newMarkdown;
+      return markdown.replace(regEx, '<p>$<text></p>');
       break;
     case 'li':
-      newMarkdown = markdown.replace(regEx, '<li>$<text></li>');
-      return newMarkdown;
+      return markdown.replace(regEx, '<li>$<text></li>');
       break;
     case 'ul':
-      newMarkdown = markdown.replace(regEx, '<ul>');
-      return newMarkdown;
+      return markdown.replace(regEx, '<ul>');
       break;
     case '/ul':
-      newMarkdown = markdown.replace(regEx, '</ul>');
-      return newMarkdown;
+      return markdown.replace(regEx, '</ul>');
       break;
   }
 }
 
 function testForMarkdown(blurb) {
-  //console.log(blurb);
   let markdown = blurb.toString();
   const strongRegEx = /\*\*(?<text>.+)\*\*/gm;
-  const removals = [
-    /^<<<.*|^>>>.*/gm,
-    /^$/gm
-  ];
   const markdownObject = {
     'h3': /^##\s(?<text>.+)/gm,
     'p': /^(?<text>[^-{<#>\s].+)/gm,
@@ -40,15 +29,13 @@ function testForMarkdown(blurb) {
     '/ul': /{:!list}/gm
   };
   for (let key in markdownObject) {
-    if (markdownObject.hasOwnProperty(key)) {
-      markdown = replaceItem(markdown, key, markdownObject[key]);
-    }
+    markdown = replaceItem(markdown, key, markdownObject[key]);
   }
+
   markdown = markdown.replace(strongRegEx, '<strong>$<text></strong>');
-  for (var i = 0; i < removals.length; i++) {
-    markdown = markdown.replace(removals[i], '');
-  }
-  //console.log(markdownHeadings);
+
+  [/^<<<.*|^>>>.*/gm, /^$/gm].forEach(pattern => markdown = markdown.replace(pattern, ''));
+
   return markdown;
 }
 

@@ -1,28 +1,40 @@
-<div class="container slider-container">
-  <a href="http://www.njcaa.org/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
-  <div class="row slider-row">
-    <div class="col-md-12 heroSlider">
+<div class="row mx-0">
+  <div id="heroSlider" class="col hero-slider">
+    {% for slide in page.slides %}
+      {% if forloop.first == true %}
       <div>
-        <img src="{{page.baseurl}}uploads/header-bg2.jpg" class="img-fluid slide-img" alt="">
-        <div class="heading-container">
-          <h3 class="sub-heading editable">June 6, 2017 | Baseball</h3>
-          <h3 class="slide-heading editable">2017 NJCAA Division II<br>National Champions</h3>
-        </div>
+        <a href="{{ slide.url }}">
+          <img src="{{page.baseurl}}{{slide.image}}"
+           class="img-fluid hero-slider__img"
+           alt="{{slide.alt-text}}">
+        </a>
+        {% if slide.text1 or slide.text2 %}
+        <a href="{{ slide.url }}">
+          <div class="hero-slider__heading-wrapper">
+            {% if slide.text1 %}<h3 class="typography__hero-slider--sub-heading">{{ slide.text1 }}</h3>{% endif %}
+            {% if slide.text2 %}<h3 class="typography__hero-slider--main-heading">{{ slide.text2 }}</h3>{% endif %}
+          </div>
+        </a>
+        {% endif %}
       </div>
+      {% else %}
       <div>
-        <img src="{{page.baseurl}}uploads/header-bg.jpg" class="img-fluid slide-img" alt="">
-        <div class="heading-container">
-          <h3 class="sub-heading editable">Date, Year | Basketball</h3>
-          <h3 class="slide-heading editable">Heading line 1<br>Heading line 2</h3>
-        </div>
+        <a href="{{ slide.url }}">
+          <img src="{{page.baseurl}}assets/img/placeholder.png"
+           data-src="{{page.baseurl}}{{slide.image}}"
+           class="img-fluid hero-slider__img"
+           alt="{{slide.alt-text}}">
+        </a>
+        {% if slide.text1 or slide.text2 %}
+        <a href="{{ slide.url }}">
+          <div class="hero-slider__heading-wrapper">
+            {% if slide.text1 %}<h3 class="typography__hero-slider--sub-heading">{{ slide.text1 }}</h3>{% endif %}
+            {% if slide.text2 %}<h3 class="typography__hero-slider--main-heading">{{ slide.text2 }}</h3>{% endif %}
+          </div>
+        </a>
+        {% endif %}
       </div>
-      <div>
-        <img src="{{page.baseurl}}uploads/header-bg3.jpg" class="img-fluid slide-img" alt="">
-        <div class="heading-container">
-          <h3 class="sub-heading editable">Date, Year | Soccer</h3>
-          <h3 class="slide-heading editable">Heading line 1</h3>
-        </div>
-      </div>
-    </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>

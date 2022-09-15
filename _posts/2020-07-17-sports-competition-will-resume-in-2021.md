@@ -2,8 +2,9 @@
 post_title: KCC sports will restart in 2021
 date: 2020-07-17 00:00:00
 categories:
+  - general
   - news
-sport-category: general
+sport-category: General News
 news_thumb_image: /assets/img/16-9_thumb.png
 news_thumb_alt: Cavaliers logo
 description: >-

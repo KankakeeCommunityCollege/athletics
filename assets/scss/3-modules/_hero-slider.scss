@@ -1,0 +1,129 @@
+// Styles for the `_includes/hero-slider.html` component
+// slick carousels
+//============================================== //
+
+.hero-slider__heading-wrapper {   // div container for slide headings
+  border-left-color: $white;
+  border-left-style: solid;
+  border-left-width: 2px;
+  filter: drop-shadow(2px 2px 5px #000);
+  margin-left: .9%;
+  padding-left: 5px;
+  position: absolute;
+  top: 55%;
+  width: 7%;
+  z-index: 4444;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 488px) {
+  .hero-slider__heading-wrapper {
+    top: 60%;
+    width: 6%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-slider__heading-wrapper {
+    margin-left: .7%;
+    padding-left: 10px;
+    top: 61%;
+    width: 6%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-slider__heading-wrapper {
+    margin-left: .6%;
+    padding-left: 20px;
+    top: 67%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-slider__heading-wrapper {
+    top: 69%;
+  }
+}
+
+.hero-slider__img {
+  position: relative;
+  width: 100%;
+}
+
+.hero-slider .slick-next {
+  right: 20px;
+}
+
+.hero-slider .slick-prev {
+  left: 20px;
+  z-index: 4;
+}
+
+@media screen and (min-width: 576px) {
+  .hero-slider .slick-next {
+    right: 25px;
+  }
+
+  .hero-slider .slick-prev {
+    left: 25px;
+    z-index: 4;
+  }
+}
+
+.hero-slider .slick-next,
+.hero-slider .slick-prev {
+  height: 25px;
+  top: 75%;
+  width: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-slider .slick-next,
+  .hero-slider .slick-prev {
+    height: 40px;
+    top: 80%;
+    width: 40px;
+  }
+}
+
+.hero-slider .slick-dots li button:before {
+  color: $landing-bg;
+  font-size: 12px;
+  line-height: 30px;
+  opacity: 1;
+  text-shadow:
+    -1px -1px 0 $black,
+    1px -1px 0 $black,
+    -1px 1px 0 $black,
+    1px 1px 0 $black;
+}
+
+.hero-slider .slick-dots li.slick-active button:before {
+  color: $primary-blue;
+  opacity: 1;
+  text-shadow:
+    -1px -1px 0 $black,
+    1px -1px 0 $black,
+    -1px 1px 0 $black,
+    1px 1px 0 $black;
+}
+
+.hero-slider .slick-dots li {
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero-slider {   // prevents all slides from displaying vertically before slick has initialized
+  visibility: hidden;
+}
+
+.slick-initialized {   // makes slides visible again once slick has initialized
+  visibility: visible;
+}
+
+.slick-track {
+  margin-left: 0;
+}

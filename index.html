@@ -1,5 +1,5 @@
 ---
-layout: index-page
+layout: default
 baseurl:
 title: Athletics
 description: >-
@@ -7,6 +7,10 @@ description: >-
   Intercollegiate sports are Men's and Women's Basketball, Women's and  Men's
   Soccer, Softball, Baseball and Volleyball.
 sport: '1'
+body_class: landing ## <landing|page>
+include_datatables: false
+include_gapi: true
+include_sub-nav: false
 slides:
   - image: uploads/2021/wsoccer_d81_1109.jpg
     alt-text:
@@ -48,46 +52,15 @@ slides:
     </div>
   </div>
 </div>
-<div class="container slider-container">
-  <div class="row slider-row">
-    <div class="col-md-12 baseballSlider">
-    {% for slide in page.slides %}
-      {% if forloop.first == true %}
-      <div>
-        <a href="{{ slide.url }}"><img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}"></a>
-        {% if slide.text1 or slide.text2 %}
-        <div class="heading-container">
-          {% if slide.text1 %}<h3 class="sub-heading">{{slide.text1}}</h3>{% endif %}
-          {% if slide.text2 %}<h3 class="slide-heading">{{slide.text2}}</h3>{% endif %}
-        </div>
-        {% endif %}
-      </div>
-      {% else %}
-      <div>
-        <a href="{{ slide.url }}"><img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}"></a>
-        {% if slide.text1 or slide.text2 %}
-        <div class="heading-container">
-          {% if slide.text1 %}<h3 class="sub-heading">{{slide.text1}}</h3>{% endif %}
-          {% if slide.text2 %}<h3 class="slide-heading">{{slide.text2}}</h3>{% endif %}
-        </div>
-        {% endif %}
-      </div>
-      {% endif %}
-    {% endfor %}
-    </div>
-  </div>
+<div class="container px-0 positioning__max-width-1300--xxl">
+  {% include hero-slider.html %}
 </div>
 
 <section class="container content-marg mt-1">
-  {% for alert in site.alerts limit: 1 %}
-    {% if alert.display_alert == true %}
-      {% include athletics-alert.html %}
-    {% endif %}
-  {% endfor %}
     <div class="row schedule-row">
       <div class="col-md-12">
         <h2 class="main-heading">
-          <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" aria-hidden="true">&nbsp;Upcoming Games
+          <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&nbsp;Upcoming Games
         </h2>
           <div class="btn-group schedule__button-margin" role="group">
             <div class="dropdown">
@@ -114,37 +87,44 @@ slides:
       <div id="scheduleDiv" class="slick games" style="padding:15px">
         {% include loading-slider.html %}
       </div>
-      <p id="myMessage"></p>
     </div>
   </div>
   <div class="row news-social-row">
       <div class="col-md-8 col-xs-12 news-feed">
-        <h2 class="main-heading grey-bg"><img src="assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News  <a href="{{ page.baseurl }}news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <div class="d-flex mb-4 align-items-center">
+          <h2 class="main-heading mb-0"><img src="assets/img/news.svg" class="icon-middle" alt="news icon">&nbsp;News</h2>
+          <a href="{{ page.baseurl }}news" class="btn btn-primary schedule__button-margin">View All News</a>
+        </div>
         <div class="news__scroll">
           <ul class="news__list">
-            {% for post in site.posts %}
+            {% for post in site.posts limit: 10 %}
               {% include news-item.html %}
               {% include news-item-modal.html %}
             {% endfor %}
           </ul>
+          <div class="text-center mb-3">
+            <a href="{{ page.baseurl }}news" class="btn btn-primary">More Articles</a>
+          </div>
         </div>
       </div>
       <div class="col-md-4 col-xs-12 text-sm-center social-marg">
-        <h2 class="main-heading text-sm-left"><img src="assets/img/social-icon.svg" class="icon-middle" alt="Social media icon">&#160;Social Media</h2>
-        {% include facebook-widget.html %}
+        <h2 class="main-heading">
+          <img src="assets/img/social-icon.svg" class="icon-middle" alt="social media icon">&nbsp;Social Media
+        </h2>
+        <div class="text-center">
+          {% include facebook-widget.html %}
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="wrapper">
-          <h2 class="main-heading"><img src="assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos</h2>
-        	<div id="yt_list" class="yt_list">
+          <h2 class="main-heading"><img src="assets/img/video.svg" class="icon-middle" alt="video icon">&nbsp;Videos</h2>
+        	<div id="yt_list" class="yt-list">
         	</div>
             <a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
             <a class="btn btn-primary ml-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
         	</div>
-
-        <!-- YouTube Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -154,14 +134,16 @@ slides:
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body yt_player-positioning">
-                		<iframe id="yt_player"></iframe>
+              <div class="modal-body mx-auto">
+                <iframe id="yt_player" width="560" height="315" class="yt-list__player"></iframe>
               </div>
               <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
-        </div>
+        </div><!-- End modal code -->
+
       </div>
     </div>
 </section>

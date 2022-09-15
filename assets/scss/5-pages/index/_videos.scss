@@ -1,11 +1,5 @@
-#wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1110px;
-  width: 100%;
-}
 
-#yt_list {
+.yt-list {
   height: 260px;
   list-style: none;
   margin-bottom: 10px;
@@ -14,51 +8,53 @@
 }
 
 @media screen and (min-width: 375px) {
-  #yt_list {
+  .yt-list {
     min-height: 280px;
   }
 }
 
 
 @media screen and (min-width: 412px) {
-  #yt_list {
+  .yt-list {
     min-height: 320px;
   }
 }
 
 @media screen and (min-width: 481px) {
-  #yt_list {
+  .yt-list {
     min-height: 350px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  #yt_list {
+  .yt-list {
     min-height: 460px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  #yt_list {
+  .yt-list {
     min-height: 260px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #yt_list {
+  .yt-list {
     min-height: 300px;
   }
 }
 
-#yt_list_bb {
-  height: 290px;
-  list-style: none;
-  margin-bottom: 10px;
-  right: 0;
-  top: 0;
+@media screen and (max-width: 599px) {
+  .yt-list__prev {
+    left: -13px !important;
+  }
+  
+  .yt-list__next {
+    right: -13px !important;
+  }
 }
 
-.item {
+.yt-list__item {
   background: $white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   float: left;
@@ -69,31 +65,34 @@
   width: 300px;
 }
 
+@media screen and (orientation: portrait) and (max-width: 468px) {
+  .yt-list__item {
+    height: auto;
+    width: calc(100% - 50px);
+  }
+}
+
 @media screen and (min-width: 992px) {
-  .item {
+  .yt-list__item {
     min-height: 235px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .item {
+  .yt-list__item {
     min-height: 270px;
   }
 }
 
-.item > a > img {
+.yt-list__item > a > img {
   width: 100%;
 }
 
-.item:hover {
+.yt-list__item:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.video-details {
-  font-size: 18px;
-}
-
-.video-carousel__title {
+.yt-list__title {
   color: $primary-red;
   font-size: 17px;
   font-weight: bold;
@@ -128,25 +127,14 @@ button#load-more {
 }
 
 @media screen and (orientation: portrait) {
- #yt_player {
+ .yt-list__player {
    height: 40vh;
 	 width: 100%;
  }
-
- #yt_list {   // DO NOT DEFINE A WIDTH HERE OR BAD THINGS WILL HAPPEN
+ .yt-list {   // DO NOT DEFINE A WIDTH HERE OR BAD THINGS WILL HAPPEN
    bottom: 0;
    left: 0;
 	 top: auto;
- }
- #yt_list_bb {
-  bottom: 0;
-  height: 59vh;
-  left: 0;
-  top: auto;
-  width: 800px;
- }
-
- .item {
  }
 }
 
@@ -170,20 +158,3 @@ button#load-more {
   }
 }
 
-
-@media screen and (orientation: portrait) and (max-width: 468px) {
- .item {
-	 height: auto;
-	 width: calc(100% - 50px);
- }
-}
-
-.yt_player-positioning {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#scheduleDiv {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}

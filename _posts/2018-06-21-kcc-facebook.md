@@ -2,8 +2,8 @@
 post_title: KCC Athletics Facebook
 date: 2018-06-21 11:00:00
 categories:
-  - news
   - general
+  - news
 sport-category: General News
 news_thumb_image: /uploads/fb.PNG
 news_thumb_alt:

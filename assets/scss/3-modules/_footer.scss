@@ -19,10 +19,18 @@ a.footer-link {
 .footer-icons {
   background-color: $primary-red;
   border-radius: 50%;
-  height: 40px;
-  margin: 5px;
+  height: 35px;
+  margin: 4px;
   padding: 2px;
-  width: 40px;
+  width: 35px;
+}
+
+@media screen and (min-width: 350px) {
+  .footer-icons {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+  }
 }
 
 @media screen and (min-width: 412px) {
