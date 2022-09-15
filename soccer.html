@@ -36,15 +36,7 @@ slides:
 <div class="container px-0 positioning__max-width-1300--xxl">
   {% include hero-slider.html %}
 </div>
-
-<!--  Content  -->
 <section class="container content-marg">
-  {% for alert in site.alerts %}
-    {% if alert.display_alert == true %}
-      {% include athletics-alert.html %}
-    {% endif %}
-  {% endfor %}
-  <!-- season preview -->
     <div class="row schedule-row{% if page.season_preview == false %} editor-content{% endif %}">
       <div class="col">
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
@@ -91,35 +83,6 @@ slides:
         {% include facebook-widget.html %}
       </div>
     </div>
-    <!-- <div class="row">
-      <div class="col-md-12">
-        <div id="wrapper">
-          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon" />&#160;Videos
-        	<div id="yt_list" class="yt_list">
-        	</div>
-        		<a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
-
-
-YouTube Modal
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                		<iframe id="yt_player"></iframe>
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-
-     -->
 </section>
 <!-- Coaches Section -->
 <section class="coach-section">

@@ -23,4 +23,6 @@ window.addEventListener('load', () => {
   // 4. These modules only happen on the homepage
   if (document.getElementById('scheduleDiv')) import('../games/games').then(({ default: games }) => games());
   if (document.getElementById('yt_list')) import('../ytCarousel/youTubeCarousel').then(({ default: youTubeCarousel }) => youTubeCarousel());
+
+  if (document.getElementById('SearchTermForm')) import('./watchForWebsiteSearch').then(({ default: watchForWebsiteSearch }) => watchForWebsiteSearch());
 });

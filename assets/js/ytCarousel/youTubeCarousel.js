@@ -17,11 +17,11 @@ function createSlideHTML(item) {
   let [, , title, desc, thumbs, , , , vid,] = Object.values(item.snippet);
 
   return `
-<div class="item">
-  <a class="video-link" data-videoid="${vid.videoId}" data-toggle="modal" data-target="#exampleModalCenter" href="#" tabindex="-1">
+<div class="yt-list__item">
+  <a class="yt-list__a" data-videoid="${vid.videoId}" data-toggle="modal" data-target="#exampleModalCenter" href="#" tabindex="-1">
     <img class="img-fluid" src="${BASE_URL}/assets/img/yt-loading.png" data-src="${thumbs.medium.url}" alt="${desc.replace('\n', '')}">
   </a>
-  <h3 class="video-carousel__title">${title}</h3>
+  <h3 class="yt-list__title">${title}</h3>
 </div>`;
 }
 

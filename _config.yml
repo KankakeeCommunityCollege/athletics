@@ -7,8 +7,6 @@ google-tag_key: 'GTM-KRL8533'
 collections:
   posts:
     output: false
-  alerts:
-    output: false
   accordions:
     output: false
   staff:

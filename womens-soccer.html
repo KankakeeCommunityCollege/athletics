@@ -39,14 +39,7 @@ slides:
 <div class="container px-0 positioning__max-width-1300--xxl">
   {% include hero-slider.html %}
 </div>
-
 <section class="container content-marg">
-  {% for alert in site.alerts %}
-    {% if alert.display_alert == true %}
-      {% include athletics-alert.html %}
-    {% endif %}
-  {% endfor %}
-  <!-- season preview -->
     <div class="row schedule-row{% if page.season_preview == false %} editor-content{% endif %}">
       <div class="col">
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&nbsp;Season Preview</h2>
