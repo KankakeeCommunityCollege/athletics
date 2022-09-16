@@ -55,19 +55,17 @@ function createCells(tr, val, isFirstCell, location) {
   return td;
 }
 
-let winCount = 0;
-let lossCount = 0;
-let tieCountValue = 0;
+let [win, loss, tie] = [0, 0, 0];
 
 function addRecordCountToData(data) {
   let status = data[6].trim();
 
-  if (status == 'W') winCount += 1;
-  if (status == 'L') winCount += 1;
-  if (status == 'T') winCount += 1;
+  if (status == 'W') win += 1;
+  if (status == 'L') loss += 1;
+  if (status == 'T') tie += 1;
 
-  let tieCount = (tieCountValue === 0) ? '' : ` - ${tieCountValue}`;
-  let record = (status == '') ? '' : `${winCount} - ${lossCount}${tieCount}`;
+  let tieCount = (tie === 0) ? '' : ` - ${tie}`;
+  let record = (status == '') ? '' : `${win} - ${loss}${tieCount}`;
 
   data[9] = record
   return data;
@@ -110,7 +108,7 @@ function createTableElements(response) {
   const headingData = sheetData[0]; // This is the first row in the spreadsheet data
   const tableData = sheetData.slice(1, sheetData.length); // is an array of arrays
 
-  headingData[9] = 'Record'; // Add the final "Record" column which is calculated from Wins/Losses/Ties
+  headingData[9] = 'Record <span class="typography__muted-small-caps">(W - L - T)</span>'; // Add the final "Record" column which is calculated from Wins/Losses/Ties
   createHeadingRow(thead, headingData);
   createTableBodyRows(tbody, tableData);
 }
