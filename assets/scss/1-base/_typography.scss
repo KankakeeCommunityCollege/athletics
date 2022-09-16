@@ -158,6 +158,13 @@
   }
 }
 
+.typography__muted-small-caps {
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: .8rem;
+  vertical-align: middle;
+}
+
 // Typography for Coaches sections on pages
 // ===========================================
 .coaches-heading {
