@@ -7,44 +7,45 @@ description: >-
   Intercollegiate sports are Men's and Women's Basketball, Women's and  Men's
   Soccer, Softball, Baseball and Volleyball.
 sport: '1'
-body_class: landing ## <landing|page>
+body_class: landing
 include_datatables: false
 include_gapi: true
 include_sub-nav: false
 slides:
-  - image: uploads/2021/wsoccer_d81_1109.jpg
-    alt-text:
+  - image: /uploads/wom-soccer-homepage-_DSC2102.jpg
+    alt-text: >-
+      Women soccer players #19 Alayna Valone, #9 Hailey Johns, and #27 Riley
+      Jones
     url: /womens-soccer
     text2: Women's Soccer
-  - image: uploads/2021/soccer_d81_9766.jpg
-    alt-text: 'Mens Soccer vs South Suburban College - #15 Luis Mendez'
+  - image: /uploads/men-soccer-homepage-_DSC8329.jpg
+    alt-text: 'Mens Soccer player #4 Nathaniel Brown'
     url: soccer
     text2: Soccer
-  - image: uploads/volleyball-2021_team.jpg
-    alt-text:
+  - image: /uploads/volleyball-homepage-DSC_6278.jpg
+    alt-text: 'Volleyball player #6 Taylor Rodabaugh'
     url: volleyball
     text1: Lady Cavaliers
-    text2: 2021 KCC Volleyball
-  - image: /uploads/womens-basketball-2021-1.jpg
-    alt-text: Women's basketball team
+    text2: 2022 KCC Volleyball
+  - image: /uploads/wom-basketball-homepage-Z91_1027.jpg
+    alt-text: 'Women''s basketball player #23 Sarah Burton'
     url: womens-basketball
-    text1: 2020-2021
+    text1: 2021-2022
     text2: Women's Basketball
   - image: /uploads/jhd-4997-1-1.jpg
     alt-text: 'Men''s basketball '
     url: mens-basketball
     text2: Men's Basketball
-  - image: /uploads/2021/softball-pitch_DSC_3597.jpg
-    alt-text: 'Softball game vs Joliet Junior College - #18 Lanie Malone'
+  - image: /uploads/softball-homepage-JHD_4184.jpg
+    alt-text: 'Softball player #15 Claudia Morris'
     url: softball
     text2: Softball
-  - image: /uploads/2021/baseball_DSC_1060.jpg
-    alt-text: 'Ian Sanders #14'
+  - image: /uploads/baseball-homepage-JHD_3631.jpg
+    alt-text: 'Baseball player #5 Kyle Czarnecki'
     url: baseball
     text1:
     text2: Baseball
 ---
-
 <div class="container margin__alert">
   <div class="row">
     <div class="col">
@@ -60,7 +61,7 @@ slides:
     <div class="row schedule-row">
       <div class="col-md-12">
         <h2 class="main-heading">
-          <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&nbsp;Upcoming Games
+          <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games
         </h2>
           <div class="btn-group schedule__button-margin" role="group">
             <div class="dropdown">
@@ -77,12 +78,7 @@ slides:
                 <a class="dropdown-item" href="{{ page.baseurl }}/volleyball/schedule">Volleyball Schedule</a>
               </div>
             </div>
-            <a
-              class="btn btn-primary mb-3 ml-2"
-              href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Watch Home Games Live</a>
+            <a class="btn btn-primary mb-3 ml-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
           </div>
       <div id="scheduleDiv" class="slick games" style="padding:15px">
         {% include loading-slider.html %}
@@ -92,7 +88,7 @@ slides:
   <div class="row news-social-row">
       <div class="col-md-8 col-xs-12 news-feed">
         <div class="d-flex mb-4 align-items-center">
-          <h2 class="main-heading mb-0"><img src="assets/img/news.svg" class="icon-middle" alt="news icon">&nbsp;News</h2>
+          <h2 class="main-heading mb-0"><img src="assets/img/news.svg" class="icon-middle" alt="news icon" />&nbsp;News</h2>
           <a href="{{ page.baseurl }}news" class="btn btn-primary schedule__button-margin">View All News</a>
         </div>
         <div class="news__scroll">
@@ -109,7 +105,7 @@ slides:
       </div>
       <div class="col-md-4 col-xs-12 text-sm-center social-marg">
         <h2 class="main-heading">
-          <img src="assets/img/social-icon.svg" class="icon-middle" alt="social media icon">&nbsp;Social Media
+          <img src="assets/img/social-icon.svg" class="icon-middle" alt="social media icon" />&nbsp;Social Media
         </h2>
         <div class="text-center">
           {% include facebook-widget.html %}
@@ -119,7 +115,7 @@ slides:
     <div class="row">
       <div class="col-md-12">
         <div id="wrapper">
-          <h2 class="main-heading"><img src="assets/img/video.svg" class="icon-middle" alt="video icon">&nbsp;Videos</h2>
+          <h2 class="main-heading"><img src="assets/img/video.svg" class="icon-middle" alt="video icon" />&nbsp;Videos</h2>
         	<div id="yt_list" class="yt-list">
         	</div>
             <a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
