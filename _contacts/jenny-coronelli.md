@@ -11,7 +11,7 @@ A former KCC player, Jenny Coronelli is excited to come back to the college wher
 
 <br>Coronelli brings energy and excitement to the coaching staff in her second season as assistant coach. Her resume includes 13 years of middle school coaching an one season as a KCC assistant alongside Donnie Denson.
 
-<br>She is eager to be back with the program she attributes much of her personal success to. After KCC, Coronelli continued her collegiate basketball career at Kentucky Wesleyan University, a NCAA Div. II school where she completed &nbsp;a bachelor's degree in sports management.
+<br>She is eager to be back with the program she attributes much of her personal success to. After KCC, Coronelli continued her collegiate basketball career at Kentucky Wesleyan University, a NCAA Div. II school where she completed a bachelor's degree in sports management.
 
 She earned a master’s degree in teaching from Olivet Nazarene University and became a Physical Education Teacher for a local school district. She is currently working on a doctoral degree in curriculum and instruction at Aurora University.
 
