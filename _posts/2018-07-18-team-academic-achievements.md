@@ -5,7 +5,7 @@ categories:
   - baseball
   - softball
 post_topic: General News
-news_thumb_image: /assets/img/cavaliers-16x9-thumb.png
+news_thumb_image: /assets/img/placeholder.jpg
 news_thumb_alt:
 description: Congratulations!
 ---

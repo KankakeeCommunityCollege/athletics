@@ -4,7 +4,7 @@ date: 2019-01-17 07:00:00
 categories:
   - baseball
 post_topic: Baseball
-news_thumb_image: /assets/img/cavaliers-16x9-thumb.png
+news_thumb_image: /assets/img/placeholder.jpg
 news_thumb_alt:
 description: KCC 2019 Spring Baseball
 ---

@@ -4,7 +4,7 @@ date: 2022-04-18 00:00:00
 categories:
   - general
 post_topic: General News
-news_thumb_image: /assets/img/16-9_thumb.png
+news_thumb_image: /assets/img/placeholder.jpg
 news_thumb_alt: Cavaliers Logo
 description: Signing Day Players
 ---
