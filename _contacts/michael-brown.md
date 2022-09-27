@@ -1,5 +1,5 @@
 ---
-name: 'Michael Brown'
+name: Michael Brown
 contacts_title: Head Basketball Coach
 contacts_sport: men's basketball
 sort_number: 1
@@ -7,8 +7,7 @@ portrait: uploads/michael-brown.jpg
 phone: 815‑802‑8609
 email: mbrown@kcc.edu
 ---
-
-For 2021-22, Mike Brown is in his first season as the head coach of the KCC men’s basketball program. Over his career, Brown has coached three NJCAA All-Americans, one NJCAA Academic All-American and eight All-Region players.
+For 2022-23, Mike Brown enters his seconds season as the head coach of the KCC men’s basketball program. Over his career, Brown has coached three NJCAA All-Americans, three NJCAA Academic All-Americans and ten All-Region players. Last season, the Cavs finished the season as a NJCAA All-Academic team with a 3.05 team GPA to go along with 19 victories and a Region IV championship game appearance.
 
 Before KCC, Brown served as an assistant coach at Purdue University Northwest from 2018-20, helping the Pride to its most successful season since joining NCAA Div. II. Before Purdue, Brown was assistant coach at Maryville University in Saint Louis for a season. He helped the Saints to a record of 20-8, 11 more wins than the previous season. The Saints also finished the season as Great Lakes Valley Conference Central Division regular season champs and advanced to the GLVC conference tournament.
 
