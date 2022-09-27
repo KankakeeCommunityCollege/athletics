@@ -7,7 +7,7 @@
   </div>
   <div class="news__cell-right">
     <a data-toggle="modal" href="#post{{ forloop.index }}" class="news__link">
-      <h5 class="news__sub-heading news__sub-heading--spacing"> {{ post.sport-category }} &#183; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
+      <h5 class="news__sub-heading news__sub-heading--spacing">{{ post.post_topic }} &middot; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
       <h4 class="news__heading">{{ post.post_title }}</h4>
       <p class="news__paragraph">{{ post.description }}</p>
     </a>

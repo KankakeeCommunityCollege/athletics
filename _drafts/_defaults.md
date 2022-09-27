@@ -2,8 +2,8 @@
 post_title: 'Do not start the title with a number'
 date:
 categories:
-sport-category:
-news_thumb_image: 'assets/img/placeholder.png'
+post_topic:
+news_thumb_image: 'assets/img/placeholder.jpg'
 news_thumb_alt:
 description: A brief intro to your article
 ---

@@ -3,8 +3,7 @@ post_title: Ashley Harwood
 date: 2019-11-18 16:33:00
 categories:
   - volleyball
-  - news
-sport-category: Volleyball
+post_topic: Volleyball
 news_thumb_image: /uploads/aharwood.jpg
 news_thumb_alt:
 description: All Region

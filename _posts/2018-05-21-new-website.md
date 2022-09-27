@@ -2,10 +2,9 @@
 post_title: New Website
 date: 2018-05-21 10:00:00
 categories:
-  - news
   - general
-sport-category: General News
-news_thumb_image: /assets/img/16-9_thumb.png
+post_topic: General News
+news_thumb_image: /assets/img/placeholder.jpg
 news_thumb_alt:
 description: Website revamped!
 ---

@@ -8,7 +8,7 @@ accordion_expanded: false
 body_class: page ## <landing|page>
 include_datatables: false
 include_gapi: false
-include_sub-nav: true
+include_sub-nav: false
 _options:
   _block:
     format: p
@@ -33,23 +33,25 @@ _options:
     styles: /assets/css/content.css
 ---
 
-<div class="container-fluid sub-nav positioning__sub-nav--container">
-  <div class="row sub-nav-row mx-auto pt-4">
-    <div class="col-md-6 text-center">
-      <h1 class="page-heading">Fitness Center</h1>
-    </div>
-    <div class="col-md-6">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#membership" class="nav-link sub-nav-link membershipTarget">Membership</a>
-        </li>
-        <li class="nav-item">
-          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#personal-trainers" class="nav-link sub-nav-link trainersTarget">Personal Trainers & Staff</a>
-        </li>
-        <li class="nav-item">
-          <a href="{{page.baseurl}}{{page.base}}/fitness-center/#testimonials" class="nav-link sub-nav-link testimonialsTarget">Testimonials</a>
-        </li>
-      </ul>
+<div class="container-fluid sub-nav">
+  <div class="container">
+    <div class="row sub-nav-row mx-auto pt-4">
+      <div class="col-md-6">
+        <h1 class="page-heading">Fitness Center</h1>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="{{page.baseurl}}{{page.base}}/fitness-center/#membership" class="nav-link sub-nav-link membershipTarget">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{page.baseurl}}{{page.base}}/fitness-center/#personal-trainers" class="nav-link sub-nav-link trainersTarget">Personal Trainers & Staff</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{page.baseurl}}{{page.base}}/fitness-center/#testimonials" class="nav-link sub-nav-link testimonialsTarget">Testimonials</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

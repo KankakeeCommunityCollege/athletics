@@ -3,8 +3,7 @@ post_title: Jacob Makes KCC Soccer Proud
 date: 2018-05-21 08:00:00
 categories:
   - soccer
-  - news
-sport-category: Soccer
+post_topic: Soccer
 news_thumb_image: /uploads/jmccleary.jpg
 news_thumb_alt:
 description: Way to go Jacob!

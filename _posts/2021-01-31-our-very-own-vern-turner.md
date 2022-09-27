@@ -3,8 +3,7 @@ post_title: Turner selected for IBCA Hall of Fame
 date: 2021-01-31 00:00:00
 categories:
   - general
-  - news
-sport-category: General News
+post_topic: General News
 news_thumb_image: /uploads/Vern-Turner-in-center-officiating-at-the-McDonald-All-American-Game-2016.jpg
 news_thumb_alt: Vern Turner officiating at the McDonald All American Game in 2016
 description: KCC employee  gets honored for officiating

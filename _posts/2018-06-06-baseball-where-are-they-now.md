@@ -3,8 +3,7 @@ post_title: 2018 Players Next Step
 date: 2018-06-06 09:00:00
 categories:
   - baseball
-  - news
-sport-category: Baseball
+post_topic: Baseball
 news_thumb_image: /uploads/aerial-baseball-field.jpg
 news_thumb_alt:
 description: Where are the 2018 Baseball athletes headed

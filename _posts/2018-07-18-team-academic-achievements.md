@@ -4,9 +4,8 @@ date: 2018-07-18 07:00:00
 categories:
   - baseball
   - softball
-  - news
-sport-category: General
-news_thumb_image: /assets/img/cavaliers-16x9-thumb.png
+post_topic: General News
+news_thumb_image: /assets/img/placeholder.jpg
 news_thumb_alt:
 description: Congratulations!
 ---

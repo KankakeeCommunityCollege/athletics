@@ -3,8 +3,7 @@ post_title: Soccer- All Region Team
 date: 2019-10-30 09:00:00
 categories:
   - soccer
-  - news
-sport-category: Soccer
+post_topic: Soccer
 news_thumb_image: /uploads/joel3.jpg
 news_thumb_alt:
 description: Congratulations

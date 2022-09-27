@@ -3,8 +3,7 @@ post_title: Baseball Comes to a Close
 date: 2018-05-21 09:00:00
 categories:
   - baseball
-  - news
-sport-category: Baseball
+post_topic: Baseball
 news_thumb_image: /uploads/baseball-sophomores.jpg
 news_thumb_alt:
 description:

@@ -3,9 +3,8 @@ post_title: JBB Award given to Owen Jackson!
 date: 2022-04-18 00:00:00
 categories:
   - baseball
-  - news
-sport-category: Baseball
-news_thumb_image: /assets/img/16-9_thumb.png
+post_topic: Baseball
+news_thumb_image: /assets/img/placeholder.jpg
 news_thumb_alt: Cavaliers Logo
 description: Congratulations Owen Jackson
 ---
