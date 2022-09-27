@@ -3,8 +3,7 @@ post_title: Congrats Jasmine
 date: 2018-05-23 09:00:00
 categories:
   - womens-basketball
-  - news
-sport-category: Women's Basketball
+post_topic: Women's Basketball
 news_thumb_image: /uploads/image-2018-06-06.jpg
 news_thumb_alt:
 description: Sophomore Jasmine Elliott receives FULL ride!

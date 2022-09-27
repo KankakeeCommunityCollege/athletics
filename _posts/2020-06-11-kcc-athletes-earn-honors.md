@@ -3,8 +3,7 @@ post_title: '22 Athletes earn honors'
 date: 2020-06-11 00:00:00
 categories:
   - general
-  - news
-sport-category: General News
+post_topic: General News
 news_thumb_image: 'uploads/2020/softball-right.jpg'
 news_thumb_alt:
 description: NJCAA names all-academic teams

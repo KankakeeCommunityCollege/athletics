@@ -7,8 +7,7 @@ categories:
   - softball
   - volleyball
   - general
-  - news
-sport-category: General News
+post_topic: General News
 news_thumb_image: /assets/img/16-9_thumb.png
 news_thumb_alt:
 description: Athletes receiving 3.60 or higher GPA

@@ -5,8 +5,7 @@ categories:
   - baseball
   - mens-basketball
   - womens-basketball
-  - news
-sport-category: General
+post_topic: General News
 news_thumb_image: /assets/img/16-9_thumb.png
 news_thumb_alt:
 description:

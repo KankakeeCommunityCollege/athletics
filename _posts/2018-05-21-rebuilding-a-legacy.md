@@ -3,8 +3,7 @@ post_title: Rebuilding a Legacy
 date: 2018-05-21 09:00:00
 categories:
   - mens-basketball
-  - news
-sport-category: Men's Basketball
+post_topic: Men's Basketball
 news_thumb_image: /uploads/mbb-recruits.jpg
 news_thumb_alt:
 description: Coach Thorson's 18-19 Recruits

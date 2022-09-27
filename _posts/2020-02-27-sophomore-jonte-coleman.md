@@ -3,8 +3,7 @@ post_title: Sophomore Jonte Coleman
 date: 2020-02-27 00:00:00
 categories:
   - mens-basketball
-  - news
-sport-category: Men's Basketball
+post_topic: Men's Basketball
 news_thumb_image: /uploads/jonte-portrait.jpg
 news_thumb_alt:
 description: New Three Point Record

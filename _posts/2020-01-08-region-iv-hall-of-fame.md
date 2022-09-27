@@ -3,8 +3,7 @@ post_title: NJCAA Region IV Hall of Fame
 date: 2020-01-08 00:00:00
 categories:
   - baseball
-  - news
-sport-category: Baseball
+post_topic: Baseball
 news_thumb_image: /uploads/todd-post.jpg
 news_thumb_alt:
 description: Congratulations Coach Post

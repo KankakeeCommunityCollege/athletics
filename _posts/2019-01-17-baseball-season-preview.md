@@ -3,8 +3,7 @@ post_title: Baseball 2019 Season Preview
 date: 2019-01-17 07:00:00
 categories:
   - baseball
-  - news
-sport-category: Baseball
+post_topic: Baseball
 news_thumb_image: /assets/img/cavaliers-16x9-thumb.png
 news_thumb_alt:
 description: KCC 2019 Spring Baseball

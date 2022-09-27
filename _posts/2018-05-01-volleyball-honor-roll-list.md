@@ -3,8 +3,7 @@ post_title: Volleyball Honor Roll List
 date: 2018-05-14 22:16:00
 categories:
   - volleyball
-  - news
-sport-category: Volleyball
+post_topic: Volleyball
 news_thumb_image: /uploads/volleyball_thumb.jpg
 news_thumb_alt:
 description:
