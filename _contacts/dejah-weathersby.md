@@ -1,21 +1,18 @@
 ---
-name: DeJah Weathersby
+name: 'Jenny Coronelli '
 contacts_title: Assistant Coach
 contacts_sport: women's basketball
 sort_number: 2
-portrait: uploads/dejah.jpg
+portrait: assets/img/blank-contact.svg
 phone:
 email:
 ---
+A former KCC player, Jenny Coronelli is excited to come back to the college where she experienced success including two National Tournament Runner-Up finishes and an overall record of 57-10.&nbsp;
 
-A former KCC player, De'Jah Weathersby is in her first season as women's basketball assistant coach. Weathersby has experience as a community college, and NAIA Div. I athlete, she provides guidance to the student-athletes on reaching the next level, plus valuable input and game-planning skills.
+<br>Coronelli brings energy and excitement to the coaching staff in her second season as assistant coach. Her resume includes 13 years of middle school coaching an one season as a KCC assistant alongside Donnie Denson.
 
-Weathersby is a 2017 graduate of Rich South High School. As a high school sophomore, the Stars made it to the Illinois Class 3A Elite 8. As a senior—while starting alongside two athletes who would move on to the NCAA Div. I Big East—Weathersby averaged 11 points per game and was a “knockdown shooter,” with a team-leading 40 3-pointers.
+<br>She is eager to be back with the program she attributes much of her personal success to. After KCC, Coronelli continued her collegiate basketball career at Kentucky Wesleyan University, a NCAA Div. II school where she completed &nbsp;a bachelor's degree in sports management.
 
-At KCC she played for Hall of Fame Coach Donnie Denson and the Lady Cavaliers from 2017-19. Weathersby was a standout performer, averaging 12 points, 2 assists, and 4 rebounds per game. She also contributed to a Region IV Championship Title and National Tournament appearance in 2018. During her sophomore year at KCC, she was top 3 in every major statistical category and second in scoring.&nbsp;
+She earned a master’s degree in teaching from Olivet Nazarene University and became a Physical Education Teacher for a local school district. She is currently working on a doctoral degree in curriculum and instruction at Aurora University.
 
-Weathersby continued her basketball career with a scholarship to Lincoln College in central Illinois. During her first season at Lincoln, she battled leg injuries and was still a major contributor to a talented team that finished with a 20-9 record and narrowly missed a national tournament bid. Although doctors said her basketball career was possibly over, Weathersby overcame a major stress fracture in her leg to start 11 of 15 games her senior season, highlighted by a 14-point performance against Holy Cross.
-
-In 2021 Weathersby graduated cum laude with a 3.5 GPA and a bachelor’ degree in sport management.
-
-Weathersby resides in Matteson.
+Coronelli lives in Bourbonnais with her puppy, Bootsie May, and cannot wait to see what this season has in store.
