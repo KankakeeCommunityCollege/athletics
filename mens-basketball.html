@@ -87,7 +87,7 @@ slides:
           <div class="news__scroll">
             <ul class="news__list">
               {% assign mbball_posts = site.posts | where_exp: "item", "item.categories contains 'mens-basketball' or item.categories contains 'general'" %}
-              {% for post in site.posts limit: 7 %}
+              {% for post in mbball_posts limit: 7 %}
                 {% include news-item.html %}
                 {% include news-item-modal.html %}
               {% endfor %}
