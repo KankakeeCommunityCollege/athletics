@@ -2,7 +2,7 @@
 name: Francine Castongia
 contacts_title: Fitness Specialist
 order: 4
-image: '../../uploads/dsc-0248-francine.jpg'
+image: '/assets/img/dsc-0248-francine.jpg'
 phone: 815‑802‑8610
 email: fcastongia@kcc.edu
 ---

@@ -4,7 +4,7 @@ date: 2018-05-14 22:16:00
 categories:
   - volleyball
 post_topic: Volleyball
-news_thumb_image: /uploads/volleyball_thumb.jpg
+news_thumb_image: uploads/news/volleyball_thumb.jpg
 news_thumb_alt:
 description:
 ---

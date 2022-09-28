@@ -4,7 +4,7 @@ date: 2019-04-15 07:00:00
 categories:
   - softball
 post_topic: Softball
-news_thumb_image: /uploads/image-2019-04-15.jpg
+news_thumb_image: uploads/news/image-2019-04-15.jpg
 news_thumb_alt:
 description: Matti Lanie
 ---

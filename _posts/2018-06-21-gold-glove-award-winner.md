@@ -4,7 +4,7 @@ date: 2018-06-21 07:00:00
 categories:
   - baseball
 post_topic: Baseball
-news_thumb_image: /assets/img/Gold Glove Team.PNG
+news_thumb_image: uploads/news/Gold Glove Team.PNG
 news_thumb_alt:
 description: Congratulations Brennan Kelly!
 ---

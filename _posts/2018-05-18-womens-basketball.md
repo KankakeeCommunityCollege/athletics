@@ -4,7 +4,7 @@ date: 2018-04-30 10:16:00
 categories:
   - womens-basketball
 post_topic: Women's Basketball
-news_thumb_image: /uploads/womens-basketball-wheelchair-game.jpg
+news_thumb_image: uploads/news/womens-basketball-wheelchair-game.jpg
 news_thumb_alt:
 description: Lady Cavaliers support Option CIL!
 ---

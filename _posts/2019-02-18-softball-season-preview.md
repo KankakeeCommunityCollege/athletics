@@ -4,7 +4,7 @@ date: 2019-02-18 07:00:00
 categories:
   - softball
 post_topic: Softball
-news_thumb_image: /assets/img/placeholder.jpg
+news_thumb_image: assets/img/placeholder.jpg
 news_thumb_alt:
 description: KCC 2019 Spring Softball
 ---

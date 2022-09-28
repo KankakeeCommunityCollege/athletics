@@ -4,7 +4,7 @@ date: 2018-06-12 07:00:00
 categories:
   - womens-basketball
 post_topic: Women's Basketball
-news_thumb_image: /uploads/image-2018-06-21.jpg
+news_thumb_image: uploads/news/image-2018-06-21.jpg
 news_thumb_alt:
 description: Sophomore Kiara Moses accepts FULL ride!
 ---

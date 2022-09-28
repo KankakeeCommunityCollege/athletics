@@ -4,7 +4,7 @@ date: 2019-05-23 07:00:00
 categories:
   - softball
 post_topic: Softball
-news_thumb_image: uploads/njcaaregionivweb.jpg
+news_thumb_image: uploads/news/njcaaregionivweb.jpg
 news_thumb_alt:
 description: 2019 DII Region IV All Region Awards
 ---

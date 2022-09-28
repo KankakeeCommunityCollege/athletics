@@ -4,7 +4,7 @@ date: 2019-11-18 16:33:00
 categories:
   - volleyball
 post_topic: Volleyball
-news_thumb_image: /uploads/aharwood.jpg
+news_thumb_image: uploads/news/aharwood.jpg
 news_thumb_alt:
 description: All Region
 ---
