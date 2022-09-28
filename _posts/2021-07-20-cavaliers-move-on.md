@@ -4,7 +4,7 @@ date: 2021-07-20 15:05:00
 categories:
   - baseball
 post_topic: Baseball
-news_thumb_image: /uploads/2021/ig3_5893_optimized.jpg
+news_thumb_image: uploads/news/ig3_5893_optimized.jpg
 news_thumb_alt:
 description: Congratulations Baseball Players
 ---

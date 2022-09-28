@@ -4,7 +4,7 @@ date: 2020-01-08 00:00:00
 categories:
   - baseball
 post_topic: Baseball
-news_thumb_image: /uploads/todd-post.jpg
+news_thumb_image: uploads/news/todd-post.jpg
 news_thumb_alt:
 description: Congratulations Coach Post
 ---

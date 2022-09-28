@@ -4,7 +4,7 @@ date: 2020-04-16 00:00:00
 categories:
   - womens-soccer
 post_topic: Women's Soccer
-news_thumb_image: uploads/womens-soccer-web-banner.jpg
+news_thumb_image: uploads/news/womens-soccer-web-banner.jpg
 news_thumb_alt:
 description: Coming in Fall 2020
 ---

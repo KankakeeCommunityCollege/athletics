@@ -4,7 +4,7 @@ date: 2018-06-21 11:00:00
 categories:
   - general
 post_topic: General News
-news_thumb_image: /uploads/fb.PNG
+news_thumb_image: uploads/news/fb.PNG
 news_thumb_alt:
 description: Athletics on Social Media
 ---

@@ -1,10 +1,16 @@
 <div class="row mx-0">
   <div id="heroSlider" class="col hero-slider">
     {% for slide in page.slides %}
+    {% assign prefix  = slide.image | slice: 0 %}
+    {% if prefix == '/' %}
+    {% assign slide_image = slide.image | remove_first: '/' %}
+    {% else %}
+    {% assign slide_image = slide.image %}
+    {% endif %}
       {% if forloop.first == true %}
       <div>
         <a href="{{ slide.url }}">
-          <img src="{{page.baseurl}}{{slide.image}}"
+          <img src="{{ page.baseurl }}{{ slide_image }}"
            class="img-fluid hero-slider__img"
            alt="{{slide.alt-text}}">
         </a>
@@ -20,8 +26,8 @@
       {% else %}
       <div>
         <a href="{{ slide.url }}">
-          <img src="{{page.baseurl}}assets/img/placeholder.png"
-           data-src="{{page.baseurl}}{{slide.image}}"
+          <img src="{{ page.baseurl }}assets/img/placeholder_grayscale.jpg"
+           data-src="{{ page.baseurl }}{{slide_image}}"
            class="img-fluid hero-slider__img"
            alt="{{slide.alt-text}}">
         </a>

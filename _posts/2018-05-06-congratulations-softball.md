@@ -4,7 +4,7 @@ date: 2018-05-06 17:00:00
 categories:
   - softball
 post_topic: Softball
-news_thumb_image: /uploads/softball-region-champs.jpg
+news_thumb_image: uploads/news/softball-region-champs.jpg
 news_thumb_alt:
 description: Regional Champions
 ---

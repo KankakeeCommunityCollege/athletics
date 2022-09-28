@@ -4,7 +4,7 @@ date: 2022-04-18 00:00:00
 categories:
   - baseball
 post_topic: Baseball
-news_thumb_image: /uploads/matt-littrell-1.jpg
+news_thumb_image: uploads/news/matt-littrell-1.jpg
 news_thumb_alt: 'Matt Littrell 2nd baseman #13'
 description: KCC Baseball Alumni
 ---

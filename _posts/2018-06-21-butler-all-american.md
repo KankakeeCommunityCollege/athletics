@@ -4,7 +4,7 @@ date: 2018-06-26 07:00:00
 categories:
   - baseball
 post_topic: Baseball
-news_thumb_image: /uploads/allamericanbutler.PNG
+news_thumb_image: uploads/news/allamericanbutler.PNG
 news_thumb_alt:
 description: Congratulations Bryce Butler!
 ---

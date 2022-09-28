@@ -4,7 +4,7 @@ date: 2018-05-21 08:00:00
 categories:
   - soccer
 post_topic: Soccer
-news_thumb_image: /uploads/jmccleary.jpg
+news_thumb_image: uploads/news/jmccleary.jpg
 news_thumb_alt:
 description: Way to go Jacob!
 ---

@@ -2,7 +2,7 @@
 name: Casey Meister
 contacts_title: Director
 order: 1
-image: '../../uploads/meister.jpg'
+image: '/assets/img/meister.jpg'
 phone: 815-802-8614
 email: cmeister@kcc.edu
 ---

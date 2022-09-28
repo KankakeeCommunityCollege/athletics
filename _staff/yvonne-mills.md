@@ -2,7 +2,7 @@
 name: Yvonne Mills
 contacts_title: Personal Trainer Manager
 order: 2
-image: '../../uploads/dsc-0659yvonne-mills.jpg'
+image: '/assets/img/dsc-0659yvonne-mills.jpg'
 phone: 815‑802‑8610
 email: ymills@kcc.edu
 ---

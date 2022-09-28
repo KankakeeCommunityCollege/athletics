@@ -4,7 +4,7 @@ date: 2022-04-18 00:00:00
 categories:
   - baseball
 post_topic: Baseball
-news_thumb_image: /assets/img/placeholder.jpg
+news_thumb_image: assets/img/placeholder.jpg
 news_thumb_alt: Cavaliers Logo
 description: Congratulations Owen Jackson
 ---

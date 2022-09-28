@@ -8,7 +8,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{ page.baseurl }}{{ post.news_thumb_image }}" alt="{{ post.news_thumb_alt }}" class="img-fluid float-left news__modal-thumb"/>
+        <img src="/assets/img/placeholder_grayscale.jpg" data-src="{{ page.baseurl }}{{ post.news_thumb_image }}" alt="{{ post.news_thumb_alt }}" class="img-fluid float-left news__modal-thumb"/>
         <h5 class="news__sub-heading news__sub-heading--spacing">{{ post.post_topic }} &middot; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
         <h4 id="modalCenterTitle{{ forloop.index }}" class="news__heading">{{ post.post_title }}</h4>
         <p class="news__paragraph">{{ post.content }}</p>

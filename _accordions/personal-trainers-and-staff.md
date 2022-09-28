@@ -10,7 +10,7 @@ order: 2
 
 Our personal trainers can help you reach your fitness goals. In addition to being certified professionals and/or having the appropriate degrees, our trainers stay current with the latest fitness trends and training techniques.
 
-![](/uploads/dsc-0173-home.jpg){: width="655" height="250" .img-fluid }
+![](/assets/img/dsc-0173-home.jpg){: width="655" height="250" .img-fluid }
 
 ### Rates
 {: .typography__h3 }
