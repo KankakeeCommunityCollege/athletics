@@ -7,9 +7,11 @@
 }
 
 // Footer's "athletics.kcc.edu link"
-a.footer-link {
+.footer-link {
   color: $primary-blue;
-
+  transition-property: color;
+  transition-timing-function: linear;
+  transition-duration: .15s;
   &:hover {
     text-decoration: none !important;
     color: $primary-red;
@@ -22,6 +24,9 @@ a.footer-link {
   height: 35px;
   margin: 4px;
   padding: 2px;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  transition-duration: .1s;
   width: 35px;
 }
 

@@ -3,7 +3,7 @@ name: Nick Ulrey
 contacts_title: Assistant Coach
 contacts_sport: baseball
 sort_number: 3
-portrait: uploads/nick-ulrey.jpg
+portrait: assets/img/nick-ulrey.jpg
 phone:
 email:
 ---

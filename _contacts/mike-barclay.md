@@ -3,7 +3,7 @@ name: Mike Barclay
 contacts_title: Head Coach for Men’s & Women’s Soccer
 contacts_sport: soccer
 sort_number: 1
-portrait: uploads/m-barclay.jpg
+portrait: assets/img/m-barclay.jpg
 phone: 815‑802‑8618
 email: mbarclay@kcc.edu
 ---

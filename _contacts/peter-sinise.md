@@ -3,7 +3,7 @@ name: Peter Sinise
 contacts_title: Assistant Coach
 contacts_sport: soccer
 sort_number: 4
-portrait: uploads/p-sinise.jpg
+portrait: assets/img/p-sinise.jpg
 phone:
 email:
 ---

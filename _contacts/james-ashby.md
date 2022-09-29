@@ -3,7 +3,7 @@ name: James Ashby
 contacts_title: Assistant Coach
 contacts_sport: soccer
 sort_number: 3
-portrait: uploads/j-ashby.jpg
+portrait: assets/img/j-ashby.jpg
 phone:
 email:
 ---
