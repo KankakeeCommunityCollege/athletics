@@ -3,7 +3,7 @@ name: James Ashby
 contacts_title: Assistant Coach
 contacts_sport: women's soccer
 sort_number: 2
-portrait: uploads/j-ashby.jpg
+portrait: assets/img/j-ashby.jpg
 phone:
 email: jashby@kcc.edu
 ---

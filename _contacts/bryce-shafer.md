@@ -3,7 +3,7 @@ name: Bryce Shafer
 contacts_title: Assistant Coach
 contacts_sport: baseball
 sort_number: 2
-portrait: uploads/bryce-shafer.jpg
+portrait: assets/img/bryce-shafer.jpg
 phone: 815-802-8609
 email: bshafer@kcc.edu
 ---

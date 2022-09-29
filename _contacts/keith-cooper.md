@@ -3,7 +3,7 @@ name: Keith Cooper
 contacts_title: Head Coach
 contacts_sport: softball
 sort_number: 1
-portrait: uploads/18-kcooper-coach.jpg
+portrait: assets/img/18-kcooper-coach.jpg
 phone: 815-802-8606
 email: kcooper@kcc.edu
 ---
