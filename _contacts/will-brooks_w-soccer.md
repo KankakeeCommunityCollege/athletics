@@ -1,8 +1,8 @@
 ---
 name: Will Brooks
 contacts_title: Assistant Coach
-contacts_sport: women's Soccer
-sort_number: 4
+contacts_sport: women's soccer
+sort_number: 5
 portrait: assets/img/blank-contact.svg
 phone:
 email:
