@@ -7,7 +7,7 @@ portrait: assets/img/michael-brown.jpg
 phone: 815‑802‑8609
 email: mbrown@kcc.edu
 ---
-For 2022-23, Mike Brown enters his second season as the head coach of the KCC men’s basketball program. The 2021-22 Cavs finished the season as a NJCAA All-Academic team with a 3.05 team GPA, earned 19 victories, and made it to the Region IV championship game.
+For 2022-23, Mike Brown enters his second season as the head coach of the KCC men’s basketball program. The 2021-22 Cavs finished the season as an NJCAA All-Academic team with a 3.05 team GPA, earned 19 victories, and made it to the Region IV championship game.
 
 Over his career, Brown has also coached three NJCAA All-Americans, three NJCAA Academic All-Americans and 10 All-Region players.
 
