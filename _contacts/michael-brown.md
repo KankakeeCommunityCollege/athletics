@@ -7,7 +7,7 @@ portrait: assets/img/michael-brown.jpg
 phone: 815‑802‑8609
 email: mbrown@kcc.edu
 ---
-For 2022-23, Mike Brown enters his second season as the head coach of the KCC men’s basketball program. The 2021-22 Cavs finished the season as a NJCAA All-Academic team with a 3.05 team GPA, earned 19 victories, and made it to the Region IV championship game.
+For 2022-23, Mike Brown enters his second season as the head coach of the KCC men’s basketball program. The 2021-22 Cavs finished the season as an NJCAA All-Academic team with a 3.05 team GPA, earned 19 victories, and made it to the Region IV championship game.
 
 Over his career, Brown has also coached three NJCAA All-Americans, three NJCAA Academic All-Americans and 10 All-Region players.
 
@@ -23,4 +23,4 @@ Brown also found success as an assistant high school coach in 2008-09 at his alm
 
 Brown attended Saint Xavier University in Chicago. He played a key role in SXU’s 30-7 record (2004-05) on a squad that was ranked No. 14 in the NAIA’s final poll and reached the Elite Eight in the NAIA Div. I tournament.
 
-At KCC, Brown is also the Coordinator of Enrollment Services. He has a bachelor’s degree in business administration from Saint Xavier University and a master’s degree in sports leadership from Concordia University in Chicago.
+At KCC, Brown is also the coordinator of enrollment services. He has a bachelor’s degree in business administration from Saint Xavier University and a master’s degree in sports leadership from Concordia University in Chicago.
