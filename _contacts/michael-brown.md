@@ -23,4 +23,4 @@ Brown also found success as an assistant high school coach in 2008-09 at his alm
 
 Brown attended Saint Xavier University in Chicago. He played a key role in SXU’s 30-7 record (2004-05) on a squad that was ranked No. 14 in the NAIA’s final poll and reached the Elite Eight in the NAIA Div. I tournament.
 
-At KCC, Brown is also the Coordinator of Enrollment Services. He has a bachelor’s degree in business administration from Saint Xavier University and a master’s degree in sports leadership from Concordia University in Chicago.
+At KCC, Brown is also the coordinator of enrollment services. He has a bachelor’s degree in business administration from Saint Xavier University and a master’s degree in sports leadership from Concordia University in Chicago.
