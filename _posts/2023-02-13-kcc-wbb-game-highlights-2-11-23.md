@@ -1,0 +1,14 @@
+---
+post_title: KCC WBB Game Highlights 2-11-23
+date:2023-02-11 00:00:00 -0600
+categories:
+  - womens-basketball
+  - general
+post_topic: Women's Basketball
+news_thumb_image: assets/img/placeholder.jpg
+news_thumb_alt: KCC Cavaliers Logo
+description: 'Women''s Basketball Highlights from the 2-11-23 game. '
+---
+The Lady Cavs faced off against Black Hawk College on Saturday in Moline. KCC battled and was within 2 points going into the 4th quarter, but ultimately fell to Black Hawk 58-72 being outscored 26-12 in the 4th quarter. Jazmyn Smith was the top performer for the Lady Cavs, scoring 17 points on 8-13 shooting from the field. Sarah Burton also had a solid performance with 9 points and 5 rebounds.
+
+KCC will be back home for an 11 am start Saturday, Feb. 18. They’ll take on Bryant & Stratton College. Watch all home games through our livestream link - [https://bit.ly/KCCCavsLiveStream](https://bit.ly/KCCCavsLiveStream)
