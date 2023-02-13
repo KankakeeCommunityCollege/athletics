@@ -1,6 +1,6 @@
 ---
 post_title: KCC WBB Game Highlights 2-11-23
-date:
+date:2023-02-11 00:00:00 -0600
 categories:
   - womens-basketball
   - general
