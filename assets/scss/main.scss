@@ -2,17 +2,18 @@
 @import '0-tools/vars';
 @import '0-tools/cloudcannon';
 @import '0-tools/bootstrap-overrides';
+@import '0-tools/content';
 
 // Base items
 @import '1-base/body';
 @import '1-base/typography';
-@import '1-base/content-typography';
 @import '1-base/links';
 @import '1-base/tables';
 @import '1-base/buttons';
 @import '1-base/lists';
 @import '1-base/datatables';
 @import '1-base/iframe';
+@import '1-base/blockquote';
 
 // Modular components
 @import '3-modules/mega-nav';
