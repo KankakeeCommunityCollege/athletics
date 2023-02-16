@@ -118,9 +118,9 @@ _options: # The CloudCannon options key
     outdent: true
     image: true
     table: true
-    left: align-left
-    center: center-this-text
-    right: align-right
+    left: text-left
+    center: text-center
+    right: text-right
     removeformat: true
     link: true
     numberedlist: true
