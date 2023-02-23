@@ -1,6 +1,7 @@
 function createHash(str) {
   return (
     str
+      .trim()
       .replace(/[^A-Za-z\s]/g, '')
       .replace(/\s/g, '-')
       .toLowerCase()
