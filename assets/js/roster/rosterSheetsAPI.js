@@ -26,6 +26,23 @@ function start() {
   }).then(() => {
     document.querySelector('input[type="search"].form-control').setAttribute('placeholder', 'Search roster...');
     import('../src/lazyload').then(({ default: lzFunction }) => lzFunction());
+  }).then(() => {
+    // ClipboardJS - See: <https://clipboardjs.com/>
+    import('clipboard/dist/clipboard').then(({ default: ClipboardJS }) => {
+      const buttons = document.querySelectorAll('button[data-clipboard-text]');
+      const message = document.getElementById('clipText');
+      const clipboard = new ClipboardJS(buttons);
+
+      clipboard.on('success', (e) => {
+        message.innerHTML = `<span class="text-white">Copied: ${e.text}</span>`;
+        message.classList.add('roster__cliptext--show');
+        window.setTimeout(() => {
+          message.classList.remove('roster__cliptext--show');
+        }, 2000);
+      })
+    })
+  }).then(() => {
+    import('./openModal').then(({ default: openModal }) => openModal());
   }, err => console.error(`Execute error: ${err.message}`, err))
 }
 // Loads the JavaScript client library and invokes `start` afterwards.
