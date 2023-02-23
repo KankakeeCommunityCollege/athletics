@@ -1,4 +1,13 @@
-function createModal(parent, id) {
+function createHash(str) {
+  return (
+    str
+      .replace(/[^A-Za-z\s]/g, '')
+      .replace(/\s/g, '-')
+      .toLowerCase()
+  );
+}
+
+function createModal(parent, id, name) {
   const modal = document.createElement('div');
   const modalId = id + 'Modal';
   modal.classList.add('modal', 'fade');
@@ -7,6 +16,7 @@ function createModal(parent, id) {
   modal.setAttribute('tabindex', '-1');
   modal.setAttribute('aria-labelledby', id);
   modal.setAttribute('id', modalId);
+  modal.setAttribute('data-roster-hash', `#${createHash(name)}`);
   parent.appendChild(modal);
   return modal;
 }
@@ -148,7 +158,7 @@ function createModalElements(response) {
     src == '_na_' ? src = 'blank-avatar' : null;
 
     let id = name.replace(/[\W_]+/g, '');
-    const modal = createModal(parent, id);
+    const modal = createModal(parent, id, name);
     const doc = createDoc(modal);
     const content = createContent(doc);
     const header = createHeader(content);

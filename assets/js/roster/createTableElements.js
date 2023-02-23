@@ -1,5 +1,14 @@
 import createModalElements from './createModalElements.js';
 
+function createHash(str) {
+  return (
+    str
+      .replace(/[^A-Za-z\s]/g, '')
+      .replace(/\s/g, '-')
+      .toLowerCase()
+  );
+}
+
 function createTableElement(parent) {
   const table = document.createElement('table');
   table.classList.add('display', 'table', 'table-striped', 'table-hover');
@@ -92,7 +101,9 @@ function createTableElements(response) {
     let name = rowData[2];
     let id = name.replace(/[\W_]+/g, '');
     let targetModalId = id + 'Modal';
-    rowData[2] = '<button type="button" class="btn btn-link buttons__roster--name" data-toggle="modal" data-target="#' + targetModalId + '" >' + name + '</button>';
+
+    rowData[2] = `<span class="roster--hover"><button type="button" class="btn btn-link buttons__roster--name" data-toggle="modal" data-target="#${targetModalId}">${name}</button>`;
+    rowData[2] += `<button class="btn btn-link roster--hidden-till-hover" data-clipboard-text="https://athletics.kcc.edu${window.location.pathname}#${createHash(name)}">#</button></span>`;
     createBodyRow(tbody, data[i], id);
   }
 }
