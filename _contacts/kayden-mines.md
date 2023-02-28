@@ -3,7 +3,7 @@ name: Kayden Mines
 contacts_title: Assistant Coach
 contacts_sport: softball
 sort_number: 4
-portrait: assets/img/kayden-mines-softball-coach.jpg
+portrait: assets/img/kayden-mines-softball-assistant-coach.jpg
 phone:
 email:
 ---
