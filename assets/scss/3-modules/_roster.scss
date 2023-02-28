@@ -59,6 +59,7 @@
   display: none;
   opacity: 0;
   transition: opacity ease-in-out .12s;
+  z-index: 1000;
 }
 
 .roster__cliptext--show {
