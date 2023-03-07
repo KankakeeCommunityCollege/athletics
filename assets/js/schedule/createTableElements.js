@@ -58,16 +58,29 @@ function createCells(tr, val, isFirstCell, location) {
 let [win, loss, tie] = [0, 0, 0];
 
 function addRecordCountToData(data) {
-  let status = data[6].trim();
+  let status = data[6].trim(); // trim() to ensure consistent data
+  const statusIsPending = (status === '' || status.search(/^([Cc]ancelled|[Pp]ostponed|C)$/) !== -1);
+  // Double-header games have the status of both games in a single cell - separated by a coma or semi-colon
+  const statusArray = status.split(/,(?:\s+)?|;(?:\s+)?/);
 
-  if (status == 'W') win += 1;
-  if (status == 'L') loss += 1;
-  if (status == 'T') tie += 1;
+  if (statusArray.length > 1) {
+    // Tally double-header records here
+    statusArray.forEach(score => {
+      if (score === 'W') win += 1;
+      if (score === 'L') loss += 1;
+      if (score === 'T') tie += 1;
+    });
+  } else {
+    // Tally normal game records here
+    if (status === 'W') win += 1;
+    if (status === 'L') loss += 1;
+    if (status === 'T') tie += 1;
+  }
 
   let tieCount = (tie === 0) ? '' : ` - ${tie}`;
-  let record = (status == '') ? '' : `${win} - ${loss}${tieCount}`;
+  let record = (statusIsPending) ? '' : `${win} - ${loss}${tieCount}`;
 
-  data[9] = record
+  data[9] = record; // Add the calculated record to the end of each row
   return data;
 }
 
