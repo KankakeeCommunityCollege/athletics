@@ -3,6 +3,7 @@ accordion_page: 'Fitness Center'
 card_heading: 'Personal Trainers & Staff'
 order: 2
 ---
+{::options auto_ids="false" /}
 
 ## Personal Trainers and Staff
 {: .typography__h2 }
