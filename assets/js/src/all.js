@@ -12,7 +12,11 @@ window.addEventListener('load', () => {
   if (document.getElementById('heroSlider')) import('./sliders').then(({ default: initSlickSliders }) => initSlickSliders());
   if (document.querySelector('img[data-src')) import('./lazyload').then(({ default: lzFunction }) => lzFunction());
   if (document.querySelector('.js-more-btn')) import('./moreButton').then(({ default: moreClick }) => moreClick());
-  // if (document.getElementById('accordion')) import('./accordion').then(({ default: accordion }) => accordion());
+
+  if (document.getElementById('accordion')) {
+    import('./contentHashLink').then(({default: contentHashLink}) => contentHashLink());
+  }
+  
   import('./footerDate').then(({ default: footerDate }) => footerDate());
 
   // 3. These modules are page-specific:
