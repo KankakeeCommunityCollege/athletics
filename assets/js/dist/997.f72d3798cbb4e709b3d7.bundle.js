@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkcc_athletics=self.webpackChunkkcc_athletics||[]).push([[997],{1997:function(t,c,e){e.r(c),e(1539),e(4747),c.default=function(){document.querySelectorAll("img[data-src]").forEach((function(t){t.src=t.getAttribute("data-src"),t.onload=function(){return t.removeAttribute("data-src")}}))}}}]);

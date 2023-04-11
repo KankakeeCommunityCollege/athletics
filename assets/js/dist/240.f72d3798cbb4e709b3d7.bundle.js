@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkcc_athletics=self.webpackChunkkcc_athletics||[]).push([[240],{6240:function(t,c,e){e.r(c),e(1539),e(4747),c.default=function(t){document.querySelectorAll(".yt-list__a").forEach((function(c){c.addEventListener("click",(function(e){t.src="https://youtube.com/embed/".concat(c.dataset.videoid,"?controls=1&showinfo=0&rel=0&autoplay=1")}))}))}}}]);
