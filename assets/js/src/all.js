@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
 
   // 2. These modules are used in most pages:
   if (document.getElementById('heroSlider')) import('./sliders').then(({ default: initSlickSliders }) => initSlickSliders());
-  if (document.querySelector('img[data-src')) import('./lazyload').then(({ default: lzFunction }) => lzFunction());
+  if (document.querySelector('img[data-src]')) import('./lazyload').then(({ default: lzFunction }) => lzFunction());
   if (document.querySelector('.js-more-btn')) import('./moreButton').then(({ default: moreClick }) => moreClick());
 
   if (document.getElementById('accordion')) {
