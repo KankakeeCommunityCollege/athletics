@@ -1,10 +1,10 @@
 ---
 name: Bryce Shafer
-contacts_title: Assistant Coach
+contacts_title: Head Coach
 contacts_sport: baseball
-sort_number: 2
+sort_number: 1
 portrait: assets/img/bryce-shafer.jpg
-phone: 815-802-8609
+phone: 815-802-8616
 email: bshafer@kcc.edu
 ---
 Coach Shafer is entering his eighth season as an assistant at KCC. For the Cavaliers, he works with pitchers and catchers and assists with recruiting.
