@@ -4,7 +4,7 @@ contacts_title: Assistant Coach
 contacts_sport: baseball
 sort_number: 2
 portrait: assets/img/nick-ulrey.jpg
-phone: 815-802-8613
+phone: 815-802-8600
 email: nulrey@kcc.edu
 ---
 Coach Ulrey is entering his fifth season as an assistant at KCC. For the Cavaliers, Ulrey works primarily with the hitters and catchers. Prior to KCC, Ulrey was an assistant at NCAA Division II University of Missouri-St. Louis. In the 2018 season, Ulrey helped coach UMSL to three GLVC All-Conference players.
