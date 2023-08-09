@@ -20,11 +20,3 @@ Following his collegiate career, Shafer was drafted by the Chicago Cubs in the 4
 In 2015, Shafer earned a Bachelor's Degree in Psychology from Fort Hays State University, further enriching his understanding of the mental aspects of the game. Today, he resides in Manteno with his wife Jill and their two sons, Carver and Callum.
 
 Coach Shafer's appointment as the Director of Athletics and Head Baseball Coach is set to propel Kankakee Community College's baseball program to new heights. With a steadfast focus on player development and a proven track record of success, Shafer is committed to guiding the team towards new achievements while fostering a culture of growth, achievement, and excellence both on and off the field.
-
-
-
-Shafer pitched in the Cubs organization from 2010 to 2012 (2.99 ERA, 110 strikeouts, 111.1 innings). In 2013 Shafer pitched for the Frontier Greys and in 2014, for the River City Rascals, both in the Frontier League of Independent Baseball.
-
-Shafer also works as an academic success coach for the Athletic Department. Shafer has a bachelor’s degree in psychology from Ft. Hays State University (2015).
-
-Shafer resides in Manteno with his wife, Jill, and their two sons, Carver and Callum.
