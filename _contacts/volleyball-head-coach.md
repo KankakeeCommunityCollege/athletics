@@ -3,7 +3,7 @@ name: Bailey White
 contacts_title: Head Coach
 contacts_sport: volleyball
 sort_number: 1
-portrait: assets/img/blank-contact.svg
+portrait: uploads/2023-coach_bailey-white.jpg
 phone: 815‑802‑8614
 email: bwhite@kcc.edu
 ---
