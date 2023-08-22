@@ -2,7 +2,7 @@
 name: John Hall
 contacts_title: Assistant Coach
 contacts_sport: soccer
-sort_number: 4
+sort_number: 3
 portrait: assets/img/blank-contact.svg
 phone:
 email:
