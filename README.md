@@ -1,5 +1,9 @@
 # KCC Athletics
 
+This project's version of Ruby: `ruby-3.1.3`.
+
+-----
+
 ## Requirements
 
 - Jekyll
