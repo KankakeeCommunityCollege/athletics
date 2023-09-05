@@ -4,7 +4,7 @@ date: 2023-08-29 00:00:00 -0500
 post_topic: General News
 news_thumb_image: assets/img/placeholder.jpg
 news_thumb_alt: KCC Cavaliers logo
-description:
+description: KCC Baseball VS. Rock Valley College
 ---
 The Kankakee Community College men’s soccer team showed individual talent during a loss to Rock Valley College on Tuesday night.&nbsp;
 
