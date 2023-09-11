@@ -7,7 +7,7 @@ categories:
 post_topic: Soccer
 news_thumb_image: assets/img/placeholder.jpg
 news_thumb_alt: KCC Cavaliers logo
-description:
+description: KCC Soccer vs. Northeast Community College
 ---
 The Kankakee Community College Cavaliers men's soccer team took on the Northeast Community College Hawks Saturday, Aug. 9. The Hawks, ranked seventh in the NJCAA Div. II pre-season poll, took control of the game early. After several saves by KCC goalkeeper Tariq Singh, the Hawks capitalized on an open field and scored first.
 
