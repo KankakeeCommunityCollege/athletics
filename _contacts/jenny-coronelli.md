@@ -1,5 +1,5 @@
 ---
-name: 'Jenny Coronelli '
+name: Jenny Coronelli
 contacts_title: Assistant Coach
 contacts_sport: women's basketball
 sort_number: 3
