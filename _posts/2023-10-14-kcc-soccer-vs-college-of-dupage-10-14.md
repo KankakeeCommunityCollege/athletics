@@ -11,7 +11,7 @@ description: KCC Men's Soccer vs. College of DuPage
 ---
 <div><p>Kankakee Community College’s men’s soccer team defeated College of DuPage at home Saturday in a close 1-0 victory.&nbsp;</p></div>
 
-<div><p>&nbsp;Malachai Daniel from the KCC Cavaliers broke away from a DuPage defender to take an early shot on goal. The Chaparrals goalkeeper was able to make the save. &nbsp;</p></div>
+<div><p>Malachai Daniel from the KCC Cavaliers broke away from a DuPage defender to take an early shot on goal. The Chaparrals goalkeeper was able to make the save. &nbsp;</p></div>
 
 <div><p>At the other end, Cavaliers goalkeeper Tariq Singh recorded six saves in the first half.&nbsp;&nbsp;</p></div>
 
