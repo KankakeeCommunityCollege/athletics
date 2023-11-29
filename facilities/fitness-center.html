@@ -9,6 +9,34 @@ body_class: page ## <landing|page>
 include_datatables: false
 include_gapi: false
 include_sub-nav: false
+slides:
+ - image: /uploads/2023/fitness-center-hours-web-banner-spr-24.jpg
+   alt-text: >-
+     Fitness Center Current Hours: Mon. - Fri., 6 a.m. - 1 p.m.; Mon. - Thur., 4 - 7 p.m.; Sat., 8 a.m. - noon.
+     New Hours Effective Jan. 8, 2024: Mon. - Thur., 6 a.m. - 7 p.m.; Fri., 6 a.m. - 1 p.m.; Sat., 8 a.m. - noon.
+   url: '#'
+   text1:
+   text2:
+ - image: /uploads/2023/fitness-center_img_0003.jpg
+   alt-text: 'Four individuals using various exercise equipment'
+   url: '#'
+   text1:
+   text2:
+ - image: /uploads/2023/fitness-center_img_9987.jpg
+   alt-text: 'Elliptical machines, stationary bikes, treadmills and other exercise equipment'
+   url: '#'
+   text1:
+   text2:
+ - image: /uploads/2023/fitness-center_img_9995.jpg
+   alt-text: 'Two individuals using exercise equipment'
+   url: '#'
+   text1:
+   text2:
+ - image: /uploads/2023/fitness-center_img_0031.jpg
+   alt-text: 'Various exercise equipment including benches, barbells, and a rack full of dumbbells'
+   url: '#'
+   text1:
+   text2:
 _options:
   _block:
     format: p
@@ -63,12 +91,8 @@ _options:
   </div>
 </div>
 <section>
-  <div class="container hero-container">
-    <div class="row hero-row">
-      <div class="col-md-12">
-        <img src="/assets/img/D41_3957fchome.jpg" class="img-fluid hero editable" alt="Photo of the George S. Ryan Activities Center" />
-      </div>
-    </div>
+  <div class="container px-0">
+    {% include hero-slider.html %}
   </div>
 </section>
 
