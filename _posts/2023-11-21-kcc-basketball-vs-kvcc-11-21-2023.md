@@ -15,7 +15,7 @@ In the first quarter, the duo of Valorie Dagg and Jazmyn Smith powered the Caval
 
 Early in the second quarter, Jackson and Sneed recorded 3-pointers, helping the Cavaliers score 7 consecutive points. The Cougars responded with 12 straight points, to even up the game. Amaria Pender scored 4 points for KCC, but Kalamazoo Valley was able to&nbsp; take a 35-28 lead at the half.
 
-&nbsp;The Cougars extended their lead to 15 points, before Pender recorded 4 points and Jaida Taylor added 2 points to stall the Cougars. The Cavaliers recorded three 3-pointers in quick succession, one from Pender and two from Sneed. Aniyah Moody rounded out the third quarter scoring with a 3-point play to narrow the Cavaliers deficit to seven.
+The Cougars extended their lead to 15 points, before Pender recorded 4 points and Jaida Taylor added 2 points to stall the Cougars. The Cavaliers recorded three 3-pointers in quick succession, one from Pender and two from Sneed. Aniyah Moody rounded out the third quarter scoring with a 3-point play to narrow the Cavaliers deficit to seven.
 
 The Cavaliers bounced back in impressive fashion, outscoring the Cougars 23-17 in the fourth quarter. At one point,&nbsp; Smith scored a free throw to put the Cavaliers under by just five points, 54-49. Kalamazoo Valley responded with four points, but a 3-pointer by Jackson and a three-point play from Pender narrowed the Cougars’ lead to 3 points. The Cougars were leading 68-64 with seconds left in the game. Smith scored a three-pointer, but the Cavaliers could not get another bucket.
 
