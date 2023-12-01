@@ -19,7 +19,7 @@ The Cougars extended their lead to 15 points, before Pender recorded 4 points an
 
 The Cavaliers bounced back in impressive fashion, outscoring the Cougars 23-17 in the fourth quarter. At one point,&nbsp; Smith scored a free throw to put the Cavaliers under by just five points, 54-49. Kalamazoo Valley responded with four points, but a 3-pointer by Jackson and a three-point play from Pender narrowed the Cougars’ lead to 3 points. The Cougars were leading 68-64 with seconds left in the game. Smith scored a three-pointer, but the Cavaliers could not get another bucket.
 
-The final was&nbsp; KCC 67, Kalamazoo Valley, 68.
+The final score was KCC, 67, and Kalamazoo Valley, 68.
 
 Pender led the Cavaliers with 15 points, 5 steals and 4 rebounds. Sneed had 12 points (four 3-pointers), 5 rebounds and 4 assists. Smith tacked on 11 points, 9 rebounds, and 3 steals. Dagg had 10 points, 5 rebounds and 1 steal. Jackson added 9 points, 6 assists, and 5 steals.&nbsp;
 
