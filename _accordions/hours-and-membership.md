@@ -7,7 +7,23 @@ order: 1
 ## Hours
 {: .typography__h2 }
 
-6 a.m. - 1 p.m. Monday - Friday<br />4 - 7 p.m.&nbsp; Mon &ndash; Thursday<br />8 a.m. - noon Saturday
+<table class="table table-striped table-hover">
+ <caption>KCC Fitness Center hours</caption>
+  <tbody>
+    <tr>
+      <td>Monday - Thursday</td>
+      <td>6 a.m. - 7 p.m.</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>6 a.m. - 1 p.m.</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>8 a.m. - noon</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Become a Member
 {: .typography__h2 }
