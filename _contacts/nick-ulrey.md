@@ -7,10 +7,10 @@ portrait: assets/img/nick-ulrey.jpg
 phone: 815-802-8600
 email: nulrey@kcc.edu
 ---
-Coach Ulrey is entering his fifth season as an assistant at KCC. For the Cavaliers, Ulrey works primarily with the hitters and catchers. Prior to KCC, Ulrey was an assistant at NCAA Division II University of Missouri-St. Louis. In the 2018 season, Ulrey helped coach UMSL to three GLVC All-Conference players.
+Coach Ulrey is entering his sixth season as an assistant at KCC. For the Cavaliers, Ulrey works primarily with the hitters and catchers. Prior to KCC, Ulrey was an assistant at NCAA Division II University of Missouri-St. Louis. In the 2018 season, Ulrey helped coach Great Lakes Valley All-Conference players.&nbsp;
 
-Since joining KCC in 2018, Coach Ulrey has seen 17 hitters move on to four year schools: Four to NCAA Division I, eight to NCAA Division II, one to NCAA DIII, four to NAIA. In two seasons the Cavaliers offense produced: 1 All-American, 11 All-Region players, 13 Top10 NJCAA offensive categories. The Cavaliers have averaged 8.6 runs and a .326 batting average.&nbsp;
+Since joining KCC in 2018, Coach Ulrey has seen 21 hitters move on to four-year schools (five to NCAA Division I, eight to NCAA Division II, two to NCAA DIII and six to NAIA). In two seasons, the Cavaliers offense produced one NJCAA All-American, 11 NJCAA All-Region players, and 13 players with Top 10 within NJCAA offensive stats. The Cavaliers have averaged 8.6 runs and a .326 batting average since Ulrey came on board.&nbsp;
 
-Ulrey’s collegiate career started at KCC in 2013, where he started both years behind the plate. In his time at KCC, he attained All-Region honors and is in 8 of KCC’s career hitting records. Ulrey transferred to UMSL where he was a two-time GLVC All-Conference player and led the GLVC both years in runners caught stealing. In 2020, UMSL selected Ulrey to the All-Decade Team. Ulrey collected 231 hits and posted a career .334 batting average.&nbsp;
+Ulrey’s collegiate career started at KCC in 2013, where he started both years behind the plate. At KCC, he earned All-Region honors and is in the top 20 in five offensive categories, and top 25 in two others. Ulrey transferred to UMSL, where he collected 231 hits and posted a .334 batting average. During his two seasons at UMSL, Ulrey led the conference in runners caught stealing and was named All-Conference. In 2020, UMSL selected Ulrey to the All-Decade Team.
 
-A native of New Palestine, Indiana, Coach Ulrey currently resides in St. Anne with his wife Sidney. He has a Bachelor’s degree in Criminal Justice from the University of Missouri-St. Louis.
+A native of New Palestine, Indiana, Coach Ulrey now resides in St. Anne with his wife, Sidney, and son, Vincent. He has a bachelor’s degree in criminal justice from UMSL.
