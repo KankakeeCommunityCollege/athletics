@@ -36,19 +36,6 @@ _site
 
 # Ignore node/npm stuffs
 node_modules/
-package-lock.json
-
-# Ignore gem lock to avoid mac/windows discrepencies
-Gemfile.lock
-
-# Ignore adobe directory containing working illustrator, photoshop, inDesign, etc. files
-assets/adobe/
-assets/adobe/*
-/adobe/
-adobe/*
-
-# Yarn error log
-yarn-error.log
 
 # Jekyll 4's new `/.jekyll-cache/` dir
 .jekyll-cache/
