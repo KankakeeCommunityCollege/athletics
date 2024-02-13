@@ -3,6 +3,13 @@
 import setSheetParameters from '../shared/setSheetParameters.js';
 import createTableElements from './createTableElements.js';
 
+function createColumnArray() { // Returns an array representing which columns should be visible (0-based)
+  const pathIsBaseball = (window.location.pathname.search(/\/baseball\//) !== -1);
+  const columns = [1, 2, 3, 4, 5, 6, 7];
+
+  return (pathIsBaseball) ? [...columns, 8] : columns;
+}
+
 function start() {
   const PARAMS = {
     'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
@@ -15,12 +22,8 @@ function start() {
   }).then(response => {
     return createTableElements(response);
   }).then(() => {
-    /**
-     * @todo Modify the below DataTables configuration:
-     *   exportOptions.columns needs a way to provide different column numbers
-     *   depending on which roster page the user is on — different rosters
-     *   have different data/columns.
-     */
+    const printIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 12v2H8v-4h8v2zm2-2v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4h-2z"/><circle cx="18" cy="11.5" r="1"/></svg>';
+
     $('#responsiveTable').DataTable({
       responsive: true, // Activate responsive powers GO!
       paging: false, // Don't paginate. Schedule schould all be on one page
@@ -30,18 +33,16 @@ function start() {
         // 'print'
         {
           extend: 'print', // Adds a print button
+          text: `Print&nbsp;${printIcon}`,
+          // autoPrint: false,
           exportOptions: {
-            columns: [1, 2, 3, 4, 5, 6, 7, 8] // Columns to display in the print view (0-based index)
+            // Columns to display in the print view (0-based index)
+            columns: createColumnArray() // Array representing columns to display
           },
           customize: function (win) { // Function to customize the print view - win = Window
             const playerList = win.document.body.querySelectorAll('td:nth-child(2)'); // Get the column w/ player name
-            // # suffix is added for hash-linking capabilities in createTabelELements()
+            // '#' suffix is added for hash-linking capabilities in createTableELements()
             playerList.forEach(item => item.innerHTML = item.innerHTML.replace(/#$/, '')); // Remove the '#' suffix
-            // $(win.document.body).find('td:nth-child(2)').each(function(index){
-            //   const text = $(this).text();
-
-            //   $(this).html(text.replace(/#$/, ''));
-            // });
           }
         }
       ]
