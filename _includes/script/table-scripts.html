@@ -1,17 +1,2 @@
-{% comment %}  
-<!-- dataTable's JS (v1.10.18 for use w/ bootstrap4 theme) -->
-<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
-<!-- dataTable's Bootstrap4 theme's JS -->
-<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-<!-- dataTable's JS for "Responsive" extension -->
-<script src="https://cdn.datatables.net/responsive/2.2.2/js/dataTables.responsive.min.js"></script>
-{% endcomment %}
-<script src="https://cdn.datatables.net/1.13.10/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.10/js/dataTables.bootstrap4.min.js"></script>
-{% if page.url contains '/roster/' %}
-<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.bootstrap4.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
-{% endif %}
-<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap4.js"></script>
+<!-- DataTables minified and concatenated JS (with extensions): DataTables + BS4 + Buttons + Print + Responsive -->
+<script src="https://cdn.datatables.net/v/bs4/dt-1.13.10/b-2.4.2/b-print-2.4.2/r-2.5.0/datatables.min.js"></script>
