@@ -15,13 +15,36 @@ function start() {
   }).then(response => {
     return createTableElements(response);
   }).then(() => {
+    /**
+     * @todo Modify the below DataTables configuration:
+     *   exportOptions.columns needs a way to provide different column numbers
+     *   depending on which roster page the user is on — different rosters
+     *   have different data/columns.
+     */
     $('#responsiveTable').DataTable({
       responsive: true, // Activate responsive powers GO!
       paging: false, // Don't paginate. Schedule schould all be on one page
-      'order': []//, // Initial column ordering
-      //'columnDefs': [
-      //  { 'visible': false, 'targets': [0,10] }
-      //]
+      'order': [], // Initial column ordering
+      dom: 'Bfrti',
+      buttons: [
+        // 'print'
+        {
+          extend: 'print', // Adds a print button
+          exportOptions: {
+            columns: [1, 2, 3, 4, 5, 6, 7, 8] // Columns to display in the print view (0-based index)
+          },
+          customize: function (win) { // Function to customize the print view - win = Window
+            const playerList = win.document.body.querySelectorAll('td:nth-child(2)'); // Get the column w/ player name
+            // # suffix is added for hash-linking capabilities in createTabelELements()
+            playerList.forEach(item => item.innerHTML = item.innerHTML.replace(/#$/, '')); // Remove the '#' suffix
+            // $(win.document.body).find('td:nth-child(2)').each(function(index){
+            //   const text = $(this).text();
+
+            //   $(this).html(text.replace(/#$/, ''));
+            // });
+          }
+        }
+      ]
     });
   }).then(() => {
     document.querySelector('input[type="search"].form-control').setAttribute('placeholder', 'Search roster...');
