@@ -35,7 +35,7 @@ function createTableBodyElement(table) {
 function createHeadingCells(tr, val) {
   const th = document.createElement('th');
   tr.appendChild(th);
-  val === 'Image' || val === 'Bio' || val === 'Intended Major' || val === 'High School Coach' || val === 'Parents' || val === 'Siblings' ? th.classList.add('none') // Add DataTable's 'all' & 'none' classes.
+  val === 'Image' || val === 'Bio' || val === 'Intended Major' || val === 'High School Coach' || val === 'Parents' || val === 'Siblings' ? th.classList.add('never') // Add DataTable's 'all' & 'none' classes.
   : val === 'Jersey' || val === 'player' ? th.classList.add('all') // Add DataTable's 'all' & 'none' classes.
   : null;
   val = val + ':';

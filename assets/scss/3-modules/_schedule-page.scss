@@ -32,3 +32,12 @@
 .schedule-page__align-center--offset {
   text-indent: -15px;
 }
+
+#Schedule table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before,
+#Schedule table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#Schedule thead th {
+  white-space: nowrap;
+}
