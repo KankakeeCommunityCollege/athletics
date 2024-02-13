@@ -1,10 +1,2 @@
-<!-- dataTables stylesheets -->
-{% comment %}  
-<!-- dataTables Bootstrap4 themed stylesheet -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css"/>
-<!-- dataTables "Responsive" extension stylesheet for bootstrap4 theme -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.bootstrap4.min.css"/>
-{% endcomment %}
-<link href="https://cdn.datatables.net/1.13.10/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-{% if page.url contains '/roster/' %}<link href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.bootstrap4.min.css" rel="stylesheet">{% endif %}
-<link href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap4.min.css" rel="stylesheet">
+<!-- DataTables minified and concatenated stylesheets (with extensions): DataTables + BS4 + Buttons + Print + Responsive -->
+<link href="https://cdn.datatables.net/v/bs4/dt-1.13.10/b-2.4.2/b-print-2.4.2/r-2.5.0/datatables.min.css" rel="stylesheet">
