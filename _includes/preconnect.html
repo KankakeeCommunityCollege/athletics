@@ -20,11 +20,25 @@
 {%- endif -%}
 {%- if page.include_datatables == true -%}
 <!-- preload DataTables styles and scripts -->
+{% comment %}
 <link rel="preload" as="style" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
 <link rel="preload" as="style" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.bootstrap4.min.css">
 <link rel="preload" as="script" href="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js">
 <link rel="preload" as="script" href="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js">
 <link rel="preload" as="script" href="https://cdn.datatables.net/responsive/2.2.2/js/dataTables.responsive.min.js">
+{% endcomment %}
+<link rel="preload" as="style" href="https://cdn.datatables.net/1.13.10/css/dataTables.bootstrap4.min.css">
+{% if page.url contains '/roster/' %}<link rel="preload" as="style" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.bootstrap4.min.css">{% endif %}
+<link rel="preload" as="style" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap4.min.css">
+<link rel="preload" as="script" href="https://cdn.datatables.net/1.13.10/js/jquery.dataTables.min.js">
+<link rel="preload" as="script" href="https://cdn.datatables.net/1.13.10/js/dataTables.bootstrap4.min.js">
+{% if page.url contains '/roster/' %}
+<link rel="preload" as="script" href="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js">
+<link rel="preload" as="script" href="https://cdn.datatables.net/buttons/2.4.2/js/buttons.bootstrap4.min.js">
+<link rel="preload" as="script" href="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js">
+{% endif %}
+<link rel="preload" as="script" href="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js">
+<link rel="preload" as="script" href="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap4.js">
 {%- endif -%}
 {%- if site.theme_config != true -%}
 <!-- preload the main custom stylesheet -->
