@@ -21,7 +21,8 @@ function start() {
       paging: false, // Don't paginate. Schedule should all be on one page
       'order': [], // Do not order = 'order': []
       'columnDefs': [
-        { 'visible': false, 'targets': [1, 8] }
+        { 'visible': false, 'targets': [0, 2, 9] }, // Hide the 1st, 3rd, & 10th columns
+        { 'orderData': 0, 'targets': 1 } // Make the 2nd column use the 1st columns data for sorting purposes
       ]
     });
   }).then(() => {

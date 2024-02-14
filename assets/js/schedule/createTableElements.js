@@ -45,11 +45,11 @@ function createHeadingRow(thead, data) {
   return tr;
 }
 
-function createCells(tr, val, isFirstCell, location) {
+function createCells(tr, val, isSecondCell, location) {
   const td = document.createElement('td');
   const className = location == 'Home' ? 'tables--red' : 'tables--blue';
 
-  if (isFirstCell) td.classList.add(className);
+  if (isSecondCell) td.classList.add(className);
 
   td.innerHTML = val;
   tr.append(td);
@@ -59,7 +59,7 @@ function createCells(tr, val, isFirstCell, location) {
 let [win, loss, tie] = [0, 0, 0];
 
 function addRecordCountToData(data) {
-  let status = data[6].trim(); // trim() to ensure consistent data
+  let status = data[7].trim(); // trim() to ensure consistent data
   const statusIsPending = (status === '' || status.search(/^([Cc]ancelled|[Pp]ostponed|C)$/) !== -1);
   // Double-header games have the status of both games in a single cell - separated by a coma or semi-colon
   const statusArray = status.split(/,(?:\s+)?|;(?:\s+)?/);
@@ -81,18 +81,27 @@ function addRecordCountToData(data) {
   let tieCount = (tie === 0) ? '' : ` - ${tie}`;
   let record = (statusIsPending) ? '' : `${win} - ${loss}${tieCount}`;
 
-  data[9] = record; // Add the calculated record to the end of each row
+  data[10] = record; // Add the calculated record to the end of each row
   return data;
 }
 
 function createBodyRow(tbody, data) {
   const tr = document.createElement('tr');
-  const location = data[5];
+  const location = data[6];
 
   data = addRecordCountToData(data);
   tbody.append(tr);
-  data.forEach((cell, i) => createCells(tr, cell, i === 0, location))
+  data.forEach((cell, i) => createCells(tr, cell, i === 1, location))
   return tr;
+}
+
+function formatISODate(dateStr) {
+  const dateArr = dateStr
+    .split('/')
+    .map(num => num < 10 ? `0${num}` : num);
+  const [mm, dd, yyyy] = dateArr;
+
+  return `${yyyy}-${mm}-${dd}`;
 }
 
 function formatDate(date) {
@@ -104,12 +113,13 @@ function formatDate(date) {
 
 function createTableBodyRows(tbody, data) {
   data.forEach(row => {
-    let [start, end, , , , , , , ,] = row;
+    let [start, end, ...theRest] = row;
     const startDate = start !== '' ? formatDate(start) : ' ';
-    const endDate = end !== '' ? formatDate(end) : '' ;
+    const endDate = end !== '' ? formatDate(end) : '';
+    const isoDate = formatISODate(start);
+    const formattedRow = [isoDate, `${startDate}${endDate === '' ? '' : ' - ' + endDate}`, end, ...theRest];
 
-    row[0] = `${startDate}${endDate === '' ? '' : ' - ' + endDate}`;
-    createBodyRow(tbody, row);
+    createBodyRow(tbody, formattedRow);
   });
 }
 
@@ -119,11 +129,13 @@ function createTableElements(response) {
   const tbody = createTableBodyElement(table);
 
   const sheetData = response.result.values;
-  const headingData = sheetData[0]; // This is the first row in the spreadsheet data
+  const headerData = sheetData[0]; // This is the first row in the spreadsheet data
   const tableData = sheetData.slice(1, sheetData.length); // is an array of arrays
 
-  headingData[9] = 'Record <span class="typography__muted-small-caps">(W - L - T)</span>'; // Add the final "Record" column which is calculated from Wins/Losses/Ties
-  createHeadingRow(thead, headingData);
+  const recordHeader = 'Record <span class="typography__muted-small-caps">(W - L - T)</span>'; // Add the final "Record" column which is calculated from Wins/Losses/Ties
+  const headerRow = ['iso_date', ...headerData, recordHeader];
+
+  createHeadingRow(thead, headerRow);
   createTableBodyRows(tbody, tableData);
 }
 
