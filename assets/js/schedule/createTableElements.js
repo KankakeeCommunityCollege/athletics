@@ -30,8 +30,9 @@ function createTableBodyElement(table) {
 
 function createHeadingCells(tr, val) {
   const th = document.createElement('th');
+  const value = (val !== 'Start') ? val : 'Date'; // Start and End columns get combined so "Date" is a more accurate heading.
   
-  th.innerHTML = val += ':';
+  th.innerHTML = value + ':';
   tr.append(th);
   return th;
 }
