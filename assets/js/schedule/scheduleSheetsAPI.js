@@ -34,12 +34,12 @@ function start() {
           // autoPrint: false, // Prevent print dialog from opening - useful for refining print layout in dev
           exportOptions: {
             // Columns to display in the print view (0-based index)
-            columns: [1, 4, 5, 6, 7/*, 8, 9, 11*/]
+            columns: [1, 4, 5, 6, 7]
           },
           customize: function (win) { // Function to customize the print view - win = Window JS global
             const table = win.document.body.querySelector('table');
             const p = `<p style="text-align: center;">
-  <em>Game schedules are subject to change, check the athletics website for postponements and cancellations.</em>
+  <em>Game schedules are subject to change, check https://athletics.kcc.edu for postponements and cancellations.</em>
 </p>`;
 
             table.insertAdjacentHTML('afterend', p);
