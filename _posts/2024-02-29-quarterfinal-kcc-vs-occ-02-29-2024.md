@@ -33,6 +33,6 @@ description: 'KCC Women''s Basketball vs. Oakton Community College - Region IV Q
 
 <div><p> </p></div>
 
-<div><p>Stats&nbsp;</p></div>
+<div><p><strong>Stats</strong></p></div>
 
 <div><p>Pender and Smith led the Lady Cavaliers with 16 points each. Dagg had 11 points. Moody added 6 points. Johnson had 4 points. De Sousa, Sneed, and Freeman all added 3 points apiece. &nbsp;</p></div>
