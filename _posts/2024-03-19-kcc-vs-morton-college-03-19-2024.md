@@ -35,7 +35,7 @@ The Panthers attempted a comeback in the seventh inning, recording five more run
 
 &nbsp;
 
-Stat Book
+**Stat Book**
 
 The Cavaliers improved to 8-9-1 this season and will take on Black Hawk College on the road Wednesday afternoon at 3 pm CST.
 
