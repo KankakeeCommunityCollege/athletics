@@ -1,9 +1,9 @@
 
-// html,
-// body {
-//   // Needed to eliminate horizontal scrolling on mobile devices
-//   overflow-x: hidden;
-// }
+html,
+body {
+  // Needed to eliminate horizontal scrolling on mobile devices
+  overflow-x: hidden;
+}
 
 body.landing {
   background-color: $landing-bg;

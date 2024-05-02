@@ -9,7 +9,7 @@ description: >-
 base: facilities
 body_class: landing ## <landing|page>
 include_datatables: false
-include_gapi: false
+include_gapi: true
 include_sub-nav: false
 ---
 
@@ -22,10 +22,14 @@ include_sub-nav: false
       <div class="col-md-6">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/sports-facilities" class="nav-link sub-nav-link">Sports Facilities</a>
+            <a href="{{page.baseurl}}{{page.base}}/sports-facilities" class="nav-link sub-nav-link">
+              Sports Facilities
+            </a>
           </li>
           <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/fitness-center" class="nav-link sub-nav-link">Fitness Center</a>
+            <a href="{{page.baseurl}}{{page.base}}/fitness-center" class="nav-link sub-nav-link">
+              Fitness Center
+            </a>
           </li>
         </ul>
       </div>

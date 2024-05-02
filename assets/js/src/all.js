@@ -4,12 +4,14 @@ import Collapse from 'bootstrap/js/dist/collapse';
 
 window.addEventListener('load', async () => {
   // 1. Alerts go first
-  if (!window.sessionStorage.getItem('Alert-Content')) {
-    import('./campusAlertsSheetsAPI')
-      .then(({ default: start }) => gapi.load('client', start));
-  } else {
-    import('./getCachedResponse')
-      .then(({ default: getCachedResponse }) => getCachedResponse());
+  if (document.getElementById('emergencyAlerts')) {
+    if (!window.sessionStorage.getItem('Alert-Content')) {
+      import('./campusAlertsSheetsAPI')
+        .then(({ default: start }) => gapi.load('client', start));
+    } else {
+      import('./getCachedResponse')
+        .then(({ default: getCachedResponse }) => getCachedResponse());
+    }
   }
 
   // 2. These modules are used in most pages:
