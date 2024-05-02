@@ -1,7 +1,7 @@
 import createTabTable from './createTabTable.js';
 import testForMarkdown from './markdownify.js';
 
-const PARENT = document.getElementById('Stats');
+const parent = document.getElementById('Stats');
 
 function createTabsUl() {
   const ul = document.createElement('ul');
@@ -52,7 +52,7 @@ function createTabLinks(tabName, ul, isFirstTab) {
   if (isFirstTab) a.classList.add('active');
 
   a.href = `#${tabLabel}`
-  a.setAttribute('data-toggle', 'tab');
+  a.setAttribute('data-bs-toggle', 'tab');
   a.setAttribute('aria-selected', ariaSelected);
   a.id = tabId;
   a.setAttribute('role', 'tab');
@@ -89,7 +89,7 @@ function createTabHTML(response) {
     let tabPane = createTabPane(tabName, (i == 0));
     let tabPaneWithTable = createTabTable(tabPane, tableData, tabName, blurb);
 
-    assembleTabbedNav(PARENT, ulWithTabs, tabContent, tabPaneWithTable); // Wonder twins UNITE!
+    assembleTabbedNav(parent, ulWithTabs, tabContent, tabPaneWithTable); // Wonder twins UNITE!
   });
 }
 export default createTabHTML;

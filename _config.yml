@@ -20,9 +20,8 @@ defaults:
     type: posts
   values:
     layout: post
-    post_title: ''
-    permalink: /:categories/:title/
-    baseurl: ../../../../
+    permalink: /news/:year/:month/:day/:title/
+    baseurl: ../../../../../
 - scope:
     path: ''
     type: alerts
@@ -55,11 +54,12 @@ exclude:
   - "README.md"
   - "Gemfile"
   - "Gemfile.lock"
-  - "athletics-bad-response-object-from-sheetsAPI-request.js"
   - "webpack.config.js"
   - "postcss.config.js"
   - "buildtools/"
   - "siteicon.png"
+  - "look-for-deprecated-bs4-classes.mjs"
+  - "look-for-deprecated-bs4-js.mjs"
 
 uploads_dir: "uploads/" # specifies the default uploads directory for CloudCannon
 

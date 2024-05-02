@@ -1,5 +1,5 @@
 ---
-post_title: ''
+title: ''
 date:
 categories:
 post_topic:

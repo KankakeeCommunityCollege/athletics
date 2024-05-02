@@ -1,5 +1,5 @@
 ---
-post_title: Congrats Kiara
+title: Congrats Kiara
 date: 2018-06-12 07:00:00
 categories:
   - womens-basketball

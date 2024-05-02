@@ -1,5 +1,5 @@
 ---
-post_title: 2018 Players Next Step
+title: 2018 Players Next Step
 date: 2018-06-06 09:00:00
 categories:
   - baseball

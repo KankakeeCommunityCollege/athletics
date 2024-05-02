@@ -1,5 +1,5 @@
 ---
-post_title: KCC Volleyball vs. PSC 9/28/2023
+title: KCC Volleyball vs. PSC 9/28/2023
 date: 2023-09-28 00:00:00 -0500
 categories:
   - general

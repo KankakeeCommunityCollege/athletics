@@ -1,5 +1,5 @@
 ---
-post_title: KCC vs. Morton College 03/19/2024
+title: KCC vs. Morton College 03/19/2024
 date: 2024-03-19 00:00:00 -0500
 categories:
   - baseball

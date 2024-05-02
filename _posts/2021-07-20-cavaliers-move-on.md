@@ -1,5 +1,5 @@
 ---
-post_title: Cavaliers Moving On
+title: Cavaliers Moving On
 date: 2021-07-20 15:05:00
 categories:
   - baseball

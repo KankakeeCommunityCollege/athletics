@@ -1,9 +1,11 @@
 // Stops video playback when the modal is closed
-function watchForModalClose(YT_PLAYER) {
-  // BS4 method for detecting when modal events happen (other events: `hide.bs...`, `hidden...`, `show...`, & `shown...`)
-  $('#exampleModalCenter').on('hide.bs.modal', function (e) {
-    YT_PLAYER.src = '';
-  });
+
+// Modal built into page which contains the iframe player
+const videoModal = document.getElementById('videoModal');
+
+function watchForModalClose(ytPlayer) {
+  // BS5 method for detecting when modal events happen:
+  videoModal.addEventListener('hide.bs.modal', _e => ytPlayer.src = '');
 }
 
 export default watchForModalClose;

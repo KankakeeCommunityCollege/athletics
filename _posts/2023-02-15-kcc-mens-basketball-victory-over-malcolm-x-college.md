@@ -1,5 +1,5 @@
 ---
-post_title: KCC Men's Basketball victory over Malcolm X College
+title: KCC Men's Basketball victory over Malcolm X College
 date: 2023-02-15 00:00:00 -0600
 categories:
   - mens-basketball

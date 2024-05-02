@@ -1,5 +1,5 @@
 ---
-post_title: Baseball 2019 Season Preview
+title: Baseball 2019 Season Preview
 date: 2019-01-17 07:00:00
 categories:
   - baseball

@@ -46,14 +46,10 @@ function createHeader(content) {
 
 function createButton() {
   const button = document.createElement('button');
-  const x = document.createElement('span');
-  x.setAttribute('aria-hidden', 'true');
-  x.innerHTML = '&times;';
-  button.classList.add('close');
+  button.classList.add('btn-close');
   button.setAttribute('type', 'button');
-  button.setAttribute('data-dismiss', 'modal');
+  button.setAttribute('data-bs-dismiss', 'modal');
   button.setAttribute('aria-label', 'close');
-  button.appendChild(x);
   return button;
 }
 
@@ -90,7 +86,7 @@ function createPlayerImage(name, src, body) {
   img.height = '393';
   img.setAttribute('onerror', 'this.onerror=null;this.src=\'https://cdn.kcc.edu/athletics/roster-img/blank-avatar.jpg\'');
   img.classList.add('roster__img');
-  div.classList.add('text-center', 'float-md-left');
+  div.classList.add('text-center', 'float-md-start');
   div.appendChild(img);
   body.appendChild(div);
   return body;
@@ -132,7 +128,7 @@ function createModalFooter(content) {
   const button = document.createElement('button');
   div.classList.add('modal-footer');
   button.setAttribute('type', 'button');
-  button.setAttribute('data-dismiss', 'modal');
+  button.setAttribute('data-bs-dismiss', 'modal');
   button.classList.add('btn', 'btn-secondary');
   button.innerHTML = 'Close';
   div.appendChild(button);

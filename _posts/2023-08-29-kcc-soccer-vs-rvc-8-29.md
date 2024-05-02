@@ -1,5 +1,5 @@
 ---
-post_title: KCC Soccer vs. RVC 8/29
+title: KCC Soccer vs. RVC 8/29
 date: 2023-08-29 00:00:00 -0500
 post_topic: General News
 news_thumb_image: assets/img/placeholder.jpg

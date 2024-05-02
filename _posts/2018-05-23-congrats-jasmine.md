@@ -1,5 +1,5 @@
 ---
-post_title: Congrats Jasmine
+title: Congrats Jasmine
 date: 2018-05-23 09:00:00
 categories:
   - womens-basketball

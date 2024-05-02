@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. Morton College 12/7/2023
+title: KCC Basketball vs. Morton College 12/7/2023
 date: 2023-12-07 00:00:00 -0600
 categories:
   - general

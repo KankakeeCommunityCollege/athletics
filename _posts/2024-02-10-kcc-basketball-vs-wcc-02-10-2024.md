@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. WCC 02/10/2024
+title: KCC Basketball vs. WCC 02/10/2024
 date: 2024-02-10 00:00:00 -0600
 categories:
   - womens-basketball

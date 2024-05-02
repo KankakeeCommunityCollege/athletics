@@ -1,5 +1,5 @@
 ---
-post_title: KCC vs Highland 2/25
+title: KCC vs Highland 2/25
 date: 2023-02-25 00:00:00 -0600
 categories:
   - mens-basketball

@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. Kishwaukee College 02/19/2024
+title: KCC Basketball vs. Kishwaukee College 02/19/2024
 date: 2024-02-19 00:00:00 -0600
 categories:
   - womens-basketball

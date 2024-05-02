@@ -1,5 +1,5 @@
 ---
-post_title: KCC MBB vs Aurora University JV 2-12-23
+title: KCC MBB vs Aurora University JV 2-12-23
 date: 2023-02-15 10:33:00 -0600
 categories:
   - mens-basketball

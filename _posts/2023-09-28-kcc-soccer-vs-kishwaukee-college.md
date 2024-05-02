@@ -1,5 +1,5 @@
 ---
-post_title: KCC Soccer vs. Kishwaukee College
+title: KCC Soccer vs. Kishwaukee College
 date: 2023-09-28 00:00:00 -0500
 categories:
   - soccer

@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. Daley College 12/5/2023
+title: KCC Basketball vs. Daley College 12/5/2023
 date: 2023-12-05 00:00:00 -0600
 categories:
   - mens-basketball

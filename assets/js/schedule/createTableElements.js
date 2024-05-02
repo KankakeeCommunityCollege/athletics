@@ -1,4 +1,4 @@
-const PARENT = document.getElementById('Schedule');
+const parent = document.getElementById('Schedule');
 const monthNames = [ // Define an array of the months to convert JS # value of month into short text version
   'Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'
 ];
@@ -133,7 +133,7 @@ function createTableBodyRows(tbody, data) {
 }
 
 function createTableElements(response) {
-  const table = createTableElement(PARENT);
+  const table = createTableElement(parent);
   const thead = createTableHeadingElement(table);
   const tbody = createTableBodyElement(table);
 

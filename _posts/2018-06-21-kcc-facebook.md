@@ -1,5 +1,5 @@
 ---
-post_title: KCC Athletics Facebook
+title: KCC Athletics Facebook
 date: 2018-06-21 11:00:00
 categories:
   - general

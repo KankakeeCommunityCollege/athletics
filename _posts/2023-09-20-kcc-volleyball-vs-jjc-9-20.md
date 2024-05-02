@@ -1,5 +1,5 @@
 ---
-post_title: KCC Volleyball vs. JJC 9/20
+title: KCC Volleyball vs. JJC 9/20
 date: 2023-09-20 00:00:00 -0500
 categories:
   - volleyball

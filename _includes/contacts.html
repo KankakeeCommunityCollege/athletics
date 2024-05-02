@@ -19,8 +19,8 @@
   <!-- Coach 1 row -->
   <div class="row">
     <!-- Coach 1 left image div (inner-left column) -->
-    <div class="col-6 float-left">
-      <a data-toggle="modal" href="#modalCoach{{ forloop.index }}">
+    <div class="col-6">
+      <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}">
         <img
           src="{{ page.baseurl }}{% if contact.portrait %}{{ contact.portrait }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}"
           alt="{{ contact.contacts_title }} {{ contact.name }}"
@@ -29,14 +29,14 @@
       </a>
     </div>
     <!-- Coach 1 right info div (inner-right column) -->
-    <div class="col-6 float-right coaches__info">
-      <a data-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link"><h5 class="coach-name">{{ contact.name }}</h5>
+    <div class="col-6 coaches__info">
+      <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link"><h5 class="coach-name">{{ contact.name }}</h5>
       <h6 class="coach-title">{{ contact.contacts_title }}</h6></a>
       <p>
         {% if contact.phone %}<a href="tel:1{{ contact.phone | replace: '-', '' | replace: '‑', '' }}">{{ contact.phone }}</a><br />{% endif %}
         {% if contact.email %}<a href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% endif %}
       </p>
-      <a data-toggle="modal" class="btn btn-primary" href="#modalCoach{{ forloop.index }}">View Bio</a>
+      <a data-bs-toggle="modal" class="btn btn-primary" href="#modalCoach{{ forloop.index }}">View Bio</a>
     </div>
   </div>
 </div>

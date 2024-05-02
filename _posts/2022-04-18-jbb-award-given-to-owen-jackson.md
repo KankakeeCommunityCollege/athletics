@@ -1,5 +1,5 @@
 ---
-post_title: JBB Award given to Owen Jackson!
+title: JBB Award given to Owen Jackson!
 date: 2022-04-18 00:00:00
 categories:
   - baseball

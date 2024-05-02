@@ -1,5 +1,5 @@
 ---
-post_title: KCC Baseball vs College of DuPage
+title: KCC Baseball vs College of DuPage
 date: 2023-03-15 00:00:00 -0500
 categories:
   - baseball

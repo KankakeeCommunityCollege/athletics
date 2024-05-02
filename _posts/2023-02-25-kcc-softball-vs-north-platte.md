@@ -1,5 +1,5 @@
 ---
-post_title: KCC Softball vs North Platte
+title: KCC Softball vs North Platte
 date: 2023-02-25 00:00:00 -0600
 categories:
   - softball
