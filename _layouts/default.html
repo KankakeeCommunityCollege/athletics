@@ -1,6 +1,8 @@
 {% include document-head.html %}
-  <body class="{{ page.body_class }}">
+  <body data-bs-no-jquery class="{{ page.body_class }}">
+  {% if page.include_facebook_sdk %}
     {% include script/facebook-sdk.html %}
+  {% endif %}
   {% include script/google-noscript.html %}
   {% include nav/global-nav.html %}
   {% include nav/mega-nav.html %}

@@ -11,12 +11,9 @@
 import createAlertsHtml from './createAlertsHtml.js';
 import cacheResponse from './cacheResponse.js';
 
-const SHEET_KEY = '1plXBiZY5pVbhNT-mszxEuqCl4zy8wMnz9gXXbbT_yLs'; // Corresponds to the ID of the Google Sheet
-const SHEET_TAB = 'Alerts'; // Corresponds to the tab of workbook: either  'Alerts' or 'Alerts Testing' unless you make a new one.
-const EMERGENCY_ALERT_DIV_ID = 'emergencyAlerts'
 const SHEET_PARAMS = {
-  spreadsheetId: SHEET_KEY,
-  range: SHEET_TAB
+  spreadsheetId: '1plXBiZY5pVbhNT-mszxEuqCl4zy8wMnz9gXXbbT_yLs', // ID of the spreadsheet
+  range: 'Alerts' // Range of data in the spreadsheet to get (can use A1 notation)
 };  // Configures the Object used for `sheets.spreadsheets.values.get()` parameters
 const API_PARAMS = { // This is configuration for API call with spreadsheets that are setup as readonly
   'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
@@ -24,7 +21,7 @@ const API_PARAMS = { // This is configuration for API call with spreadsheets tha
 };
 
 function start() {
-  if ( ! document.getElementById(EMERGENCY_ALERT_DIV_ID) )
+  if ( ! document.getElementById('emergencyAlerts') )
     return;
 
   gapi.client.init(API_PARAMS).then(() => { // Executes an API request, and returns a Promise.

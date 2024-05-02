@@ -1,14 +1,16 @@
-function initSlick(el, BASE_URL) {
-  const SLICK_PARAMETERS = {
-    dots: false,
-    infinite: false,
-    autoplay: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+function initSlick(slickElement, baseUrl) {
+  /** @see https://kenwheeler.github.io/slick/#settings for available slick slider settings */
+  const slickParameters = {
+    dots: false, // No indicator dots along the bottom
+    infinite: false, // Do not loop when end of slides is reached
+    autoplay: false, // Do not autoplay the slides
+    slidesToShow: 3, // Default number of slides to show
+    slidesToScroll: 1, // Number of slides to advance per click/scroll
     adaptiveHeight: false,
-    prevArrow: `<img class="a-left control-c prev slick-prev yt-list__prev" src="${BASE_URL}/assets/img/blue-prev.svg">`,
-    nextArrow: `<img class="a-right control-c next slick-next yt-list__next" src="${BASE_URL}/assets/img/blue-next.svg">`,
-    responsive: [
+    // Custom prev/next arrows
+    prevArrow: `<img class="a-left control-c prev slick-prev yt-list__prev" src="${baseUrl}/assets/img/blue-prev.svg">`,
+    nextArrow: `<img class="a-right control-c next slick-next yt-list__next" src="${baseUrl}/assets/img/blue-next.svg">`,
+    responsive: [ // Adjust slider based on screen width
       {
         breakpoint: 1024,
         settings: {
@@ -16,7 +18,7 @@ function initSlick(el, BASE_URL) {
           slidesToScroll: 3
         }
       },
-      {
+      { // Show 1 slide for screens under 992px wide
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
@@ -25,7 +27,7 @@ function initSlick(el, BASE_URL) {
       },
     ]
   }
-  $(el).slick(SLICK_PARAMETERS);
+  $(slickElement).slick(slickParameters);
 }
 
 export default initSlick;

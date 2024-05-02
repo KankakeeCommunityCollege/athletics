@@ -4,6 +4,7 @@ const moreButton = document.querySelector('.js-more-btn');
 function moreClick() {
   moreButton.addEventListener('click', (e) => {
     const target = e.target;
+
     if (target.innerHTML == 'More ...') {
       target.innerHTML = 'Close';
     } else {

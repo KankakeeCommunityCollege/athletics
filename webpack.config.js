@@ -22,6 +22,7 @@ module.exports = {
   plugins,
   entry: {
     'main': './assets/js/src/all.js',
+    'bootstrap': './assets/js/src/bootstrap.js'
   },
   output: {
     filename: '[name].[fullhash].bundle.js',

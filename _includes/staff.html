@@ -9,12 +9,17 @@
   <div class="col-md-6 coaches__col-bottom-margin">
     <div class="row">
       <div class="col-4">
-        <a data-toggle="modal" href="#modalCoach{{ forloop.index }}">
-          <img src="{{ page.baseurl }}{% if member.image %}{{ member.image }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}" alt="{{ member.members_title }} {{ member.name }}" class="img-fluid coach-img modal-link" title="Photo of {{ member.contacts_title }} {{ member.name }}" />
+        <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}">
+          <img
+            src="{{ page.baseurl }}{% if member.image %}{{ member.image }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}"
+            alt="{{ member.members_title }} {{ member.name }}"
+            class="img-fluid coach-img modal-link"
+            title="{{ member.contacts_title }} {{ member.name }}"
+          >
         </a>
       </div>
       <div class="col-8 coaches__info">
-        <a data-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link">
+        <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link">
           <h5 class="coach-name">{{ member.name }}</h5>
           <h6 class="coach-title">{{ member.contacts_title }}</h6>
         </a>
@@ -22,7 +27,7 @@
           {% if member.phone %}<a href="tel:1{{ member.phone | replace: '-', '' }}">{{ member.phone }}</a><br />{% endif %}
           {% if member.email %}<a href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
         </p>
-        <a data-toggle="modal" class="btn btn-primary" href="#modalCoach{{ forloop.index }}">View Bio</a>
+        <a data-bs-toggle="modal" class="btn btn-primary" href="#modalCoach{{ forloop.index }}">View Bio</a>
       </div>
     </div>
   </div>
