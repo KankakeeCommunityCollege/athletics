@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. Triton College 1/17/2024
+title: KCC Basketball vs. Triton College 1/17/2024
 date: 2024-01-17 00:00:00 -0600
 categories:
   - general

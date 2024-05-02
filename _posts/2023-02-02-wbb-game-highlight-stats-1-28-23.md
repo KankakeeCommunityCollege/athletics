@@ -1,5 +1,5 @@
 ---
-post_title: WBB Game Highlight Stats 1-28-23
+title: WBB Game Highlight Stats 1-28-23
 date: 2023-02-02 10:53:00 -0600
 categories:
   - womens-basketball

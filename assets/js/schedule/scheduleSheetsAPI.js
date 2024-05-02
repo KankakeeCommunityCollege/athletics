@@ -2,8 +2,8 @@
 //import createScheduleElements from './createScheduleElements.js';
 import setSheetParameters from '../shared/setSheetParameters.js';
 import createTableElements from './createTableElements.js';
-
-const PARAMS = {
+// Google API configuration object
+const apiParams = {
   'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
   'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest']
 };
@@ -11,7 +11,7 @@ const sheetParams = setSheetParameters();
 
 function start() {
   //console.log(sheetParams);
-  gapi.client.init(PARAMS).then(() => {
+  gapi.client.init(apiParams).then(() => {
     return gapi.client.sheets.spreadsheets.values.get(sheetParams);
   }).then(response => {
     createTableElements(response);

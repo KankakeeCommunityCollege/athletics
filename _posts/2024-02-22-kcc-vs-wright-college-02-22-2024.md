@@ -1,5 +1,5 @@
 ---
-post_title: KCC vs. Wright College 02/22/2024
+title: KCC vs. Wright College 02/22/2024
 date: 2024-02-22 00:00:00 -0600
 categories:
   - general

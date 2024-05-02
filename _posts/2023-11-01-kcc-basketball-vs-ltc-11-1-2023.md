@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. LTC 11/1/2023
+title: KCC Basketball vs. LTC 11/1/2023
 date: 2023-11-01 00:00:00 -0500
 categories:
   - mens-basketball

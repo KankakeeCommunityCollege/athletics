@@ -1,5 +1,5 @@
 ---
-post_title: WBB Game Highlights 2-4-23
+title: WBB Game Highlights 2-4-23
 date: 2023-02-07 13:35:00 -0600
 categories:
   - womens-basketball

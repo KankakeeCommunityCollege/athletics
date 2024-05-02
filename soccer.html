@@ -9,6 +9,7 @@ description: >-
 base: soccer
 body_class: landing
 include_datatables: false
+include_facebook_sdk: true
 include_gapi: true
 include_sub-nav: true
 slides:
@@ -39,16 +40,20 @@ slides:
   {% include hero-slider.html %}
 </div>
 <section class="container content-marg">
-    <div class="row schedule-row{% if page.season_preview == false %} editor-content{% endif %}">
+    <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
       <div class="col">
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
         <div class="season-preview__content-bg">
           <div class="editable">
             <p>The Cavaliers enter the season with high hopes, returning a core group of players from last year’s campaign and a high-quality freshmen recruiting class.</p>
-          </div> <div id="collapsePreview" class="collapse"><div class="editable">
-  <p>“The incoming freshmen are one of the most talented groups we’ve seen in a long time and bring added dimensions to what we are going to be able to do this year,” said Head Coach Mike Barclay. “We’ve filled some important gaps in our lineup and are looking to bring a consistent game-in and game-out performance this year.”</p>
-</div><br /></div><button class="btn btn-primary float-right season-preview__btn--more js-more-btn" type="button" data-toggle="collapse" data-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
+          </div>
+          <div id="collapsePreview" class="collapse">
+            <div class="editable">
+              <p>“The incoming freshmen are one of the most talented groups we’ve seen in a long time and bring added dimensions to what we are going to be able to do this year,” said Head Coach Mike Barclay. “We’ve filled some important gaps in our lineup and are looking to bring a consistent game-in and game-out performance this year.”</p>
+            </div>
+          </div>
         </div>
+        <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
       </div>
     </div>
     <div class="row schedule-row">
@@ -56,8 +61,8 @@ slides:
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games
           <!-- <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> -->
           </h2>
-          <a class="btn btn-primary ml-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
-          <a class="btn btn-primary mb-3 ml-2" href="./schedule/">View Schedule</a>
+          <a class="btn btn-primary mb-3 ms-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
+          <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
         <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
           {% include loading-slider.html %}
         </div>
@@ -88,7 +93,7 @@ slides:
 <!-- Coaches Section -->
 <section class="coach-section">
   <div class="container">
-    <div class="row text-left">
+    <div class="row">
       <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&#160;Coaches</h4>
     </div>
     <div class="row editor-link">

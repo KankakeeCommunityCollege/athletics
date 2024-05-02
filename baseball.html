@@ -11,6 +11,7 @@ body_class: landing
 include_datatables: false
 include_gapi: true
 include_sub-nav: true
+include_facebook_sdk: true
 slides:
   - image: /uploads/baseball-1-Z91_5310.jpg
     alt-text: 'Baseball player #21 Andrew VanOeveren'
@@ -59,13 +60,13 @@ slides:
   {% include hero-slider.html %}
 </div>
 <section class="container content-marg">
-    <div class="row schedule-row{% if page.season_preview == false %} editor-content{% endif %}">
+    <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
       <div class="col">
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
         <div class="season-preview__content-bg">
           <div class="editable">
             <p>The Cavaliers are gearing up for an exciting 2024 season, marked by significant changes and promising talent. With the retirement of Region 4 Hall of Fame Head Coach Todd Post, the team welcomes Bryce Shafer, a familiar face with eight years as an assistant, as the new head coach. The Cavaliers are building on a solid 2023 season, where they had a 34-22 record and finished fourth at the Region 4 Championship.</p>
-          </div><br />
+          </div>
           <div id="collapsePreview" class="collapse">
             <div class="editable">
               <p>The pitching staff has exceptional promise this year. The staff is not only deeper, but brings a wealth of experience from the previous season.</p>
@@ -78,15 +79,15 @@ slides:
               <p>He emphasizes the team’s perennial goal: competing for the Region 4 championship. With a blend of experienced sophomores, promising freshmen, and a flexible lineup, the Cavaliers are well-positioned for a strong run this spring.</p>
             </div>
           </div>
-          <button class="btn btn-primary float-right season-preview__btn--more js-more-btn" type="button" data-toggle="collapse" data-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
         </div>
+        <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
       </div>
     </div>
     <div class="row schedule-row">
       <div class="col-md-12">
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <!-- <a href="{{ page.baseurl }}baseball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
-        <a class="btn btn-primary mb-3 ml-2" href="/stream-games/">Watch Home Games Live</a>
-        <a class="btn btn-primary mb-3 ml-2" href="./schedule/">View Schedule</a>
+        <a class="btn btn-primary mb-3 ms-2" href="/stream-games/">Watch Home Games Live</a>
+        <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
         <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
           {% include loading-slider.html %}
         </div>
@@ -118,8 +119,10 @@ slides:
 <!-- Coaches Section -->
 <section class="coach-section">
   <div class="container">
-    <div class="row text-left">
-      <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="Icon of a baseball" />&#160;&#160;Coaches</h4>
+    <div class="row">
+      <h4 id="coaches" name="coaches" class="coaches-heading link__offset">
+        <img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="Icon of a baseball" />&#160;&#160;Coaches
+      </h4>
     </div>
     <div class="row editor-link">
       <div class="col editor-link mb-3">

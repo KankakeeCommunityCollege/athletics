@@ -1,13 +1,13 @@
 // Sheet Keys
-const SCHEDULES_SHEET_ID = "13cd6P3Ze7bBJugzlQ2Uk2dFWc677wE68ghL94JZcnmI";
-const ROSTER_SHEET_ID = "1odoxnNnm3ldZFpND9SDj6JhPXIct60FVJSFvcshX2aw";
-const BASEBALL_STATS_SHEET_ID = '1CjI-KFAmasBUipURvXRtGuu6kWYbrNmo49VPeg7d6Os';
-const MENS_BASKETBALL_STATS_SHEET_ID = '1zBMYYFRJLLgUu9XKR8voz37o5Nz1dMVAdfy3cj3W_PI';
-const WOMENS_SOCCER_STATS_SHEET_ID = '1kh9ordjrIok0lrh8hcl8vE6TFUJIORU4T-sC_UC4STQ';
-const SOCCER_STATS_SHEET_ID = '1CR7waySsJVjNEq7OuWGA7y1-FXWnE4hsvybYUg9l8cw';
-const SOFTBALL_STATS_SHEET_ID = '1qZHyYT_fJE6jajEUjFJK8Z8yKYbu76YnJ9ec3Vzk-KM';
-const VOLLEYBALL_STATS_ID = '1tzACDaWtF9Vohd20ooWsTxSyRaAxAKvpnvxmoO6biAI';
-const WOMENS_BASKETBALL_STATS_SHEET_ID = '1-RkDZ4YpX4XGFvOL7jgXuCm_rLD843NjzPoWJ-Otnf8';
+const schedulesSheetId = "13cd6P3Ze7bBJugzlQ2Uk2dFWc677wE68ghL94JZcnmI";
+const rosterSheetId = "1odoxnNnm3ldZFpND9SDj6JhPXIct60FVJSFvcshX2aw";
+const baseballStatsSheetId = '1CjI-KFAmasBUipURvXRtGuu6kWYbrNmo49VPeg7d6Os';
+const mensBasketballStatsSheetId = '1zBMYYFRJLLgUu9XKR8voz37o5Nz1dMVAdfy3cj3W_PI';
+const womensSoccerStatsSheetId = '1kh9ordjrIok0lrh8hcl8vE6TFUJIORU4T-sC_UC4STQ';
+const soccerStatsSheetId = '1CR7waySsJVjNEq7OuWGA7y1-FXWnE4hsvybYUg9l8cw';
+const softballStatsSheetId = '1qZHyYT_fJE6jajEUjFJK8Z8yKYbu76YnJ9ec3Vzk-KM';
+const volleyballStatsSheetId = '1tzACDaWtF9Vohd20ooWsTxSyRaAxAKvpnvxmoO6biAI';
+const womensBasketballStatsSheetId = '1-RkDZ4YpX4XGFvOL7jgXuCm_rLD843NjzPoWJ-Otnf8';
 // Conditions
 const path = window.location.pathname;
 const urlIsBaseball = path.search('/baseball') !== -1;
@@ -36,10 +36,10 @@ function setStatParams(params) {
 }
 
 function checkIds(params, i) {
-  urlIsRoster ? setId(params, ROSTER_SHEET_ID)
-  : urlIsSchedule ? setId(params, SCHEDULES_SHEET_ID)
+  urlIsRoster ? setId(params, rosterSheetId)
+  : urlIsSchedule ? setId(params, schedulesSheetId)
   : urlIsStats ? setStatsId(params)
-  : setId(params, SCHEDULES_SHEET_ID);
+  : setId(params, schedulesSheetId);
 
   return params;
 }
@@ -54,13 +54,13 @@ function checkRanges(params, r) {
 }
 
 function setStatsId(params) {
-  urlIsBaseball ? setId(params, BASEBALL_STATS_SHEET_ID)
-  : urlIsMensBasketball ? setId(params, MENS_BASKETBALL_STATS_SHEET_ID)
-  : urlIsWomensSoccer ? setId(params, WOMENS_SOCCER_STATS_SHEET_ID)
-  : urlIsSoccer ? setId(params, SOCCER_STATS_SHEET_ID)
-  : urlIsWomensBasketball ? setId(params, WOMENS_BASKETBALL_STATS_SHEET_ID)
-  : urlIsSoftball ? setId(params, SOFTBALL_STATS_SHEET_ID)
-  : urlIsVolleyball ? setId(params, VOLLEYBALL_STATS_ID)
+  urlIsBaseball ? setId(params, baseballStatsSheetId)
+  : urlIsMensBasketball ? setId(params, mensBasketballStatsSheetId)
+  : urlIsWomensSoccer ? setId(params, womensSoccerStatsSheetId)
+  : urlIsSoccer ? setId(params, soccerStatsSheetId)
+  : urlIsWomensBasketball ? setId(params, womensBasketballStatsSheetId)
+  : urlIsSoftball ? setId(params, softballStatsSheetId)
+  : urlIsVolleyball ? setId(params, volleyballStatsSheetId)
   : null;
 
   return params;

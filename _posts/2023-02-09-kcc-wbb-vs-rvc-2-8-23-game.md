@@ -1,5 +1,5 @@
 ---
-post_title: KCC WBB vs RVC 2-8-23
+title: KCC WBB vs RVC 2-8-23
 date: 2023-02-09 00:00:00 -0600
 categories:
   - womens-basketball

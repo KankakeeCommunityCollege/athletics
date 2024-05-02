@@ -1,5 +1,5 @@
 ---
-post_title: Region IV District B
+title: Region IV District B
 date: 2018-11-06 07:00:00
 categories:
   - volleyball

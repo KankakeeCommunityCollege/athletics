@@ -1,21 +1,21 @@
-function openModalIfHashExists(hash) {
+function openModalIfHashExists(hash, Modal) {
   if (!document.querySelector(`div[data-roster-hash="${hash}"]`))
     return;
 
   const modalEl = document.querySelector(`div[data-roster-hash="${hash}"]`);
 
-  // Focus the modal-dialog after it has finished opening.
-  // This is necessary for accessibility
-  $(modalEl).on('shown.bs.modal', (e) => modalEl.querySelector('.modal-dialog').focus()); // See modal events in BS4 docs for more info: <https://getbootstrap.com/docs/4.6/components/modal/#events>
-  $(modalEl).modal('show'); // Opens the modal. See modal methods <https://getbootstrap.com/docs/4.6/components/modal/#methods>
+  // Bootstrap 5 Modal method
+  const bsModal = new Modal(modalEl, { toggle: false });
+
+  bsModal.show();
 }
 
-function openModal() {
+function openModal(Modal) {
   if (window.location.hash) {
-    openModalIfHashExists(window.location.hash);
+    openModalIfHashExists(window.location.hash, Modal);
   }
   window.addEventListener('hashchange', (e) => {
-    openModalIfHashExists(window.location.hash);
+    openModalIfHashExists(window.location.hash, Modal);
   });
 }
 

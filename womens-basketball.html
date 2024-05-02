@@ -8,6 +8,7 @@ description: >-
 base: womens-basketball
 body_class: landing
 include_datatables: false
+include_facebook_sdk: true
 include_gapi: true
 include_sub-nav: true
 slides:
@@ -43,61 +44,65 @@ slides:
   {% include hero-slider.html %}
 </div>
 <section class="container content-marg">
-      <div class="row schedule-row">
-      <div class="col">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&nbsp;Season Preview</h2>
-        <div class="season-preview__content-bg">
+  <div class="row mb-2">
+    <div class="col">
+      <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&nbsp;Season Preview</h2>
+      <div class="season-preview__content-bg">
+        <div class="editable">
+          <p>Head coach Casey Meister and the Cavaliers are set to begin the 2023-24 season having high expectations as they work toward tip off Nov. 4 against Lansing Community College.</p>
+        </div>
+        <div id="collapsePreview" class="collapse">
           <div class="editable">
-            <p>Head coach Casey Meister and the Cavaliers are set to begin the 2023-24 season having high expectations as they work toward tip off Nov. 4 against Lansing Community College.</p>
-          </div> <div id="collapsePreview" class="collapse"><div class="editable">
-  <p>Meister returns for her third season at the helm of the Lady Cavaliers basketball program, and her goals and expectations remain high. The Cavaliers continue to climb and improve after a tough 9-9 record during the COVID-affected season of 2021. Meister’s 2021-22 group finished with 10 wins and the 2022-23 season ended with 14 wins.</p>
-  <p>“My expectations are to get back to our 20+ win tradition and compete and win a Region Title,” said Meister. In an effort to prepare for the Region IV season and a championship appearance, the Cavs will take on an ambitious schedule.</p>
-  <p>“Our Region is tough,” Meister added. “The top-tier teams have reloaded, and the teams chasing them have brought some serious talent, so everyone has gotten stronger. Our success on the court will be determined by our ability to adapt to the college game and how well we overcome challenges along the way. We’ll have opportunities to play multiple nationally ranked teams. We are excited about that, and hope to compete with each and every one of them.”</p>
-  <p>This year’s team is made up of nine newcomers, all eager to make their mark at KCC. The new faces for the Cavaliers this year are freshmen Jasmine Ferrero, Tinsley Freeman, Zipporah Johnson, Aniyah Moody, Harmony Reynolds, Jaida Taylor, and transfers Kayla Jackson, Amaria Pender and Brianna Sneed.</p>
-  <p>Valorie Dagg, Myllena De Sousa and Jazmyn Smith return as the experienced leaders of the group both on and off the court.</p>
-  <p>“I’m really excited about our depth this season,” Meister said. “We have our returning All-Region IV player in Jazmyn Smith, who we hope can continue her dominance in the paint to go along with this group and I really feel like we have the right pieces in place to shake things up a bit.”</p>
-</div><br /></div><button class="btn btn-primary float-right season-preview__btn--more js-more-btn" type="button" data-toggle="collapse" data-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row schedule-row">
-      <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games <!-- <a href="{{ page.baseurl }}womens-basketball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
-        <a class="btn btn-primary mb-3 ml-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
-        <a class="btn btn-primary mb-3 ml-2" href="./schedule/">View Schedule</a>
-        <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
-          {% include loading-slider.html %}
-        </div>
-      </div>
-    </div>
-    <div class="row news-social-row">
-      <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}womens-basketball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
-          <div class="news__scroll">
-            <ul class="news__list">
-              {% assign wbball_posts = site.posts | where_exp: "item", "item.categories contains 'womens-basketball' or item.categories contains 'general'" %}
-              {% for post in wbball_posts limit: 7 %}
-                {% include news-item.html %}
-                {% include news-item-modal.html %}
-              {% endfor %}
-            </ul>
-            <div class="text-center mb-3">
-              <a href="{{ page.baseurl }}womens-basketball/news" class="btn btn-primary">More Articles</a>
-            </div>
+            <p>Meister returns for her third season at the helm of the Lady Cavaliers basketball program, and her goals and expectations remain high. The Cavaliers continue to climb and improve after a tough 9-9 record during the COVID-affected season of 2021. Meister’s 2021-22 group finished with 10 wins and the 2022-23 season ended with 14 wins.</p>
+            <p>“My expectations are to get back to our 20+ win tradition and compete and win a Region Title,” said Meister. In an effort to prepare for the Region IV season and a championship appearance, the Cavs will take on an ambitious schedule.</p>
+            <p>“Our Region is tough,” Meister added. “The top-tier teams have reloaded, and the teams chasing them have brought some serious talent, so everyone has gotten stronger. Our success on the court will be determined by our ability to adapt to the college game and how well we overcome challenges along the way. We’ll have opportunities to play multiple nationally ranked teams. We are excited about that, and hope to compete with each and every one of them.”</p>
+            <p>This year’s team is made up of nine newcomers, all eager to make their mark at KCC. The new faces for the Cavaliers this year are freshmen Jasmine Ferrero, Tinsley Freeman, Zipporah Johnson, Aniyah Moody, Harmony Reynolds, Jaida Taylor, and transfers Kayla Jackson, Amaria Pender and Brianna Sneed.</p>
+            <p>Valorie Dagg, Myllena De Sousa and Jazmyn Smith return as the experienced leaders of the group both on and off the court.</p>
+            <p>“I’m really excited about our depth this season,” Meister said. “We have our returning All-Region IV player in Jazmyn Smith, who we hope can continue her dominance in the paint to go along with this group and I really feel like we have the right pieces in place to shake things up a bit.”</p>
           </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&nbsp;Social Media</h2>
-        {% include facebook-widget_wbb.html %}
+      <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
+    </div>
+  </div>
+
+
+  <div class="row schedule-row">
+    <div class="col-md-12">
+      <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games <!-- <a href="{{ page.baseurl }}womens-basketball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
+      <a class="btn btn-primary mb-3 ms-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
+      <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
+      <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
+        {% include loading-slider.html %}
       </div>
     </div>
+  </div>
+  <div class="row news-social-row">
+    <div class="col-md-8 news-feed">
+      <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}womens-basketball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <div class="news__scroll">
+          <ul class="news__list">
+            {% assign wbball_posts = site.posts | where_exp: "item", "item.categories contains 'womens-basketball' or item.categories contains 'general'" %}
+            {% for post in wbball_posts limit: 7 %}
+              {% include news-item.html %}
+              {% include news-item-modal.html %}
+            {% endfor %}
+          </ul>
+          <div class="text-center mb-3">
+            <a href="{{ page.baseurl }}womens-basketball/news" class="btn btn-primary">More Articles</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&nbsp;Social Media</h2>
+      {% include facebook-widget_wbb.html %}
+    </div>
+  </div>
 </section>
 <!-- Coaches Section -->
 <section class="coach-section">
   <div class="container">
-    <div class="row text-left">
+    <div class="row">
       <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&nbsp;&nbsp;Coaches</h4>
     </div>
     <div class="row editor-link">

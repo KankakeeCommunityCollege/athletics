@@ -1,5 +1,5 @@
 ---
-post_title: Turner selected for IBCA Hall of Fame
+title: Turner selected for IBCA Hall of Fame
 date: 2021-01-31 00:00:00
 categories:
   - general
@@ -15,7 +15,7 @@ In spring 2021, Turner will be inducted into the Illinois Basketball Coaches Ass
 
 He currently officiates for the Northern Athletic Conference, Chicagoland Collegiate Athletic Conference and the College Conference of Illinois & Wisconsin. For eight seasons, Turner has been an official at NBA training camps for the Milwaukee Bucks and Chicago Bulls. In 2019, he became a court side administrator, working for the NBA.
 
-![Vern Turner officiating](/uploads/news/Vern-Turner-officiating_sm.jpg){: .float-right width="328" height="290"}
+![Vern Turner officiating](/uploads/news/Vern-Turner-officiating_sm.jpg){: .float-end width="328" height="290"}
 
 Among the noteworthy high school games he has officiated are seven Chicago city championships; three IHSA boys basketball championships (3-A in 2013, 4-A in 2014, and 3-A and 4-A in 2019); and the McDonald’s All-American game in 2016. He will be the first person to have played in IBCA All-Star Game (1981), officiate the IBCA All-Star Game (2016), and be inducted into the IBCA Hall of Fame.
 

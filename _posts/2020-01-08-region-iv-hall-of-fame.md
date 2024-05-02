@@ -1,5 +1,5 @@
 ---
-post_title: NJCAA Region IV Hall of Fame
+title: NJCAA Region IV Hall of Fame
 date: 2020-01-08 00:00:00
 categories:
   - baseball

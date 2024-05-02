@@ -1,5 +1,5 @@
 ---
-post_title: Rawlings Gold Glove Team
+title: Rawlings Gold Glove Team
 date: 2019-05-23 07:00:00
 categories:
   - baseball

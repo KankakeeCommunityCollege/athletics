@@ -1,5 +1,5 @@
 ---
-post_title: KCC vs. Harper College 04/16/2024
+title: KCC vs. Harper College 04/16/2024
 date: 2024-04-16 00:00:00 -0500
 categories:
   - baseball

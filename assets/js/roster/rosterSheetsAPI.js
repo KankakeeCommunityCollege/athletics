@@ -3,6 +3,13 @@
 import setSheetParameters from '../shared/setSheetParameters.js';
 import createTableElements from './createTableElements.js';
 
+// Google API configuration object
+const apiParams = {
+  'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
+  'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest']
+};
+const sheetParams = setSheetParameters();
+
 function createColumnArray() { // Returns an array representing which columns should be visible (0-based)
   const pathIsBaseball = (window.location.pathname.search(/\/baseball\//) !== -1);
   const columns = [1, 2, 3, 4, 5, 6, 7];
@@ -11,17 +18,15 @@ function createColumnArray() { // Returns an array representing which columns sh
 }
 
 function start() {
-  const PARAMS = {
-    'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
-    'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest']
-  };
-  const sheetParams = setSheetParameters();
   //console.log(sheetParams);
-  gapi.client.init(PARAMS).then(() => {
+  gapi.client.init(apiParams).then(() => {
     return gapi.client.sheets.spreadsheets.values.get(sheetParams);
-  }).then(response => {
-    return createTableElements(response);
-  }).then(() => {
+  }).then(async response => {
+    createTableElements(response);
+    const { default: Modal } = await import('bootstrap/js/dist/modal.js');
+
+    return Modal;
+  }).then(Modal => {
     const printIcon = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 12v2H8v-4h8v2zm2-2v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4h-2z"/><circle cx="18" cy="11.5" r="1"/></svg>';
 
     // See: <https://datatables.net/>
@@ -47,10 +52,12 @@ function start() {
         }
       ]
     });
-  }).then(() => {
+    return Modal;
+  }).then(Modal => {
     document.querySelector('input[type="search"].form-control').setAttribute('placeholder', 'Search roster...');
     import('../src/lazyload').then(({ default: lzFunction }) => lzFunction());
-  }).then(() => {
+    return Modal;
+  }).then(Modal => {
     // ClipboardJS - See: <https://clipboardjs.com/>
     import('clipboard/dist/clipboard').then(({ default: ClipboardJS }) => {
       const buttons = document.querySelectorAll('button[data-clipboard-text]');
@@ -65,8 +72,9 @@ function start() {
         }, 2000);
       })
     })
-  }).then(() => {
-    import('./openModal').then(({ default: openModal }) => openModal());
+    return Modal;
+  }).then(Modal => {
+    import('./openModal').then(({ default: openModal }) => openModal(Modal));
   }, err => console.error(`Execute error: ${err.message}`, err))
 }
 // Loads the JavaScript client library and invokes `start` afterwards.

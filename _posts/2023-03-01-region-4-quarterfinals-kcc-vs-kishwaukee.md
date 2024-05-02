@@ -1,5 +1,5 @@
 ---
-post_title: Quarterfinal KCC Lady Cavs vs Kishwaukee
+title: Quarterfinal KCC Lady Cavs vs Kishwaukee
 date: 2023-03-01 00:00:00 -0600
 categories:
   - womens-basketball

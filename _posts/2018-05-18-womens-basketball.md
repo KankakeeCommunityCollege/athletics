@@ -1,5 +1,5 @@
 ---
-post_title: Women's Basketball
+title: Women's Basketball
 date: 2018-04-30 10:16:00
 categories:
   - womens-basketball

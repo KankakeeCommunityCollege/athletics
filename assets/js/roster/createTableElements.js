@@ -103,7 +103,7 @@ function createTableElements(response) {
     let id = name.replace(/[\W_]+/g, '');
     let targetModalId = id + 'Modal';
 
-    rowData[2] = `<span class="roster--hover"><button type="button" class="btn btn-link buttons__roster--name" data-toggle="modal" data-target="#${targetModalId}">${name}</button>`;
+    rowData[2] = `<span class="roster--hover"><button type="button" class="btn btn-link buttons__roster--name" data-bs-toggle="modal" data-bs-target="#${targetModalId}">${name}</button>`;
     rowData[2] += `<button class="btn btn-link roster--hidden-till-hover" data-clipboard-text="https://athletics.kcc.edu${window.location.pathname}#${createHash(name)}">#</button></span>`;
     createBodyRow(tbody, data[i], id);
   }

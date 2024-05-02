@@ -9,6 +9,7 @@ description: >-
 base: mens-basketball
 body_class: landing
 include_datatables: false
+include_facebook_sdk: true
 include_gapi: true
 include_sub-nav: true
 slides:
@@ -44,7 +45,7 @@ slides:
   {% include hero-slider.html %}
 </div>
 <section class="container content-marg">
-  <div class="row schedule-row{% if page.season_preview == false %} editor-content{% endif %}">
+  <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
     <div class="col">
       <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
       <div class="season-preview__content-bg">
@@ -60,10 +61,10 @@ slides:
             <p>Guard Quesim Anderson (5’9”, from Atlanta, Georgia) brings quickness, playmaking, and shooting to the Cavs. Guard Donovan Juzang (6’2”, from Matteson) brings a strong work ethic along with outside shooting and playmaking. Forward Genesis English (6’7”, from Chicago) is a physical forward who will strengthen the interior with defense and rebounding. Jaden Walls (5’7”, from Kankakee) gives the team another option at the guard position with his ability to make plays for himself and others.</p>
             <p>The 2023-24 schedule has the Cavs facing off against tough Region IV opponents as well as matchups with Vincennes University, Southeastern Iowa C.C., Mineral Area College, and Indian Hills C.C.</p>
             <p>The coaching staff and players are excited about the upcoming season and hope that fans will come out and support the team.</p>
-          </div><br />
+          </div>
         </div>
-        <button class="btn btn-primary float-right season-preview__btn--more js-more-btn" type="button" data-toggle="collapse" data-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
       </div>
+      <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
     </div>
   </div>
 
@@ -73,8 +74,8 @@ slides:
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games
           <!-- <a href="{{ page.baseurl }}mens-basketball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> -->
         </h2>
-        <a class="btn btn-primary mb-3 ml-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
-        <a class="btn btn-primary mb-3 ml-2" href="./schedule/">View Schedule</a>
+        <a class="btn btn-primary mb-3 ms-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
+        <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
         <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
           {% include loading-slider.html %}
         </div>
@@ -107,7 +108,7 @@ slides:
 <!-- Coaches Section -->
 <section class="coach-section">
   <div class="container">
-    <div class="row text-left">
+    <div class="row">
       <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&#160;Coaches</h4>
     </div>
     <div class="row editor-link">

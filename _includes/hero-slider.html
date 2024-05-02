@@ -9,13 +9,13 @@
     {% endif %}
       {% if forloop.first == true %}
       <div>
-        <a href="{{ slide.url }}">
+        <a class="ga_slider_link" href="{{ slide.url }}">
           <img src="{{ page.baseurl }}{{ slide_image }}"
            class="img-fluid hero-slider__img"
            alt="{{slide.alt-text}}">
         </a>
         {% if slide.text1 or slide.text2 %}
-        <a href="{{ slide.url }}">
+        <a class="ga_slider_link" href="{{ slide.url }}">
           <div class="hero-slider__heading-wrapper">
             {% if slide.text1 %}<h3 class="typography__hero-slider--sub-heading">{{ slide.text1 }}</h3>{% endif %}
             {% if slide.text2 %}<h3 class="typography__hero-slider--main-heading">{{ slide.text2 }}</h3>{% endif %}
@@ -25,14 +25,14 @@
       </div>
       {% else %}
       <div>
-        <a href="{{ slide.url }}">
+        <a class="ga_slider_link" href="{{ slide.url }}">
           <img src="{{ page.baseurl }}assets/img/placeholder_grayscale.jpg"
            data-src="{{ page.baseurl }}{{slide_image}}"
            class="img-fluid hero-slider__img"
            alt="{{slide.alt-text}}">
         </a>
         {% if slide.text1 or slide.text2 %}
-        <a href="{{ slide.url }}">
+        <a class="ga_slider_link" href="{{ slide.url }}">
           <div class="hero-slider__heading-wrapper">
             {% if slide.text1 %}<h3 class="typography__hero-slider--sub-heading">{{ slide.text1 }}</h3>{% endif %}
             {% if slide.text2 %}<h3 class="typography__hero-slider--main-heading">{{ slide.text2 }}</h3>{% endif %}

@@ -9,6 +9,7 @@ description: >-
 sport: '1'
 body_class: landing
 include_datatables: false
+include_facebook_sdk: true
 include_gapi: true
 include_sub-nav: false
 include_poppers: true
@@ -63,8 +64,8 @@ slides:
           <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games
         </h2>
           <div class="btn-group schedule__button-margin" role="group">
-            <div class="dropdown">
-              <button class="btn btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+            <div class="btn-group" role="group">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 All schedules
               </button>
               <div class="dropdown-menu">
@@ -77,7 +78,7 @@ slides:
                 <a class="dropdown-item" href="{{ page.baseurl }}/volleyball/schedule">Volleyball Schedule</a>
               </div>
             </div>
-            <a class="btn btn-primary mb-3 ml-2" href="./stream-games">Watch Home Games Live</a>
+            <a class="btn btn-primary" href="./stream-games">Watch Home Games Live</a>
           </div>
       <div id="scheduleDiv" class="slick games" style="padding:15px">
         {% include loading-slider.html %}
@@ -117,23 +118,23 @@ slides:
           <h2 class="main-heading"><img src="assets/img/video.svg" class="icon-middle" alt="video icon" />&nbsp;Videos</h2>
         	<div id="yt_list" class="yt-list">
         	</div>
-            <a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
-            <a class="btn btn-primary ml-2" href="./stream-games">Watch Home Games Live</a>
+            <a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">
+              More Athletics Videos
+            </a>
+            <a class="btn btn-primary ms-2" href="./stream-games">Watch Home Games Live</a>
         	</div>
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                <h5 class="modal-title" id="videoModalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body mx-auto">
                 <iframe id="yt_player" width="560" height="315" class="yt-list__player"></iframe>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>

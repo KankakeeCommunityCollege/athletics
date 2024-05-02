@@ -1,5 +1,5 @@
 ---
-post_title: KCC Soccer vs. Waubonsee CC 9/9
+title: KCC Soccer vs. Waubonsee CC 9/9
 date: 2023-09-09 00:00:00 -0500
 categories:
   - soccer

@@ -1,5 +1,5 @@
 ---
-post_title: National WBCA Day of Service
+title: National WBCA Day of Service
 date: 2018-09-26 07:00:00
 categories:
   - womens-basketball

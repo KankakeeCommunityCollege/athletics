@@ -1,6 +1,3 @@
-const ACCORDION_ID = 'accordion';
-const TABS_SELECTOR = '.navTabs';
-
 function addHistoryState(target, hashTarget) {
   let url = new URL(window.location);
   let state = {
@@ -18,9 +15,9 @@ function accordionHandler(e) {
   if ( !e.target.matches('.accordion__button') )
     return;
   
-  const accordionIsOpening = !Boolean(JSON.parse(e.target.getAttribute('aria-expanded')));
+  const accordionIsOpening = Boolean(JSON.parse(e.target.getAttribute('aria-expanded')));
 
-  accordionIsOpening ? addHistoryState(e.target, e.target.dataset.target) : null;
+  accordionIsOpening ? addHistoryState(e.target, e.target.dataset.bsTarget) : null;
 }
 
 function tabHandler(e) {
@@ -30,20 +27,16 @@ function tabHandler(e) {
   addHistoryState(e.target, targetHref)
 }
 
-function watchElementForEvent(el, event, handler) {
-  el.addEventListener(event, handler);
-}
-
 function addAccordionOrTabHistoryStates() {
   if (document.getElementById('accordion')) {
-    const accordion = document.getElementById(ACCORDION_ID);
+    const accordion = document.getElementById('accordion');
 
-    watchElementForEvent(accordion, 'click', accordionHandler);
+    accordion.addEventListener('click', accordionHandler);
   }
   if (document.querySelector('.navTabs')) {
-    const tabs = document.querySelector(TABS_SELECTOR);
+    const tabs = document.querySelector('.navTabs');
   
-    watchElementForEvent(tabs, 'click', tabHandler);
+    tabs.addEventListener('click', tabHandler);
   }
 }
 

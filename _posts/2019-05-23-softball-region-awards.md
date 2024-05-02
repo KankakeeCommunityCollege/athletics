@@ -1,5 +1,5 @@
 ---
-post_title: Softball Region Awards
+title: Softball Region Awards
 date: 2019-05-23 07:00:00
 categories:
   - softball

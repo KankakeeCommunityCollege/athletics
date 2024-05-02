@@ -1,5 +1,5 @@
 ---
-post_title: Baseball Comes to a Close
+title: Baseball Comes to a Close
 date: 2018-05-21 09:00:00
 categories:
   - baseball

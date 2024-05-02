@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. GSU JV 1/18/2024
+title: KCC Basketball vs. GSU JV 1/18/2024
 date: 2024-01-18 00:00:00 -0600
 categories:
   - womens-basketball

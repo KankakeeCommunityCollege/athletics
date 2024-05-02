@@ -1,5 +1,5 @@
 ---
-post_title: KCC vs Olive-Harvey
+title: KCC vs Olive-Harvey
 date: 2023-03-28 00:00:00 -0500
 categories:
   - baseball

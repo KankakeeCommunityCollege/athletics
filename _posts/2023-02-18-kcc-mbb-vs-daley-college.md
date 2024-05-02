@@ -1,5 +1,5 @@
 ---
-post_title: KCC MBB vs Daley College
+title: KCC MBB vs Daley College
 date: 2023-02-18 00:00:00 -0600
 categories:
   - mens-basketball

@@ -1,5 +1,5 @@
 ---
-post_title: '22 Athletes earn honors'
+title: '22 Athletes earn honors'
 date: 2020-06-11 00:00:00
 categories:
   - general
