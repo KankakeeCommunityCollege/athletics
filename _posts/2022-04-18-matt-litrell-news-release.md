@@ -1,5 +1,5 @@
 ---
-post_title: Matt Littrell News Release
+title: Matt Littrell News Release
 date: 2022-04-18 00:00:00
 categories:
   - baseball

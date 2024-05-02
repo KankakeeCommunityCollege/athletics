@@ -1,5 +1,5 @@
 ---
-post_title: KCC Cavaliers Rivalry Clash
+title: KCC Cavaliers Rivalry Clash
 date: 2023-02-01 09:00:00 -0600
 categories:
   - general

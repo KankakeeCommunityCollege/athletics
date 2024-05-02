@@ -1,5 +1,5 @@
 ---
-post_title: NJCAA Academic Honors
+title: NJCAA Academic Honors
 date: 2021-06-14 00:00:00
 categories:
   - general

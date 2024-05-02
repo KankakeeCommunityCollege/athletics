@@ -1,5 +1,5 @@
 ---
-post_title: KCC Soccer vs. College of DuPage 10/14
+title: KCC Soccer vs. College of DuPage 10/14
 date: 2023-10-14 00:00:00 -0500
 categories:
   - soccer

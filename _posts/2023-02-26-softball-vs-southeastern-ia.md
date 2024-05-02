@@ -1,5 +1,5 @@
 ---
-post_title: KCC Softball vs Souteastern (IA)
+title: KCC Softball vs Souteastern (IA)
 date: 2023-02-26 00:00:00 -0600
 categories:
   - softball

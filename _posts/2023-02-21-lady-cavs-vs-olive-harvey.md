@@ -1,5 +1,5 @@
 ---
-post_title: KCC WBB vs Olive Harvey
+title: KCC WBB vs Olive Harvey
 date: 2023-02-21 00:00:00 -0600
 categories:
   - womens-basketball

@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. MVCC 1/13/2024
+title: KCC Basketball vs. MVCC 1/13/2024
 date: 2024-01-13 00:00:00 -0600
 categories:
   - womens-basketball

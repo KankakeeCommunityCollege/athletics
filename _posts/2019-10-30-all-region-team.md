@@ -1,5 +1,5 @@
 ---
-post_title: Soccer- All Region Team
+title: Soccer- All Region Team
 date: 2019-10-30 09:00:00
 categories:
   - soccer

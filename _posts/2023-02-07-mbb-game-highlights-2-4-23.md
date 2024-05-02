@@ -1,5 +1,5 @@
 ---
-post_title: MBB Game Highlights 2-4-23
+title: MBB Game Highlights 2-4-23
 date: 2023-02-07 00:00:00 -0600
 categories:
   - mens-basketball

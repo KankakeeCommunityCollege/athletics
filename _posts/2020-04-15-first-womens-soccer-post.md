@@ -1,5 +1,5 @@
 ---
-post_title: Women's Soccer at KCC!
+title: Women's Soccer at KCC!
 date: 2020-04-16 00:00:00
 categories:
   - womens-soccer

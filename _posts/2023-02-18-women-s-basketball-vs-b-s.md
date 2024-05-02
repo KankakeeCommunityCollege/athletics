@@ -1,5 +1,5 @@
 ---
-post_title: KCC WBB vs Bryant & Stratton College
+title: KCC WBB vs Bryant & Stratton College
 date: 2023-02-18 00:00:00 -0600
 categories:
   - womens-basketball

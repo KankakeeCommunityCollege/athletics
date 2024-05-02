@@ -1,5 +1,5 @@
 ---
-post_title: Region IV Women's Basketball
+title: Region IV Women's Basketball
 date: 2021-04-13 00:00:00
 categories:
   - womens-basketball

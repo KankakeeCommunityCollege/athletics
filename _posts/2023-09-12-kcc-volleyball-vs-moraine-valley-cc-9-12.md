@@ -1,5 +1,5 @@
 ---
-post_title: KCC Volleyball vs. Moraine Valley CC 9/12
+title: KCC Volleyball vs. Moraine Valley CC 9/12
 date: 2023-09-12 00:00:00 -0500
 categories:
   - volleyball

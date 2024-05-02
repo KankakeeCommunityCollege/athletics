@@ -1,5 +1,5 @@
 ---
-post_title: Turner selected for IBCA Hall of Fame
+title: Turner selected for IBCA Hall of Fame
 date: 2021-01-31 00:00:00
 categories:
   - general

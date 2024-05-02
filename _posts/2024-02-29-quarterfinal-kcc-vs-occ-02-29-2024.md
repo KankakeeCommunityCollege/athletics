@@ -1,5 +1,5 @@
 ---
-post_title: '*Quarterfinal* KCC vs. OCC 02/29/2024'
+title: '*Quarterfinal* KCC vs. OCC 02/29/2024'
 date: 2024-02-29 00:00:00 -0600
 categories:
   - womens-basketball

@@ -1,5 +1,5 @@
 ---
-post_title: KCC Basketball vs. KVCC 11/21/2023
+title: KCC Basketball vs. KVCC 11/21/2023
 date: 2023-11-21 00:00:00 -0600
 categories:
   - womens-basketball

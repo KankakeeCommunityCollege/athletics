@@ -1,5 +1,5 @@
 ---
-post_title: KCC Signing Day Player Profiles
+title: KCC Signing Day Player Profiles
 date: 2022-04-18 00:00:00
 categories:
   - general

@@ -1,5 +1,5 @@
 ---
-post_title: 2020 Baseball Sophomores
+title: 2020 Baseball Sophomores
 date: 2020-05-06 12:00:00
 categories:
   - baseball

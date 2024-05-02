@@ -1,5 +1,5 @@
 ---
-post_title: Baseball Guest Speaker- Steve Springer
+title: Baseball Guest Speaker- Steve Springer
 date: 2019-10-17 00:00:00
 categories:
   - baseball

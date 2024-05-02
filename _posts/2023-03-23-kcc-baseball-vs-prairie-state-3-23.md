@@ -1,5 +1,5 @@
 ---
-post_title: 'KCC vs Prairie State '
+title: 'KCC vs Prairie State '
 date: 2023-03-23 00:00:00 -0500
 categories:
   - baseball

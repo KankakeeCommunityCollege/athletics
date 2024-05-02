@@ -1,5 +1,5 @@
 ---
-post_title: KCC sports will restart in 2021
+title: KCC sports will restart in 2021
 date: 2020-07-17 00:00:00
 categories:
   - general
