@@ -11,6 +11,7 @@ function createHash(str) {
 function createModal(parent, id, name) {
   const modal = document.createElement('div');
   const modalId = id + 'Modal';
+
   modal.classList.add('modal', 'fade');
   modal.setAttribute('role', 'dialog');
   modal.setAttribute('aria-hidden', 'true');
@@ -24,6 +25,7 @@ function createModal(parent, id, name) {
 
 function createDoc(modal) {
   const doc = document.createElement('div');
+
   doc.classList.add('modal-dialog', 'modal-dialog-centered');
   doc.setAttribute('role', 'document');
   modal.appendChild(doc);
@@ -32,6 +34,7 @@ function createDoc(modal) {
 
 function createContent(doc) {
   const content = document.createElement('div');
+
   content.classList.add('modal-content');
   doc.appendChild(content);
   return content;
@@ -39,6 +42,7 @@ function createContent(doc) {
 
 function createHeader(content) {
   const header = document.createElement('div');
+
   header.classList.add('modal-header');
   content.appendChild(header);
   return header;
@@ -46,6 +50,7 @@ function createHeader(content) {
 
 function createButton() {
   const button = document.createElement('button');
+
   button.classList.add('btn-close');
   button.setAttribute('type', 'button');
   button.setAttribute('data-bs-dismiss', 'modal');
@@ -56,6 +61,7 @@ function createButton() {
 function createTitle(header, name, id) {
   const title = document.createElement('h5');
   const button = createButton();
+
   title.classList.add('modal-title');
   title.setAttribute('id', id);
   title.innerHTML = name + ' Bio';
@@ -66,6 +72,7 @@ function createTitle(header, name, id) {
 
 function createBody(content, name, modalContent) {
   const body = document.createElement('div');
+
   body.classList.add('modal-body');
   body.innerHTML = modalContent.join('');
   content.appendChild(body);
@@ -76,8 +83,8 @@ function createBody(content, name, modalContent) {
 function createPlayerImage(name, src, body) {
   const div = document.createElement('div');
   const img = document.createElement('img');
-  let alt = 'Photo of player ' + name;
-  let source = 'https://cdn.kcc.edu/athletics/roster-img/' + src + '.jpg';
+  const alt = 'Photo of player ' + name;
+  const source = 'https://cdn.kcc.edu/athletics/roster-img/' + src + '.jpg';
 
   img.alt = alt;
   img.src = '/assets/img/placeholder_4by3.jpg';
@@ -94,8 +101,9 @@ function createPlayerImage(name, src, body) {
 
 function createNameHeading(name, jersey, body) {
   const h6 = document.createElement('h6');
-  h6.classList.add('roster__player');
   const jerseyIsNotBlank = jersey !== '_na_';
+  
+  h6.classList.add('roster__player');
   jerseyIsNotBlank ?
     h6.innerHTML = '#' + jersey + ' ' + name
     : h6.innerHTML = name;
@@ -105,11 +113,12 @@ function createNameHeading(name, jersey, body) {
 
 function createPlayerStats(cellCol, cellData) {
   const p = document.createElement('p');
-  const cellIsBlank = cellData == ' ' || cellData === '_na_';
+  const cellIsBlank = (cellData == '' || cellData == ' ' || cellData === '_na_');
 
   function createStat(cellCol, cellData) {
     const span = document.createElement('span');
     const strong = document.createElement('strong');
+
     p.classList.add('mb-0'); //Bootstrap Class (margin-bottom: 0)
     strong.innerHTML = cellCol + ':';
     p.appendChild(strong);
@@ -118,9 +127,8 @@ function createPlayerStats(cellCol, cellData) {
     return p;
   }
 
-  cellIsBlank ? p.innerHTML = ''
-  : createStat(cellCol, cellData);
-  return p;
+  const stat = cellIsBlank ? false : createStat(cellCol, cellData);
+  return stat;
 }
 
 function createModalFooter(content) {
@@ -165,23 +173,16 @@ function createModalElements(response) {
     const nameHeading = createNameHeading(name, jersey, body);
     let playerStatsArray = [];
 
-    for (var r = 2; r < rowData.length; r++) {
+    for (let r = 2, len = rowData.length; r < len; r++) {
       let cellData = rowData[r];
       let cellCol = headingData[r];
       const playerStats = createPlayerStats(cellCol, cellData);
-      playerStatsArray.push(playerStats);
-    }
-
-    function wrapStats(playerStatsArray, body) {
-      const p = document.createElement('p');
-      for (let x = 0, len = playerStatsArray.length; x < len; x++) {
-        let statItem = playerStatsArray[x];
-        p.appendChild(statItem);
+      
+      if (playerStats !== false) {
+        playerStatsArray.push(playerStats);
       }
-      body.appendChild(p);
-      return body;
     }
-    wrapStats(playerStatsArray, body);
+    playerStatsArray.forEach(stat => body.appendChild(stat));
     const footer = createModalFooter(content);
   }
 }
