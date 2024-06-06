@@ -25,6 +25,15 @@ const playlistItemsParams = {
 // Add the parameters to the API URL
 url.search = new URLSearchParams(playlistItemsParams);
 
+async function fetchJSON(url) {
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error(`Error fetching resource: ${response.status}`);
+  }
+  return await response.json();
+}
+
 function createSlideHTML(item) {
   let [, , title, desc, thumbs, , , , vid,] = Object.values(item.snippet);
 
@@ -50,15 +59,14 @@ function processResponse(resp) {
 
 function youTubeCarousel() {
   // YouTube Data API may be used (1) via gapi.js or (2) using a GET HTTP request
-  fetch(url) // Uses YouTube Data API to fetch the videos held in our playlist
-    .then(response => response.json())
+  fetchJSON(url) // Uses YouTube Data API to fetch the videos held in our playlist
     .then(result => processResponse(result)) // Build slider HTML & inject into page
     .then(() => {
       import('./initSlick').then(({ default: initSlick }) => initSlick(ytList, baseUrl)); // Initialize the slick carousel
       import('../src/lazyload').then(({ default: lzFunction }) => lzFunction()); // Lazy loads the video preview images/thumbs.
       import('./watchForVideoClicks').then(({ default: watchForVideoClicks }) => watchForVideoClicks(ytPlayer)); // Play the video in a modal when its clicked/
       import('./watchForModalClose').then(({ default: watchForModalClose }) => watchForModalClose(ytPlayer)); // Stop the video when the modal is closed.
-    })
+    }).catch(err => console.error(err));
 }
 
 export default youTubeCarousel;
