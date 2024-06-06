@@ -3,12 +3,13 @@
 
 // 2. Include any default variable overrides here
 
+// Remove unused XXL grid size introduced to BS5 by
+//  removing from $container-max-widths:
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1140px
+  xl: 1140px
 );
 
 $link-decoration: none;
