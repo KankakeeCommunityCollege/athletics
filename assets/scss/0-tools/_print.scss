@@ -1,0 +1,13 @@
+// ========================================= //
+// Styles for print layouts                  //
+// ========================================= //
+
+@media print {
+  .global-nav,
+  #navBar,
+  .sub-nav,
+  .hero-slider,
+  .footer {
+    display: none;
+  }
+}
