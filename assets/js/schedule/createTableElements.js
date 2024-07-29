@@ -140,12 +140,14 @@ function createTableElements(response) {
   const sheetData = response.result.values;
   const headerData = sheetData[0]; // This is the first row in the spreadsheet data
   const tableData = sheetData.slice(1, sheetData.length); // is an array of arrays
+  // Filter out rows that are an empty strings or a stray space:
+  const nonEmptyRows = tableData.filter(row => (row.join('').search(/^\s+$/) === -1 && row.join('') !== ''));
 
   const recordHeader = 'Record <span class="typography__muted-small-caps">(W - L - T)</span>'; // Add the final "Record" column which is calculated from Wins/Losses/Ties
   const headerRow = ['iso_date', 'Date', ...headerData, recordHeader];
 
   createHeadingRow(thead, headerRow);
-  createTableBodyRows(tbody, tableData);
+  createTableBodyRows(tbody, nonEmptyRows);
 }
 
 export default createTableElements;
