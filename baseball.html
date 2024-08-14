@@ -45,7 +45,7 @@ slides:
     text2:
   - image: /uploads/baseball-7-Z92_2466.jpg
     alt-text: KCC Baseball Team
-    url: http://www.kcc.edu
+    url: '#'
     text1: 'KCC Cavaliers '
     text2: BASEBALL TEAM
 ---
@@ -95,7 +95,7 @@ slides:
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News  <a href="{{ page.baseurl }}baseball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News  <a href="{{ page.baseurl }}baseball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
               {% assign baseball_posts = site.posts | where_exp: "item", "item.categories contains 'baseball' or item.categories contains 'general'" %}
@@ -105,7 +105,7 @@ slides:
               {% endfor %}
             </ul>
             <div class="text-center mb-3">
-              <a href="{{ page.baseurl }}baseball/news" class="btn btn-primary">More Articles</a>
+              <a href="{{ page.baseurl }}baseball/news/" class="btn btn-primary">More Articles</a>
             </div>
           </div>
       </div>
