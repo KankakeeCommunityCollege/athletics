@@ -7,6 +7,7 @@
     <title>{{page.title}} - {{site.title}}</title>
     <meta name="description" content="{{ page.description | strip }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{{ site.url }}{% if page.url != '/' %}{{ page.url }}{% endif %}">
     {% include preconnect.html %}
     {% include styles/fonts.html %}
     {% if site.humans_file == true %}
