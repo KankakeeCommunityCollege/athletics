@@ -11,7 +11,7 @@
         {% assign links = 'news, schedule, roster, stats, coaches' | split: ', ' %}
           {% for link in links %}
           <li class="nav-item">
-            <a href="{{page.baseurl}}{{page.base}}/{% if forloop.last %}#{% endif %}{{ link }}" class="nav-link sub-nav-link">{{ link | capitalize }}</a>
+            <a href="{{page.baseurl}}{{page.base}}/{% if forloop.last %}#{% endif %}{{ link }}{% unless forloop.last %}/{% endunless %}" class="nav-link sub-nav-link">{{ link | capitalize }}</a>
           </li>
           {% endfor %}
         </ul>

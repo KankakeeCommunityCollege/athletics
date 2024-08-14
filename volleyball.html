@@ -90,7 +90,7 @@ slides:
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}volleyball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}volleyball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
               {% assign volleyball_posts = site.posts | where_exp: "item", "item.categories contains 'volleyball' or item.categories contains 'general'" %}
@@ -100,7 +100,7 @@ slides:
               {% endfor %}
             </ul>
             <div class="text-center mb-3">
-              <a href="{{ page.baseurl }}volleyball/news" class="btn btn-primary">More Articles</a>
+              <a href="{{ page.baseurl }}volleyball/news/" class="btn btn-primary">More Articles</a>
             </div>
           </div>
       </div>

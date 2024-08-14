@@ -15,22 +15,22 @@ include_sub-nav: true
 slides:
   - image: /uploads/softball-first-JHD_4792.jpg
     alt-text: 'Softball player #5 Emily Glogowski'
-    url:
+    url: '#'
     text1:
     text2: Lady Cavaliers
   - image: /uploads/softball-1-Z92_4991.jpg
     alt-text: 'Softball player #13 Anna Faber'
-    url:
+    url: '#'
     text1:
     text2: Cavaliers Softball
   - image: /uploads/softball-2-Z92_6461.jpg
     alt-text: 'Softball player #20 Dylann Rambally'
-    url:
+    url: '#'
     text1:
     text2: Lady Cavaliers
   - image: /uploads/softball-3-Z92_4562.jpg
     alt-text: Softball Team 2023-2024 Season
-    url:
+    url: '#'
     text1: 2023-24
     text2: Cavaliers Softball
 ---
@@ -76,7 +76,7 @@ slides:
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}softball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}softball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
               {% assign softball_posts = site.posts | where_exp: "item", "item.categories contains 'softball' or item.categories contains 'general'" %}
@@ -86,7 +86,7 @@ slides:
               {% endfor %}
             </ul>
             <div class="text-center mb-3">
-              <a href="{{ page.baseurl }}softball/news" class="btn btn-primary">More Articles</a>
+              <a href="{{ page.baseurl }}softball/news/" class="btn btn-primary">More Articles</a>
             </div>
           </div>
       </div>
