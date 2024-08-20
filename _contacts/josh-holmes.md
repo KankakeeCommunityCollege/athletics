@@ -3,7 +3,7 @@ name: Josh Holmes
 contacts_title: Assistant Coach
 contacts_sport: men's basketball
 sort_number: 3
-portrait: assets/img/blank-contact.svg
+portrait: uploads/mbasketball-asst-coach_josh-holmes_z92_3579.jpg
 phone:
 email:
 ---
