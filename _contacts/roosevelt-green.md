@@ -3,7 +3,7 @@ name: Roosevelt Green
 contacts_title: Assistant Coach
 contacts_sport: men's basketball
 sort_number: 2
-portrait: assets/img/blank-contact.svg
+portrait: uploads/mbasketball-asst-coach_roosevelt-green_dsc_0522.jpg
 phone: 815-802-8600
 email: rgreen@kcc.edu
 ---
