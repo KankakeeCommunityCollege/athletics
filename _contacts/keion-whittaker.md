@@ -13,4 +13,4 @@ Whittaker is eager for the season. “I consider myself a basketball junkie and 
 
 As a scouting expert, he will play a vital role preparing for each contest.
 
-Whittaker is a long-time area resident. He is a proud graduate of Kankakee High School. In addition to coaching, he works at KCC in the Information Technology Services department.
+Whittaker is a long-time area resident. He is a proud graduate of Kankakee High School. In addition to coaching, he works at KCC in the Information Technology Services and Physical Plant departments.
