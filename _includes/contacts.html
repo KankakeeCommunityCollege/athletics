@@ -30,8 +30,10 @@
     </div>
     <!-- Coach 1 right info div (inner-right column) -->
     <div class="col-6 coaches__info">
-      <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link"><h5 class="coach-name">{{ contact.name }}</h5>
-      <h6 class="coach-title">{{ contact.contacts_title }}</h6></a>
+      <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link">
+        <h5 class="coach-name">{{ contact.name }}</h5>
+        {% if contact.contacts_title %}<h6 class="coach-title">{{ contact.contacts_title }}</h6>{% endif %}
+      </a>
       <p>
         {% if contact.phone %}<a href="tel:1{{ contact.phone | replace: '-', '' | replace: '‑', '' }}">{{ contact.phone }}</a><br />{% endif %}
         {% if contact.email %}<a href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% endif %}

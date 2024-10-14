@@ -23,7 +23,7 @@
       <div class="modal-body">
         <img src="{{ page.baseurl }}{% if contact.portrait %}{{ contact.portrait }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}" alt="Photo of {{ contact.contacts_title }} {{ contact.name }}" class="img-fluid float-start coach-modal-img" title="Photo of {{ contact.contacts_title }} {{ contact.name }}" />
         <h5 class="coach-name">{{ contact.name }}</h5>
-        <h6 class="coach-title">{{ contact.contacts_title }}</h6>
+        {% if contact.contacts_title %}<h6 class="coach-title">{{ contact.contacts_title }}</h6>{% endif %}
         <div>
           {{ contact.content }}
         </div>
