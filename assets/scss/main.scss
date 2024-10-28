@@ -1,63 +1,62 @@
 // Variables
-@import '0-tools/vars';
-@import '0-tools/cloudcannon';
-@import '0-tools/bootstrap-overrides';
-@import '0-tools/content';
-@import '0-tools/print';
+@use '0-tools/cloudcannon';
+@use '0-tools/bootstrap-overrides';
+@use '0-tools/content';
+@use '0-tools/print';
 
 // Base items
-@import '1-base/body';
-@import '1-base/typography';
-@import '1-base/links';
-@import '1-base/tables';
-@import '1-base/buttons';
-@import '1-base/lists';
-@import '1-base/datatables';
-@import '1-base/iframe';
-@import '1-base/blockquote';
+@use '1-base/body';
+@use '1-base/typography';
+@use '1-base/links';
+@use '1-base/tables';
+@use '1-base/buttons';
+@use '1-base/lists';
+@use '1-base/datatables';
+@use '1-base/iframe';
+@use '1-base/blockquote';
 
 // Modular components
-@import '3-modules/mega-nav';
-@import '3-modules/global-nav';
-@import '3-modules/hero-slider';
-@import '3-modules/footer';
-@import '3-modules/hero-banner';
-@import '3-modules/img-hover';
-@import '3-modules/sub-nav';
-@import '3-modules/roster';
-@import '3-modules/schedule-page';
-@import '3-modules/news';
-@import '3-modules/schedule';
-@import '3-modules/error';
-@import '3-modules/season-preview';
-@import '3-modules/schedule-slider';
-@import '3-modules/img';
-@import '3-modules/loader';
-@import '3-modules/accordion';
+@use '3-modules/mega-nav';
+@use '3-modules/global-nav';
+@use '3-modules/hero-slider';
+@use '3-modules/footer';
+@use '3-modules/hero-banner';
+@use '3-modules/img-hover';
+@use '3-modules/sub-nav';
+@use '3-modules/roster';
+@use '3-modules/schedule-page';
+@use '3-modules/news';
+@use '3-modules/schedule';
+@use '3-modules/error';
+@use '3-modules/season-preview';
+@use '3-modules/schedule-slider';
+@use '3-modules/img';
+@use '3-modules/loader';
+@use '3-modules/accordion';
 
 // Layout items
-// @import "4-layout/header";
-@import '4-layout/positioning';
-@import '4-layout/banners';
-@import '4-layout/svg';
-@import '4-layout/key';
-@import '4-layout/margin';
+// @use "4-layout/header";
+@use '4-layout/positioning';
+@use '4-layout/banners';
+@use '4-layout/svg';
+@use '4-layout/key';
+@use '4-layout/margin';
 
 // Page specific styling
 // Home/index page
-@import '5-pages/index/home';
-@import '5-pages/index/videos';
+@use '5-pages/index/home';
+@use '5-pages/index/videos';
 
 // Sports page
-@import '5-pages/sports/sports';
+@use '5-pages/sports/sports';
 
 // Baseball page
-@import '5-pages/baseball/coaches';
-@import '5-pages/baseball/modals';
+@use '5-pages/baseball/coaches';
+@use '5-pages/baseball/modals';
 
 // Facilities page
-@import '5-pages/facilities/facilities';
+@use '5-pages/facilities/facilities';
 
 // Sports facilities
-@import '5-pages/sports-facilities/sports-facilities';
-@import '5-pages/recruitment/recruitment';
+@use '5-pages/sports-facilities/sports-facilities';
+@use '5-pages/recruitment/recruitment';

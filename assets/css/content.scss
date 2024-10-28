@@ -3,8 +3,5 @@
 // Seperate stylesheet used in CloudCannon's CMS
 // Providing content editors with our custom styling
 
-// Variables
-@import '0-tools/vars';
-
 // Typography styles for content editors
-@import '0-tools/content';
+@use '0-tools/content';
