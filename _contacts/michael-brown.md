@@ -3,7 +3,7 @@ name: Michael Brown
 contacts_title: Head Basketball Coach
 contacts_sport: men's basketball
 sort_number: 1
-portrait: uploads/2023/michael-brown_2023.jpg
+portrait: uploads/mbasketball_coach-michael-brown.jpg
 phone: 815‑802‑8609
 email: mbrown@kcc.edu
 ---
