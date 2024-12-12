@@ -3,7 +3,7 @@ name: Jill Morgan
 contacts_title: Head Coach
 contacts_sport: volleyball
 sort_number: 1
-portrait: uploads/jill-morgan.jpg
+portrait: uploads/jill-morgan-revised-cropped.jpg
 phone:
 email: jmorgan@kcc.edu
 ---
