@@ -48,100 +48,102 @@ slides:
     text1: 2024-2025
     text2: Baseball
 ---
-<div class="container margin__alert">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
-    </div>
-  </div>
-</div>
-<div class="container px-0 positioning__max-width-1300--xxl">
-  {% include hero-slider.html %}
-</div>
-
-<section class="container content-marg mt-1">
-    <div class="row schedule-row">
-      <div class="col-md-12">
-        <h2 class="main-heading">
-          <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games
-        </h2>
-          <div class="btn-group schedule__button-margin" role="group">
-            <div class="btn-group" role="group">
-              <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                All schedules
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="{{ page.baseurl }}/baseball/schedule/">Baseball Schedule</a>
-                <a class="dropdown-item" href="{{ page.baseurl }}/mens-basketball/schedule/">Men's Basketball Schedule</a>
-                <a class="dropdown-item" href="{{ page.baseurl }}/womens-basketball/schedule/">Women's Basketball Schedule</a>
-                <a class="dropdown-item" href="{{ page.baseurl }}/soccer/schedule/">Men's Soccer Schedule</a>
-                <a class="dropdown-item" href="{{ page.baseurl }}/womens-soccer/schedule/">Women's Soccer Schedule</a>
-                <a class="dropdown-item" href="{{ page.baseurl }}/softball/schedule/">Softball Schedule</a>
-                <a class="dropdown-item" href="{{ page.baseurl }}/volleyball/schedule/">Volleyball Schedule</a>
-              </div>
-            </div>
-            <a class="btn btn-primary" href="./stream-games/">Watch Home Games Live</a>
-          </div>
-      <div id="scheduleDiv" class="slick games" style="padding:15px">
-        {% include loading-slider.html %}
-      </div>
-    </div>
-  </div>
-  <div class="row news-social-row">
-      <div class="col-md-8 col-xs-12 news-feed">
-        <div class="d-flex mb-4 align-items-center">
-          <h2 class="main-heading mb-0"><img src="assets/img/news.svg" class="icon-middle" alt="news icon" />&nbsp;News</h2>
-          <a href="{{ page.baseurl }}news/" class="btn btn-primary schedule__button-margin">View All News</a>
-        </div>
-        <div class="news__scroll">
-          <ul class="news__list">
-            {% for post in site.posts limit: 10 %}
-              {% include news-item.html %}
-              {% include news-item-modal.html %}
-            {% endfor %}
-          </ul>
-          <div class="text-center mb-3">
-            <a href="{{ page.baseurl }}news/" class="btn btn-primary">More Articles</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-xs-12 text-sm-center social-marg">
-        <h2 class="main-heading">
-          <img src="assets/img/social-icon.svg" class="icon-middle" alt="social media icon" />&nbsp;Social Media
-        </h2>
-        <div class="text-center">
-          {% include facebook-widget.html %}
-        </div>
-      </div>
-    </div>
+<main id="content">
+  <div class="container margin__alert">
     <div class="row">
-      <div class="col-md-12">
-        <div id="wrapper">
-          <h2 class="main-heading"><img src="assets/img/video.svg" class="icon-middle" alt="video icon" />&nbsp;Videos</h2>
-        	<div id="yt_list" class="yt-list">
-        	</div>
-            <a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">
-              More Athletics Videos
-            </a>
-            <a class="btn btn-primary ms-2" href="./stream-games">Watch Home Games Live</a>
-        	</div>
-        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="videoModalTitle"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body mx-auto">
-                <iframe id="yt_player" width="560" height="315" class="yt-list__player"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div><!-- End modal code -->
-
+      <div class="col">
+        {% include emergency-alert.html %}
       </div>
     </div>
-</section>
+  </div>
+  <div class="container px-0 positioning__max-width-1300--xxl">
+    {% include hero-slider.html %}
+  </div>
+
+  <section class="container content-marg mt-1">
+      <div class="row schedule-row">
+        <div class="col-md-12">
+          <h2 class="main-heading">
+            <img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games
+          </h2>
+            <div class="btn-group schedule__button-margin" role="group">
+              <div class="btn-group" role="group">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  All schedules
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="{{ page.baseurl }}/baseball/schedule/">Baseball Schedule</a>
+                  <a class="dropdown-item" href="{{ page.baseurl }}/mens-basketball/schedule/">Men's Basketball Schedule</a>
+                  <a class="dropdown-item" href="{{ page.baseurl }}/womens-basketball/schedule/">Women's Basketball Schedule</a>
+                  <a class="dropdown-item" href="{{ page.baseurl }}/soccer/schedule/">Men's Soccer Schedule</a>
+                  <a class="dropdown-item" href="{{ page.baseurl }}/womens-soccer/schedule/">Women's Soccer Schedule</a>
+                  <a class="dropdown-item" href="{{ page.baseurl }}/softball/schedule/">Softball Schedule</a>
+                  <a class="dropdown-item" href="{{ page.baseurl }}/volleyball/schedule/">Volleyball Schedule</a>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="./stream-games/">Watch Home Games Live</a>
+            </div>
+        <div id="scheduleDiv" class="slick games" style="padding:15px">
+          {% include loading-slider.html %}
+        </div>
+      </div>
+    </div>
+    <div class="row news-social-row">
+        <div class="col-md-8 col-xs-12 news-feed">
+          <div class="d-flex mb-4 align-items-center">
+            <h2 class="main-heading mb-0"><img src="assets/img/news.svg" class="icon-middle" alt="news icon" />&nbsp;News</h2>
+            <a href="{{ page.baseurl }}news/" class="btn btn-primary schedule__button-margin">View All News</a>
+          </div>
+          <div class="news__scroll">
+            <ul class="news__list">
+              {% for post in site.posts limit: 10 %}
+                {% include news-item.html %}
+                {% include news-item-modal.html %}
+              {% endfor %}
+            </ul>
+            <div class="text-center mb-3">
+              <a href="{{ page.baseurl }}news/" class="btn btn-primary">More Articles</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-sm-center social-marg">
+          <h2 class="main-heading">
+            <img src="assets/img/social-icon.svg" class="icon-middle" alt="social media icon" />&nbsp;Social Media
+          </h2>
+          <div class="text-center">
+            {% include facebook-widget.html %}
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="wrapper">
+            <h2 class="main-heading"><img src="assets/img/video.svg" class="icon-middle" alt="video icon" />&nbsp;Videos</h2>
+            <div id="yt_list" class="yt-list">
+            </div>
+              <a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">
+                More Athletics Videos
+              </a>
+              <a class="btn btn-primary ms-2" href="./stream-games">Watch Home Games Live</a>
+            </div>
+          <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="videoModalTitle"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mx-auto">
+                  <iframe id="yt_player" width="560" height="315" class="yt-list__player"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- End modal code -->
+
+        </div>
+      </div>
+  </section>
+</main>

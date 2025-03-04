@@ -29,79 +29,81 @@ slides:
     alt-text: 'Women''s soccer player #16 Ivanna Dato'
     url: '#'
 ---
-<div class="container margin__alert--2">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
+<main id="content">
+  <div class="container margin__alert--2">
+    <div class="row">
+      <div class="col">
+        {% include emergency-alert.html %}
+      </div>
     </div>
   </div>
-</div>
-<div class="container px-0 positioning__max-width-1300--xxl">
-  {% include hero-slider.html %}
-</div>
-<section class="container content-marg">
-  <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
-    <div class="col">
-      <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&nbsp;Season Preview</h2>
-      <div class="season-preview__content-bg">
-        <div class="editable">
-          <p>The Cavaliers return a large group of last year’s standout players and are looking to continue their success in Region IV.</p>
-        </div>
-        <div id="collapsePreview" class="collapse">
+  <div class="container px-0 positioning__max-width-1300--xxl">
+    {% include hero-slider.html %}
+  </div>
+  <section class="container content-marg">
+    <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
+      <div class="col">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&nbsp;Season Preview</h2>
+        <div class="season-preview__content-bg">
           <div class="editable">
-            <p>“We lost some key players to graduation, but our returning players have worked hard in the off season and have grown tremendously in preparation for the upcoming season” according to Head Coach Mike Barclay. “This is a special group of women who continuously exceed our expectations every game.”</p>
+            <p>The Cavaliers return a large group of last year’s standout players and are looking to continue their success in Region IV.</p>
+          </div>
+          <div id="collapsePreview" class="collapse">
+            <div class="editable">
+              <p>“We lost some key players to graduation, but our returning players have worked hard in the off season and have grown tremendously in preparation for the upcoming season” according to Head Coach Mike Barclay. “This is a special group of women who continuously exceed our expectations every game.”</p>
+            </div>
           </div>
         </div>
-      </div>
-      <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
-    </div>
-  </div>
-  <div class="row schedule-row">
-    <div class="col-md-12">
-      <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games <!-- <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
-      <a class="btn btn-primary mb-3 ms-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
-      <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
-      <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
-        {% include loading-slider.html %}
+        <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
       </div>
     </div>
-  </div>
-  <div class="row news-social-row">
-    <div class="col-md-8 news-feed">
-      <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}womens-soccer/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
-        <div class="news__scroll">
-          <ul class="news__list">
-            {% assign wsoccer_posts = site.posts | where_exp: "item", "item.categories contains 'womens-soccer' or item.categories contains 'general'" %}
-            {% for post in wsoccer_posts limit: 7 %}
-              {% include news-item.html %}
-              {% include news-item-modal.html %}
-            {% endfor %}
-          </ul>
-          <div class="text-center mb-3">
-            <a href="{{ page.baseurl }}womens-soccer/news/" class="btn btn-primary">More Articles</a>
-          </div>
+    <div class="row schedule-row">
+      <div class="col-md-12">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&nbsp;Upcoming Games <!-- <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
+        <a class="btn btn-primary mb-3 ms-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
+        <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
+        <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
+          {% include loading-slider.html %}
         </div>
-    </div>
-    <div class="col-md-4">
-      <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&nbsp;Social Media</h2>
-      {% include facebook-widget.html %}
-    </div>
-  </div>
-</section>
-<!-- Coaches Section -->
-<section class="coach-section">
-  <div class="container">
-    <div class="row">
-      <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&nbsp;Coaches</h4>
-    </div>
-    <div class="row editor-link">
-      <div class="col editor-link mb-3">
-        <a href="cloudcannon:collections/_contacts/" class="btn btn-success editor-button">Edit Coach Information and Bios</a>
       </div>
     </div>
-    <div class="row">
-      {% include contacts.html %}
+    <div class="row news-social-row">
+      <div class="col-md-8 news-feed">
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}womens-soccer/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+          <div class="news__scroll">
+            <ul class="news__list">
+              {% assign wsoccer_posts = site.posts | where_exp: "item", "item.categories contains 'womens-soccer' or item.categories contains 'general'" %}
+              {% for post in wsoccer_posts limit: 7 %}
+                {% include news-item.html %}
+                {% include news-item-modal.html %}
+              {% endfor %}
+            </ul>
+            <div class="text-center mb-3">
+              <a href="{{ page.baseurl }}womens-soccer/news/" class="btn btn-primary">More Articles</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&nbsp;Social Media</h2>
+        {% include facebook-widget.html %}
+      </div>
     </div>
-  </div>
-  {% include contacts-modals.html %}
-</section>
+  </section>
+  <!-- Coaches Section -->
+  <section class="coach-section">
+    <div class="container">
+      <div class="row">
+        <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/soccer.svg" class="icon-middle" alt="" />&nbsp;Coaches</h4>
+      </div>
+      <div class="row editor-link">
+        <div class="col editor-link mb-3">
+          <a href="cloudcannon:collections/_contacts/" class="btn btn-success editor-button">Edit Coach Information and Bios</a>
+        </div>
+      </div>
+      <div class="row">
+        {% include contacts.html %}
+      </div>
+    </div>
+    {% include contacts-modals.html %}
+  </section>
+</main>

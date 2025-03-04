@@ -34,84 +34,86 @@ slides:
     text1: 2023-24
     text2: Cavaliers Softball
 ---
-<div class="container margin__alert--2">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
-    </div>
-  </div>
-</div>
-<div class="container px-0 positioning__max-width-1300--xxl">
-  {% include hero-slider.html %}
-</div>
-<section class="container content-marg">
-    <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
+<main id="content">
+  <div class="container margin__alert--2">
+    <div class="row">
       <div class="col">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
-        <div class="season-preview__content-bg">
-          <div class="editable">
-            <p>The Cavaliers softball program, coming off of a 29-21 season in 2023, looks to make their mark on the 2024 season with 10 sophomores and 11 freshmen players. After winning 24 of the last 31 Region 4 Championships, the Cavs expect to be a strong contender to win their 25th NJCAA Div. II Region Championship and make another trip to the National Tournament.</p>
-          </div>
-          <div id="collapsePreview" class="collapse">
-            <div class="editable">
-              <p>The Cavaliers will depend on the strong play and leadership of the 10 sophomores, and will look to the freshmen to quickly learn and gain experience to contribute to the team. The consistency of hitting and defense from the infield will be anchored by sophomores Estelle Audette (2B), Emily Jezowski (SS), with utility players Sophia Hulsey and Lauren Waller.&nbsp;</p>
-              <p>The outfield will be led by Jaelyn Wiers (LF), and Tori Budde (CF). Eve Shultz (C) will help lead a pitching staff piloted by Koralie Morin and Ella White. Fellow sophomore utility player Mackenzie Tome will provide needed depth in the power department.</p>
-              <p>The incoming freshmen include pitchers Jaelyn Latimer, Katie Newberry and Dylan Rambally; catcher Marguerite Brown; infielders Jordyn Butcher, Drew Hosselton, Koda Morris, Abby Lorenz and Anna Faber; and outfielders Kaylynn Crotz and Brynlee Wright.</p>
-              <p>With dependable hitting, power, and speed—as well as some young top pitching—the Cavs are expected to compete in a tough Region 4.</p>
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-primary float-end season-preview__btn--more js-more-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
+        {% include emergency-alert.html %}
       </div>
-    </div>
-    <div class="row schedule-row">
-      <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <!-- <a href="{{ page.baseurl }}softball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
-        <a class="btn btn-primary mb-3 ms-2" href="/stream-games/">Watch Home Games Live</a>
-        <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
-        <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
-          {% include loading-slider.html %}
-        </div>
-      </div>
-    </div>
-    <div class="row news-social-row">
-      <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}softball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
-          <div class="news__scroll">
-            <ul class="news__list">
-              {% assign softball_posts = site.posts | where_exp: "item", "item.categories contains 'softball' or item.categories contains 'general'" %}
-              {% for post in softball_posts limit: 7 %}
-                {% include news-item.html %}
-                {% include news-item-modal.html %}
-              {% endfor %}
-            </ul>
-            <div class="text-center mb-3">
-              <a href="{{ page.baseurl }}softball/news/" class="btn btn-primary">More Articles</a>
-            </div>
-          </div>
-      </div>
-      <div class="col-md-4">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
-        {% include facebook-widget.html %}
-      </div>
-    </div>
-  
-
-</section>
-<!-- Coaches Section -->
-<section class="coach-section">
-  <div class="container">
-    <div class="row">
-      <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;Coaches</h4>
-    </div>
-    <div class="row editor-link">
-      <div class="col editor-link mb-3">
-        <a href="cloudcannon:collections/_contacts/" class="btn btn-success editor-button">Edit Coach Information and Bios</a>
-      </div>
-    </div>
-    <div class="row">
-      {% include contacts.html %}
     </div>
   </div>
-  {% include contacts-modals.html %}
-</section>
+  <div class="container px-0 positioning__max-width-1300--xxl">
+    {% include hero-slider.html %}
+  </div>
+  <section class="container content-marg">
+      <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
+        <div class="col">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
+          <div class="season-preview__content-bg">
+            <div class="editable">
+              <p>The Cavaliers softball program, coming off of a 29-21 season in 2023, looks to make their mark on the 2024 season with 10 sophomores and 11 freshmen players. After winning 24 of the last 31 Region 4 Championships, the Cavs expect to be a strong contender to win their 25th NJCAA Div. II Region Championship and make another trip to the National Tournament.</p>
+            </div>
+            <div id="collapsePreview" class="collapse">
+              <div class="editable">
+                <p>The Cavaliers will depend on the strong play and leadership of the 10 sophomores, and will look to the freshmen to quickly learn and gain experience to contribute to the team. The consistency of hitting and defense from the infield will be anchored by sophomores Estelle Audette (2B), Emily Jezowski (SS), with utility players Sophia Hulsey and Lauren Waller.&nbsp;</p>
+                <p>The outfield will be led by Jaelyn Wiers (LF), and Tori Budde (CF). Eve Shultz (C) will help lead a pitching staff piloted by Koralie Morin and Ella White. Fellow sophomore utility player Mackenzie Tome will provide needed depth in the power department.</p>
+                <p>The incoming freshmen include pitchers Jaelyn Latimer, Katie Newberry and Dylan Rambally; catcher Marguerite Brown; infielders Jordyn Butcher, Drew Hosselton, Koda Morris, Abby Lorenz and Anna Faber; and outfielders Kaylynn Crotz and Brynlee Wright.</p>
+                <p>With dependable hitting, power, and speed—as well as some young top pitching—the Cavs are expected to compete in a tough Region 4.</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary float-end season-preview__btn--more js-more-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
+        </div>
+      </div>
+      <div class="row schedule-row">
+        <div class="col-md-12">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <!-- <a href="{{ page.baseurl }}softball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
+          <a class="btn btn-primary mb-3 ms-2" href="/stream-games/">Watch Home Games Live</a>
+          <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
+          <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
+            {% include loading-slider.html %}
+          </div>
+        </div>
+      </div>
+      <div class="row news-social-row">
+        <div class="col-md-8 news-feed">
+          <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}softball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+            <div class="news__scroll">
+              <ul class="news__list">
+                {% assign softball_posts = site.posts | where_exp: "item", "item.categories contains 'softball' or item.categories contains 'general'" %}
+                {% for post in softball_posts limit: 7 %}
+                  {% include news-item.html %}
+                  {% include news-item-modal.html %}
+                {% endfor %}
+              </ul>
+              <div class="text-center mb-3">
+                <a href="{{ page.baseurl }}softball/news/" class="btn btn-primary">More Articles</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
+          {% include facebook-widget.html %}
+        </div>
+      </div>
+    
+
+  </section>
+  <!-- Coaches Section -->
+  <section class="coach-section">
+    <div class="container">
+      <div class="row">
+        <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;Coaches</h4>
+      </div>
+      <div class="row editor-link">
+        <div class="col editor-link mb-3">
+          <a href="cloudcannon:collections/_contacts/" class="btn btn-success editor-button">Edit Coach Information and Bios</a>
+        </div>
+      </div>
+      <div class="row">
+        {% include contacts.html %}
+      </div>
+    </div>
+    {% include contacts-modals.html %}
+  </section>
+</main>

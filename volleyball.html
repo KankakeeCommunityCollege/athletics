@@ -44,84 +44,86 @@ slides:
     text1: Lady Cavaliers
     text2: 2024 KCC Volleyball
 ---
-<div class="container margin__alert--2">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
+<main id="content">
+  <div class="container margin__alert--2">
+    <div class="row">
+      <div class="col">
+        {% include emergency-alert.html %}
+      </div>
     </div>
   </div>
-</div>
-<div class="container px-0 positioning__max-width-1300--xxl">
-  {% include hero-slider.html %}
-</div>
-<section class="container content-marg">
-  <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
-    <div class="col">
-      <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/volleyball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
-      <div class="season-preview__content-bg">
-        <div class="editable">
-          <p> The Lady Cavaliers will look to keep the momentum going this season with three returners and nine new athletes. In her second year as head coach, Bailey White has three returners, plus six recruits from throughout Illinois, and three other recruits from other countries. </p>
-        </div>
-        <div id="collapsePreview" class="collapse">
+  <div class="container px-0 positioning__max-width-1300--xxl">
+    {% include hero-slider.html %}
+  </div>
+  <section class="container content-marg">
+    <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
+      <div class="col">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/volleyball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
+        <div class="season-preview__content-bg">
           <div class="editable">
-            <p> “The past season I was new to the girls, and they were new to me, so it was hard for all of us to get adjusted,” White said. “But once we did, we became a strong competitor in our region. This incoming group of athletes are extremely talented and hard workers, and I have no doubt they will push themselves to be better.” </p>
-            <p> This year's team will feature eight freshmen and four sophomores.<br /> Skilled libero Tinsley Freeman (Fort Smith, Arkansas) returns for the Lady Cavs after averaging 4.10 digs per set last season and 344 digs total. Defensive specialist Emma Creek (Piper City) had 126 digs last season. Pin hitter Haylie Peck (Watseka) faced a tough shoulder injury last season, and is ready to compete. </p>
-            <p> There are 11 new faces on the roster. Fabiana Ramirez is a defensive specialist from Santa Cruz, Bolivia. She is a sophomore transfer from Seward Community College. Her quickness and effort will be great for the Lady Cavaliers. Defensive specialist Andrijana Cicvaric (Uzice, Serbia) is a smart athlete with superior court awareness and grit. Kennedi Huston (Herscher) is a two-position athlete who provides energy, toughness, and strong defense at the net. Outside, Libby Green (Kankakee) is a motivational player who has great athleticism and sportsmanship. Middle Hitter Alyssa Johnston (Wilmington) is a talented true middle hitter with years of experience. Aniya Lewis (Kankakee) is a KCC an athletic do-it-all attacker with a great work ethic. Her father, Anthony Lewis, was an All-American athlete at KCC in 1900 for the men's basketball team. </p>
-            <p> Martina Rivolta (Lissone, Italy) is a quick setter with great court awareness to make plays happen every time. Anna Watson (St. Anne) is another setter with hustle and determination who will push those around her to be better. Gianna Beaupre (St. Anne) gives the team another defensive specialist option to make plays and stay aggressive. </p>
-            <p> The 2024-25 schedule has the Lady Cavs facing tough opponents in Region IV as well as new opponents Parkland College and Heartland Community College. </p>
-            <p> While the players are excited about a new team and seeing what the season holds, no one is more eager to see greatness come out of KCC than Coach White. </p>
+            <p> The Lady Cavaliers will look to keep the momentum going this season with three returners and nine new athletes. In her second year as head coach, Bailey White has three returners, plus six recruits from throughout Illinois, and three other recruits from other countries. </p>
           </div>
-        </div>
-      </div>
-      <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
-    </div>
-  </div>
-    <div class="row schedule-row">
-      <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="" aria-hidden="true" />&nbsp;Upcoming Games</h2>
-        <a class="btn btn-primary mb-3 ms-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
-        <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
-        <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
-          {% include loading-slider.html %}
-        </div>
-      </div>
-    </div>
-    <div class="row news-social-row">
-      <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}volleyball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
-          <div class="news__scroll">
-            <ul class="news__list">
-              {% assign volleyball_posts = site.posts | where_exp: "item", "item.categories contains 'volleyball' or item.categories contains 'general'" %}
-              {% for post in volleyball_posts limit: 7 %}
-                {% include news-item.html %}
-                {% include news-item-modal.html %}
-              {% endfor %}
-            </ul>
-            <div class="text-center mb-3">
-              <a href="{{ page.baseurl }}volleyball/news/" class="btn btn-primary">More Articles</a>
+          <div id="collapsePreview" class="collapse">
+            <div class="editable">
+              <p> “The past season I was new to the girls, and they were new to me, so it was hard for all of us to get adjusted,” White said. “But once we did, we became a strong competitor in our region. This incoming group of athletes are extremely talented and hard workers, and I have no doubt they will push themselves to be better.” </p>
+              <p> This year's team will feature eight freshmen and four sophomores.<br /> Skilled libero Tinsley Freeman (Fort Smith, Arkansas) returns for the Lady Cavs after averaging 4.10 digs per set last season and 344 digs total. Defensive specialist Emma Creek (Piper City) had 126 digs last season. Pin hitter Haylie Peck (Watseka) faced a tough shoulder injury last season, and is ready to compete. </p>
+              <p> There are 11 new faces on the roster. Fabiana Ramirez is a defensive specialist from Santa Cruz, Bolivia. She is a sophomore transfer from Seward Community College. Her quickness and effort will be great for the Lady Cavaliers. Defensive specialist Andrijana Cicvaric (Uzice, Serbia) is a smart athlete with superior court awareness and grit. Kennedi Huston (Herscher) is a two-position athlete who provides energy, toughness, and strong defense at the net. Outside, Libby Green (Kankakee) is a motivational player who has great athleticism and sportsmanship. Middle Hitter Alyssa Johnston (Wilmington) is a talented true middle hitter with years of experience. Aniya Lewis (Kankakee) is a KCC an athletic do-it-all attacker with a great work ethic. Her father, Anthony Lewis, was an All-American athlete at KCC in 1900 for the men's basketball team. </p>
+              <p> Martina Rivolta (Lissone, Italy) is a quick setter with great court awareness to make plays happen every time. Anna Watson (St. Anne) is another setter with hustle and determination who will push those around her to be better. Gianna Beaupre (St. Anne) gives the team another defensive specialist option to make plays and stay aggressive. </p>
+              <p> The 2024-25 schedule has the Lady Cavs facing tough opponents in Region IV as well as new opponents Parkland College and Heartland Community College. </p>
+              <p> While the players are excited about a new team and seeing what the season holds, no one is more eager to see greatness come out of KCC than Coach White. </p>
             </div>
           </div>
-      </div>
-      <div class="col-md-4">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
-        {% include facebook-widget.html %}
+        </div>
+        <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
       </div>
     </div>
-</section>
-<!-- Coaches Section -->
-<section class="coach-section">
-  <div class="container">
-    <div class="row">
-      <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/volleyball.svg" class="icon-middle" alt="" />&#160;Coaches</h4>
-    </div>
-    <div class="row editor-link">
-      <div class="col editor-link mb-3">
-        <a href="cloudcannon:collections/_contacts/" class="btn btn-success editor-button">Edit Coach Information and Bios</a>
+      <div class="row schedule-row">
+        <div class="col-md-12">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="" aria-hidden="true" />&nbsp;Upcoming Games</h2>
+          <a class="btn btn-primary mb-3 ms-2" href="https://www.youtube.com/channel/UCsWah4rJ6mYqMYcIDw4l6Zg" target="_blank" rel="noopener noreferrer">Watch Home Games Live</a>
+          <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
+          <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
+            {% include loading-slider.html %}
+          </div>
+        </div>
+      </div>
+      <div class="row news-social-row">
+        <div class="col-md-8 news-feed">
+          <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News <a href="{{ page.baseurl }}volleyball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+            <div class="news__scroll">
+              <ul class="news__list">
+                {% assign volleyball_posts = site.posts | where_exp: "item", "item.categories contains 'volleyball' or item.categories contains 'general'" %}
+                {% for post in volleyball_posts limit: 7 %}
+                  {% include news-item.html %}
+                  {% include news-item-modal.html %}
+                {% endfor %}
+              </ul>
+              <div class="text-center mb-3">
+                <a href="{{ page.baseurl }}volleyball/news/" class="btn btn-primary">More Articles</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
+          {% include facebook-widget.html %}
+        </div>
+      </div>
+  </section>
+  <!-- Coaches Section -->
+  <section class="coach-section">
+    <div class="container">
+      <div class="row">
+        <h4 id="coaches" name="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/volleyball.svg" class="icon-middle" alt="" />&#160;Coaches</h4>
+      </div>
+      <div class="row editor-link">
+        <div class="col editor-link mb-3">
+          <a href="cloudcannon:collections/_contacts/" class="btn btn-success editor-button">Edit Coach Information and Bios</a>
+        </div>
+      </div>
+      <div class="row">
+        {% include contacts.html %}
       </div>
     </div>
-    <div class="row">
-      {% include contacts.html %}
-    </div>
-  </div>
-  {% include contacts-modals.html %}
-</section>
+    {% include contacts-modals.html %}
+  </section>
+</main>

@@ -33,54 +33,55 @@ njcaa_stats:
   - years: 2022-23
     division: div2
 ---
-
-<div class="container margin__alert--2">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
+<main id="content">
+  <div class="container margin__alert--2">
+    <div class="row">
+      <div class="col">
+        {% include emergency-alert.html %}
+      </div>
     </div>
   </div>
-</div>
-<section class="container">
-  <div class="row">
-    <div class="col">
-      <span id="page-top" class="link__offset" aria-hidden="true"></span>
-      <div class="dropdown mb-4">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Soccer Stats on NJCAA Website
-        </button>
-        <div class="dropdown-menu">
-          {% for stat in page.njcaa_stats %}
-          <a
-            class="dropdown-item"
-            href="http://stats.njcaa.org/sports/msoc/{{ stat.years }}/{{ stat.division }}/teams/kankakeecommunitycollege"
-            rel="noopener noreferrer"
-            target="_blank"
-          >{{ stat.years }} Soccer Stats&nbsp;<svg
-            class="ms-1 positioning__valign-middle"
-            xmlns="http://www.w3.org/2000/svg"
-            height="16"
-            viewBox="0 0 24 24"
-            width="16"
-            fill="#555"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 
-              2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-            />
-            </svg>
-          </a>
-          {% endfor %}
+  <section class="container">
+    <div class="row">
+      <div class="col">
+        <span id="page-top" class="link__offset" aria-hidden="true"></span>
+        <div class="dropdown mb-4">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Soccer Stats on NJCAA Website
+          </button>
+          <div class="dropdown-menu">
+            {% for stat in page.njcaa_stats %}
+            <a
+              class="dropdown-item"
+              href="http://stats.njcaa.org/sports/msoc/{{ stat.years }}/{{ stat.division }}/teams/kankakeecommunitycollege"
+              rel="noopener noreferrer"
+              target="_blank"
+            >{{ stat.years }} Soccer Stats&nbsp;<svg
+              class="ms-1 positioning__valign-middle"
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              viewBox="0 0 24 24"
+              width="16"
+              fill="#555"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 
+                2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+              />
+              </svg>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- Baseball statistics tabbed navigation -->
+        <div id="Stats">
+          {% include loader.html %}
         </div>
       </div>
-      <!-- Baseball statistics tabbed navigation -->
-      <div id="Stats">
-        {% include loader.html %}
-      </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>

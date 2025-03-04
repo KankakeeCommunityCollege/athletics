@@ -8,28 +8,29 @@ include_datatables: false
 include_gapi: true
 include_sub-nav: false
 ---
-
-<div class="container margin__alert">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
+<main id="content">
+  <div class="container margin__alert">
+    <div class="row">
+      <div class="col">
+        {% include emergency-alert.html %}
+      </div>
     </div>
   </div>
-</div>
-<section class="container">
-  <div class="row">
-      <div class="col-md-12">
-        <h2 class="main-heading">
-          <img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News
-        </h2>
-          <div>
-            <ul>
-              {% for post in site.posts %}
-                {% include news-item.html %}
-                {% include news-item-modal.html %}
-              {% endfor %}
-            </ul>
-          </div>
-      </div>
-  </div>
-</section>
+  <section class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <h2 class="main-heading">
+            <img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News
+          </h2>
+            <div>
+              <ul>
+                {% for post in site.posts %}
+                  {% include news-item.html %}
+                  {% include news-item-modal.html %}
+                {% endfor %}
+              </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+</main>
