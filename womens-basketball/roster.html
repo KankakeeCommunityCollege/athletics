@@ -10,24 +10,25 @@ include_datatables: true
 include_gapi: true
 include_sub-nav: true
 ---
-
-<div class="container margin__alert--2">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
-    </div>
-  </div>
-</div>
-<section id="table-area">
-  <div class="container container__table">
+<main id="content">
+  <div class="container margin__alert--2">
     <div class="row">
-      <div class="col-md-12">
-        <div id="Roster">
-          {% include loader.html %}
-        </div>
-        <div id="modalDiv"></div>
+      <div class="col">
+        {% include emergency-alert.html %}
       </div>
     </div>
   </div>
-</section>
-<div aria-hidden="true" tabindex="-1" class="roster__cliptext" id="clipText"></div>
+  <section id="table-area">
+    <div class="container container__table">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="Roster">
+            {% include loader.html %}
+          </div>
+          <div id="modalDiv"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div aria-hidden="true" tabindex="-1" class="roster__cliptext" id="clipText"></div>
+</main>

@@ -14,30 +14,32 @@ feature_image: ../../uploads/cashbash.jpg
 feature_image_alt: Cash Bash Graphic
 ---
 {% include nav/sub-nav-support.html %}
-<div class="container margin__alert--2">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
+<main id="content">
+  <div class="container margin__alert--2">
+    <div class="row">
+      <div class="col">
+        {% include emergency-alert.html %}
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col sub-nav__content--wrapper">
-      <main>
-        <div class="row facilities__row--bottom-margin">
-          <div class="col-md-4">
-              <img class="img-fluid" src="{{ page.feature_image }}" alt="{{ page.feature_image_alt }}" />
-          </div>
-          <div class="col-md-8">
-            <h3 class="typography__h2">{{ page.title }}</h3>
-            <div class="editable">
-              <p>The Cavalier Cash Bash will be Saturday, Feb. 15, 2025 starting at 6:30 p.m.</p>
-              <p>There's a $5,000 grand prize, plus 23 other cash prize winners.&nbsp;</p>
-              <p>Tickets are $100. Must be 21 or older to attend. Only 300 tickets will be sold. Winners need not be present.</p>
-              <p>For information and tickets, call <a href="tel:+18158028600">815-802-8600</a> or email&nbsp;<a href="mailto:fcastongia@kcc.edu">fcastongia@kcc.edu</a>.</p>
+    <div class="row">
+      <div class="col sub-nav__content--wrapper">
+        <section>
+          <div class="row facilities__row--bottom-margin">
+            <div class="col-md-4">
+                <img class="img-fluid" src="{{ page.feature_image }}" alt="{{ page.feature_image_alt }}" />
+            </div>
+            <div class="col-md-8">
+              <h3 class="typography__h2">{{ page.title }}</h3>
+              <div class="editable">
+                <p>The Cavalier Cash Bash will be Saturday, Feb. 15, 2025 starting at 6:30 p.m.</p>
+                <p>There's a $5,000 grand prize, plus 23 other cash prize winners.&nbsp;</p>
+                <p>Tickets are $100. Must be 21 or older to attend. Only 300 tickets will be sold. Winners need not be present.</p>
+                <p>For information and tickets, call <a href="tel:+18158028600">815-802-8600</a> or email&nbsp;<a href="mailto:fcastongia@kcc.edu">fcastongia@kcc.edu</a>.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </section>
+      </div>
     </div>
   </div>
-</div>
+</main>

@@ -49,89 +49,91 @@ slides:
     text1: '2024'
     text2: Baseball
 ---
-<div class="container margin__alert--2">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
-    </div>
-  </div>
-</div>
-<div class="container px-0 positioning__max-width-1300--xxl">
-  {% include hero-slider.html %}
-</div>
-<section class="container content-marg">
-    <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
+<main id="content">
+  <div class="container margin__alert--2">
+    <div class="row">
       <div class="col">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
-        <div class="season-preview__content-bg">
-          <div class="editable">
-            <p>The Cavaliers are gearing up for an exciting 2024 season, marked by significant changes and promising talent. With the retirement of Region 4 Hall of Fame Head Coach Todd Post, the team welcomes Bryce Shafer, a familiar face with eight years as an assistant, as the new head coach. The Cavaliers are building on a solid 2023 season, where they had a 34-22 record and finished fourth at the Region 4 Championship.</p>
-          </div>
-          <div id="collapsePreview" class="collapse">
-            <div class="editable">
-              <p>The pitching staff has exceptional promise this year. The staff is not only deeper, but brings a wealth of experience from the previous season.</p>
-              <p>Graham Kasey, an Eastern Illinois commit, is set to lead the staff, supported by seasoned starters Aidan Nugent, Kaleb Waller, and Jackson Smith. Zach O’Donnell is expected to deliver significant innings from the bullpen, alongside closer Brett Hecimovich. Veterans Lucas Frank and Leroy Lepper will also be key contributors. Adding to this strength are talented newcomers, including sophomore transfer Hunter Niksch, who should bolster the starting rotation.</p>
-              <p>Freshmen arms Peyton Niksch, Cole Martz, Tate Mullens, JJ Calmes, Jackson Peeler, Kolton Floor, and Brett Cook are ready to compete with Payton Knoll and Ben Carlile providing match-up options as lefties. “Our pitching staff this season is a mix of experienced sophomores and talented freshmen,” says Coach Shafer, signaling his confidence in the team’s pitching depth. “It’s time to compete.”</p>
-              <p>Behind the plate, the Cavaliers have strong options. Returning catchers Chris Suchoski and Caden Martin are joined by newcomers Nate King and Nolan McCrossin.</p>
-              <p>Sophomore shortstop Gavin Noreus will anchor the defense. The Cavaliers boast a versatile infield lineup with athletes capable of playing multiple positions. Curtis McKay and Tyler Thompson will flexibly contribute to both the infield and outfield. Newcomers Dylan Coty, Nolan McCrossin, and Dalton Hobick all play multiple positions and are set to receive significant playing time. Freshmen Nathan Jonas and Hunter Cline provide depth and options as infielders or designated hitters.</p>
-              <p>In the outfield, returner Cole Freeman is expected to bring power and a strong arm to the middle of the order. Freshmen Amarion Paxton and Jaeden Harris, both athletic outfielders, will compete for playing time.</p>
-              <p>“This group of position players is the most versatile we’ve ever had,” notes Shafer. “We focus on pitching and defense in practice, and consistency will be our key to success in 2024.”</p>
-              <p>He emphasizes the team’s perennial goal: competing for the Region 4 championship. With a blend of experienced sophomores, promising freshmen, and a flexible lineup, the Cavaliers are well-positioned for a strong run this spring.</p>
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
+        {% include emergency-alert.html %}
       </div>
-    </div>
-    <div class="row schedule-row">
-      <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <!-- <a href="{{ page.baseurl }}baseball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
-        <a class="btn btn-primary mb-3 ms-2" href="/stream-games/">Watch Home Games Live</a>
-        <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
-        <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
-          {% include loading-slider.html %}
-        </div>
-      </div>
-    </div>
-    <div class="row news-social-row">
-      <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News  <a href="{{ page.baseurl }}baseball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
-          <div class="news__scroll">
-            <ul class="news__list">
-              {% assign baseball_posts = site.posts | where_exp: "item", "item.categories contains 'baseball' or item.categories contains 'general'" %}
-              {% for post in baseball_posts limit: 7 %}
-                {% include news-item.html %}
-                {% include news-item-modal.html %}
-              {% endfor %}
-            </ul>
-            <div class="text-center mb-3">
-              <a href="{{ page.baseurl }}baseball/news/" class="btn btn-primary">More Articles</a>
-            </div>
-          </div>
-      </div>
-      <div class="col-md-4">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
-        {% include facebook-widget.html %}
-      </div>
-    </div>
-  
-</section>
-<!-- Coaches Section -->
-<section class="coach-section">
-  <div class="container">
-    <div class="row">
-      <h4 id="coaches" name="coaches" class="coaches-heading link__offset">
-        <img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="Icon of a baseball" />&#160;&#160;Coaches
-      </h4>
-    </div>
-    <div class="row editor-link">
-      <div class="col editor-link mb-3">
-        <a href="cloudcannon:collections/_contacts/" class="btn btn-success editor-button">Edit Coach Information and Bios</a>
-      </div>
-    </div>
-    <div class="row">
-      {% include contacts.html %}
     </div>
   </div>
-  {% include contacts-modals.html %}
-</section>
+  <div class="container px-0 positioning__max-width-1300--xxl">
+    {% include hero-slider.html %}
+  </div>
+  <section class="container content-marg">
+      <div class="row mb-2{% if page.season_preview == false %} editor-content{% endif %}">
+        <div class="col">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;Season Preview</h2>
+          <div class="season-preview__content-bg">
+            <div class="editable">
+              <p>The Cavaliers are gearing up for an exciting 2024 season, marked by significant changes and promising talent. With the retirement of Region 4 Hall of Fame Head Coach Todd Post, the team welcomes Bryce Shafer, a familiar face with eight years as an assistant, as the new head coach. The Cavaliers are building on a solid 2023 season, where they had a 34-22 record and finished fourth at the Region 4 Championship.</p>
+            </div>
+            <div id="collapsePreview" class="collapse">
+              <div class="editable">
+                <p>The pitching staff has exceptional promise this year. The staff is not only deeper, but brings a wealth of experience from the previous season.</p>
+                <p>Graham Kasey, an Eastern Illinois commit, is set to lead the staff, supported by seasoned starters Aidan Nugent, Kaleb Waller, and Jackson Smith. Zach O’Donnell is expected to deliver significant innings from the bullpen, alongside closer Brett Hecimovich. Veterans Lucas Frank and Leroy Lepper will also be key contributors. Adding to this strength are talented newcomers, including sophomore transfer Hunter Niksch, who should bolster the starting rotation.</p>
+                <p>Freshmen arms Peyton Niksch, Cole Martz, Tate Mullens, JJ Calmes, Jackson Peeler, Kolton Floor, and Brett Cook are ready to compete with Payton Knoll and Ben Carlile providing match-up options as lefties. “Our pitching staff this season is a mix of experienced sophomores and talented freshmen,” says Coach Shafer, signaling his confidence in the team’s pitching depth. “It’s time to compete.”</p>
+                <p>Behind the plate, the Cavaliers have strong options. Returning catchers Chris Suchoski and Caden Martin are joined by newcomers Nate King and Nolan McCrossin.</p>
+                <p>Sophomore shortstop Gavin Noreus will anchor the defense. The Cavaliers boast a versatile infield lineup with athletes capable of playing multiple positions. Curtis McKay and Tyler Thompson will flexibly contribute to both the infield and outfield. Newcomers Dylan Coty, Nolan McCrossin, and Dalton Hobick all play multiple positions and are set to receive significant playing time. Freshmen Nathan Jonas and Hunter Cline provide depth and options as infielders or designated hitters.</p>
+                <p>In the outfield, returner Cole Freeman is expected to bring power and a strong arm to the middle of the order. Freshmen Amarion Paxton and Jaeden Harris, both athletic outfielders, will compete for playing time.</p>
+                <p>“This group of position players is the most versatile we’ve ever had,” notes Shafer. “We focus on pitching and defense in practice, and consistency will be our key to success in 2024.”</p>
+                <p>He emphasizes the team’s perennial goal: competing for the Region 4 championship. With a blend of experienced sophomores, promising freshmen, and a flexible lineup, the Cavaliers are well-positioned for a strong run this spring.</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary float-end season-preview__btn--more js-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreview" aria-expanded="false" aria-controls="collapsePreview">More ...</button>
+        </div>
+      </div>
+      <div class="row schedule-row">
+        <div class="col-md-12">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <!-- <a href="{{ page.baseurl }}baseball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a> --></h2>
+          <a class="btn btn-primary mb-3 ms-2" href="/stream-games/">Watch Home Games Live</a>
+          <a class="btn btn-primary mb-3 ms-2" href="./schedule/">View Schedule</a>
+          <div id="scheduleDiv" class="baseball slick games" style="padding:15px">
+            {% include loading-slider.html %}
+          </div>
+        </div>
+      </div>
+      <div class="row news-social-row">
+        <div class="col-md-8 news-feed">
+          <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News  <a href="{{ page.baseurl }}baseball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+            <div class="news__scroll">
+              <ul class="news__list">
+                {% assign baseball_posts = site.posts | where_exp: "item", "item.categories contains 'baseball' or item.categories contains 'general'" %}
+                {% for post in baseball_posts limit: 7 %}
+                  {% include news-item.html %}
+                  {% include news-item-modal.html %}
+                {% endfor %}
+              </ul>
+              <div class="text-center mb-3">
+                <a href="{{ page.baseurl }}baseball/news/" class="btn btn-primary">More Articles</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
+          {% include facebook-widget.html %}
+        </div>
+      </div>
+    
+  </section>
+  <!-- Coaches Section -->
+  <section class="coach-section">
+    <div class="container">
+      <div class="row">
+        <h4 id="coaches" name="coaches" class="coaches-heading link__offset">
+          <img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="Icon of a baseball" />&#160;&#160;Coaches
+        </h4>
+      </div>
+      <div class="row editor-link">
+        <div class="col editor-link mb-3">
+          <a href="cloudcannon:collections/_contacts/" class="btn btn-success editor-button">Edit Coach Information and Bios</a>
+        </div>
+      </div>
+      <div class="row">
+        {% include contacts.html %}
+      </div>
+    </div>
+    {% include contacts-modals.html %}
+  </section>
+</main>

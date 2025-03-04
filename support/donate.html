@@ -13,21 +13,23 @@ include_sub-nav: false
 ---
 
 {% include nav/sub-nav-support.html %}
-<div class="container margin__alert--2">
-  <div class="row">
-    <div class="col">
-      {% include emergency-alert.html %}
+<main id="content">
+  <div class="container margin__alert--2">
+    <div class="row">
+      <div class="col">
+        {% include emergency-alert.html %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <section>
+          <h3 class="typography__h2">{{ page.title }}</h3>
+          <div class="editable">
+            <p>We appreciate your donations and hope to give you in return a great season of collegiate athletics.</p>
+          </div>
+          <a class="btn btn-primary btn-marg-left" href="https://foundation.kcc.edu/give/form/general/" target="_blank" >Donate to Athletics</a>
+        </section>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <main>
-        <h3 class="typography__h2">{{ page.title }}</h3>
-        <div class="editable">
-          <p>We appreciate your donations and hope to give you in return a great season of collegiate athletics.</p>
-        </div>
-        <a class="btn btn-primary btn-marg-left" href="https://foundation.kcc.edu/give/form/general/" target="_blank" >Donate to Athletics</a>
-      </main>
-    </div>
-  </div>
-</div>
+</main>
