@@ -1,5 +1,5 @@
 ---
-title: KCC Basketball vs. JJC 02/13/2024
+title: KCC Women's Basketball vs. JJC 02/13/2024
 date: 2024-02-13 00:00:00 -0600
 categories:
   - general
