@@ -10,6 +10,6 @@ description: Congratulations Owen Jackson
 ---
 Another award for Jackson. This time from the JBB\! Congratulations Owen\!
 
-[https://thejbb.net/2022/04/14/2022-week-12-awards/](https://thejbb.net/2022/04/14/2022-week-12-awards/){: target="_blank" rel="noopener noreferrer"}
+[https://thejbb.net/2022/04/14/2022-week-12-awards/](https://web.archive.org/web/20220425050018/https://thejbb.net/2022/04/14/2022-week-12-awards/){: target="_blank" rel="noopener noreferrer"}
 
 &nbsp;
