@@ -20,13 +20,15 @@
         <h5 id="modalCoach{{ forloop.index }}Title" class="modal-title">{{ contact.contacts_title }} {{ contact.name }} Bio</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <img src="{{ page.baseurl }}{% if contact.portrait %}{{ contact.portrait }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}" alt="Photo of {{ contact.contacts_title }} {{ contact.name }}" class="img-fluid float-start coach-modal-img" title="Photo of {{ contact.contacts_title }} {{ contact.name }}" />
-        <h5 class="coach-name">{{ contact.name }}</h5>
-        {% if contact.contacts_title %}<h6 class="coach-title">{{ contact.contacts_title }}</h6>{% endif %}
-        <div>
+      <div class="modal-body" itemprop="description" itemscope itemtype="https://schema.org/Person">
+        <img src="{{ page.baseurl }}{% if contact.portrait %}{{ contact.portrait }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}" alt="{{ contact.name }}" class="img-fluid float-start coach-modal-img" title="{{ contact.name }}" itemprop="image" />
+        <h5 class="coach-name" itemprop="name">{{ contact.name }}</h5>
+        {% if contact.contacts_title %}<h6 class="coach-title" itemprop="jobTitle">{{ contact.contacts_title }}</h6>{% endif %}
+        {% if contact.content and contact.content != '' %}
+        <div itemprop="description">
           {{ contact.content }}
         </div>
+        {% endif %}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
