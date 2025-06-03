@@ -7,25 +7,26 @@
   {% assign staff_members = site.staff | sort: 'order' %}
   {% for member in staff_members %}
   <div class="col-md-6 coaches__col-bottom-margin">
-    <div class="row">
+    <div itemscope itemtype="https://schema.org/Person" class="row">
       <div class="col-4">
         <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}">
           <img
             src="{{ page.baseurl }}{% if member.image %}{{ member.image }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}"
-            alt="{{ member.members_title }} {{ member.name }}"
+            alt="{{ member.name }}"
             class="img-fluid coach-img modal-link"
-            title="{{ member.contacts_title }} {{ member.name }}"
+            title="{{ member.name }}"
+            itemprop="image"
           >
         </a>
       </div>
       <div class="col-8 coaches__info">
         <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link">
-          <h5 class="coach-name">{{ member.name }}</h5>
-          <h6 class="coach-title">{{ member.contacts_title }}</h6>
+          <h5 class="coach-name" itemprop="name">{{ member.name }}</h5>
+          <h6 class="coach-title" itemprop="jobTitle">{{ member.contacts_title }}</h6>
         </a>
         <p>
-          {% if member.phone %}<a href="tel:1{{ member.phone | replace: '-', '' }}">{{ member.phone }}</a><br />{% endif %}
-          {% if member.email %}<a href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
+          {% if member.phone %}<a href="tel:1{{ member.phone | replace: '-', '' }}" itemprop="telephone">{{ member.phone }}</a><br />{% endif %}
+          {% if member.email %}<a href="mailto:{{ member.email }}" itemprop="email">{{ member.email }}</a>{% endif %}
         </p>
         <a data-bs-toggle="modal" class="btn btn-primary" href="#modalCoach{{ forloop.index }}">View Bio</a>
       </div>
