@@ -17,7 +17,7 @@
 {% for contact in coaches %}
 <div class="col-md-4 coaches__col-bottom-margin">
   <!-- Coach 1 row -->
-  <div class="row">
+  <div itemscope itemtype="https://schema.org/Person" class="row">
     <!-- Coach 1 left image div (inner-left column) -->
     <div class="col-6">
       <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}">
@@ -25,18 +25,19 @@
           src="{{ page.baseurl }}{% if contact.portrait %}{{ contact.portrait }}{% else %}uploads/blank-male-avatar-1.jpg{% endif %}"
           alt="{{ contact.contacts_title }} {{ contact.name }}"
           class="img-fluid coach-img modal-link"
-          title="{{ contact.contacts_title }} {{ contact.name }}" />
+          title="{{ contact.contacts_title }} {{ contact.name }}"
+          itemprop="image" />
       </a>
     </div>
     <!-- Coach 1 right info div (inner-right column) -->
     <div class="col-6 coaches__info">
       <a data-bs-toggle="modal" href="#modalCoach{{ forloop.index }}" class="modal-link">
-        <h5 class="coach-name">{{ contact.name }}</h5>
-        {% if contact.contacts_title %}<h6 class="coach-title">{{ contact.contacts_title }}</h6>{% endif %}
+        <h5 class="coach-name" itemprop="name">{{ contact.name }}</h5>
+        {% if contact.contacts_title %}<h6 class="coach-title" itemprop="jobTitle">{{ contact.contacts_title }}</h6>{% endif %}
       </a>
       <p>
-        {% if contact.phone %}<a href="tel:1{{ contact.phone | replace: '-', '' | replace: '‑', '' }}">{{ contact.phone }}</a><br />{% endif %}
-        {% if contact.email %}<a href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% endif %}
+        {% if contact.phone %}<a href="tel:+1{{ contact.phone | replace: '-', '' | replace: '‑', '' }}" itemprop="telephone">{{ contact.phone }}</a><br />{% endif %}
+        {% if contact.email %}<a href="mailto:{{ contact.email }}" itemprop="email">{{ contact.email }}</a>{% endif %}
       </p>
       <a data-bs-toggle="modal" class="btn btn-primary" href="#modalCoach{{ forloop.index }}">View Bio</a>
     </div>

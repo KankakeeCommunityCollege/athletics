@@ -11,6 +11,54 @@ include_datatables: false
 include_gapi: true
 include_sub-nav: false
 main_page_heading: Staff Directory
+staff_directory:
+  - name: Bryce Shafer
+    job_title: Athletic Director/Head Baseball Coach
+    phone_number: 815-802-8613
+    additional_phone_number:
+    email: bshafer@kcc.edu
+  - name: Casey Meister
+    job_title: >-
+      Assistant Athletic Director/Fitness Center Supervisor<br>
+      Head Women's Basketball Coach
+    phone_number: 815-802-8614
+    additional_phone_number: 815-802-8610
+    email: cmeister@kcc.edu
+  - name: Keith Cooper
+    job_title: Head Softball Coach
+    phone_number: 815-802-8606
+    additional_phone_number:
+    email: kcooper@kcc.edu
+  - name: Michael Brown
+    job_title: Head Men's Basketball Coach
+    phone_number: 815-802-8609
+    additional_phone_number:
+    email: mbrown@kcc.edu
+  - name: Michael Barclay
+    job_title: Head Soccer Coach (men's and women's)
+    phone_number: 815-802-8618
+    additional_phone_number:
+    email: mbarclay@kcc.edu
+  - name: Jill Morgan
+    job_title: Head Volleyball Coach
+    phone_number:
+    additional_phone_number:
+    email: jmorgan@kcc.edu
+  - name: Candice Brackett
+    job_title: Athletic Trainer
+    phone_number: 815-802-8617
+    additional_phone_number:
+    email: cbrackett@kcc.edu
+  - name: Nick Ulrey
+    job_title: Academic Success/Assistant Baseball Coach
+    phone_number: 815-802-8600
+    additional_phone_number:
+    email:
+  - name: Francine Castongia
+    job_title: Administrative Assistant
+    phone_number: 815-802-8604
+    additional_phone_number:
+    email: fcastongia@kcc.edu
 ---
 {% include nav/about-nav.html %}
 <main id="content">
@@ -28,6 +76,37 @@ main_page_heading: Staff Directory
           <h3 class="h3 mb-4">
             {{ page.main_page_heading }}
           </h3>
+          {% for contact in page.staff_directory %}
+          <div itemscope itemtype="https://schema.org/Person">
+            <h6 class="h6 mb-0" itemprop="name">{{ contact.name }}</h6>
+            <p>
+              {% if contact.job_title %}{{ contact.job_title }}<br>{% endif %}
+              {% if contact.phone_number %}
+              {% assign phone = contact.phone_number | strip %}
+              {% assign first_digit = phone | slice: 0 %}
+              {% if first_digit == '1' %}
+                {% assign phone_href = phone | remove_first: '1' | remove: '-' | prepend: 'tel:+1' %}
+              {% else %}
+                {% assign phone_href = phone | remove: '-' | prepend: 'tel:+1' %}
+              {% endif %}
+              {% if contact.additional_phone_number %}
+              {% assign phone_2 = contact.additional_phone_number | strip %}
+              {% assign first_digit_2 = phone_2 | slice: 0 %}
+              {% if first_digit_2 == '1' %}
+                {% assign phone_href_2 = phone_2 | remove_first: '1' | remove: '-' | prepend: 'tel:+1' %}
+              {% else %}
+                {% assign phone_href_2 = phone_2 | remove: '-' | prepend: 'tel:+1' %}
+              {% endif %}
+              <a href="{{ phone_href }}" itemprop="telephone">{{ phone }}</a> / <a href="{{ phone_href_2 }}" itemprop="telephone">{{ phone_2 }}</a><br>
+              {% else %}
+              <a href="{{ phone_href }}" itemprop="telephone">{{ phone }}</a><br>
+              {% endif %}
+              {% endif %}
+              {% if contact.email %}<a href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% endif %}
+            </p>
+          </div>
+          {% endfor %}
+          {% comment %}
           <div class="editable">
             <h6 class="h6 mb-0">Bryce Shafer</h6>
             <p>
@@ -83,6 +162,7 @@ main_page_heading: Staff Directory
               <a href="mailto:fcastongia@kcc.edu">fcastongia@kcc.edu</a>
             </p>
           </div>
+          {% endcomment %}
         </div>
       </div>
     </div>
