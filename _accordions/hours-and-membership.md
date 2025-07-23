@@ -8,7 +8,13 @@ order: 1
 {: .typography__h2 }
 
 <table class="table table-striped table-hover">
- <caption>KCC Fitness Center hours</caption>
+  <caption>KCC Fitness Center hours</caption>
+  <thead>
+    <tr>
+      <th>DAYS</th>
+      <th>HOURS</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
       <td>Monday - Thursday</td>
