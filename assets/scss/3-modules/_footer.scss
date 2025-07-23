@@ -14,8 +14,8 @@
   transition-property: color;
   transition-timing-function: linear;
   transition-duration: .15s;
+  text-decoration: none !important;
   &:hover {
-    text-decoration: none !important;
     color: $primary-red;
   }
 }
