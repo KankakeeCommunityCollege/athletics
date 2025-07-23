@@ -12,13 +12,14 @@ $container-max-widths: (
   xl: 1140px
 );
 
-$link-decoration: none;
-$link-hover-decoration: underline;
-
 $navbar-padding-x: 1rem;
 
 $breadcrumb-padding-y: .75rem;
 $breadcrumb-padding-x: 1rem;
+
+// slightly darker primary blue is needed to meet WCAG 2.1 Level AA contrast against
+//   the light grey background used in some of the pages.
+$primary: #005eea;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import '../../node_modules/bootstrap/scss/variables';
