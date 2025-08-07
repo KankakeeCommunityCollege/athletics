@@ -49,6 +49,11 @@ staff_directory:
     phone_number: 815-802-8617
     additional_phone_number:
     email: cbrackett@kcc.edu
+  - name: Brooks McDowell
+    job_title: Strength and Conditioning Coach
+    phone_number:
+    additional_phone_number:
+    email: bmcdowell@kcc.edu
   - name: Alex Lagesse
     job_title: Retention Success Navigator/Assistant Softball Coach
     phone_number: 815-802-8608
@@ -80,7 +85,7 @@ staff_directory:
           <div itemscope itemtype="https://schema.org/Person">
             <h6 class="h6 mb-0" itemprop="name">{{ contact.name }}</h6>
             <p>
-              {% if contact.job_title %}{{ contact.job_title }}<br>{% endif %}
+              {% if contact.job_title %}<span itemprop="jobTitle">{{ contact.job_title }}</span><br>{% endif %}
               {% if contact.phone_number %}
               {% assign phone = contact.phone_number | strip %}
               {% assign first_digit = phone | slice: 0 %}
@@ -102,7 +107,7 @@ staff_directory:
               <a href="{{ phone_href }}" itemprop="telephone">{{ phone }}</a><br>
               {% endif %}
               {% endif %}
-              {% if contact.email %}<a href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% endif %}
+              {% if contact.email %}<a itemprop="email" href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% endif %}
             </p>
           </div>
           {% endfor %}
