@@ -7,11 +7,12 @@ portrait: uploads/mbasketball-asst-coach_roosevelt-green_dsc_0522.jpg
 phone: 815-802-8600
 email: rgreen@kcc.edu
 ---
+Roosevelt Green is in his fifth season as an assistant coach for KCC. Last season, Coach Green helped the team finish with 24-9 record and an appearance in the Region IV championship game.
 
-Roosevelt Green is entering his fourth season as an assistant coach for KCC. In his first season, the team finished with a 19-12 record and made it to the Region IV championship game. Green joined the Cavaliers after two seasons as an assistant coach at Saint Xavier University in Chicago. As the lead recruiter, Green helped coach multiple players to achieve all-conference recognition while also achieving a 20&#8209;win&nbsp;season.  
+He joined the Cavaliers after two seasons as an assistant coach at Saint Xavier University in Chicago. As the lead recruiter, Green helped coach multiple players to achieve all-conference recognition while also achieving a 20-win season.
 
-Prior to Saint Xavier, Green was an assistant coach at Moraine Valley Community College for four seasons. During that time, MVCC achieved multiple 20-win seasons and a conference&nbsp;championship.
+Prior to Saint Xavier, Green was an assistant coach at Moraine Valley Community College for four seasons. During his time, MVCC achieved multiple 20-win seasons and a conference championship.
 
-&ldquo;Roosevelt is a great addition to our program,&rdquo; said KCC Head Coach Michael Brown. &ldquo;With his combination of playing and coaching experience, he will be able to help us in all areas of the&nbsp;program.&rdquo; 
+“Roosevelt is a great addition to our program,” said KCC Head Coach Michael Brown. “With his combination of playing and coaching experience, he helps us in all areas of the program,”
 
-Coach Green played basketball at Saint Xavier University, where he was a four-time all-conference honoree and a one-time NAIA All-American. He is also the all-time assists leader. Green has a bachelor’s degree in criminal justice from Saint Xavier&nbsp;University.  
+Green played basketball at Saint Xavier University, where he was a four-time all-conference honoree and a 2013 NAIA All-American. He is also the all-time assists leader. Green has a bachelor’s degree in criminal justice from Saint Xavier University.
