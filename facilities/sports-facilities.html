@@ -96,25 +96,24 @@ strength_coach:
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#strengthCoachModal">
               View bio
             </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="strengthCoachModal" tabindex="-1" aria-labelledby="strengthCoachModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="strengthCoachModalLabel">{{ page.strength_coach.name }} bio</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    {{ page.strength_coach.bio | markdownify }}
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
+          </p>
+          <!-- Modal -->
+          <div class="modal fade" id="strengthCoachModal" tabindex="-1" aria-labelledby="strengthCoachModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="strengthCoachModalLabel">{{ page.strength_coach.name }} bio</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  {{ page.strength_coach.bio | markdownify }}
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
-          </p>
+          </div>
           {% endif %}
         </div>
       </div>
