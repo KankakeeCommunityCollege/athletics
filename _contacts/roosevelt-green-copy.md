@@ -3,7 +3,7 @@ name: Marty Walters
 contacts_title: Assistant Coach
 contacts_sport: volleyball
 sort_number: 2
-portrait: uploads/marty-walters-assistant-coach.jpg
+portrait: uploads/marty-walters-assistant-coach-cropped.jpg
 phone:
 email:
 ---
