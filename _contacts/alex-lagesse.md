@@ -1,9 +1,9 @@
 ---
 name: Alex Lagesse
-contacts_title: Assistant Coach
+contacts_title: Head Coach
 contacts_sport: softball
-sort_number: 3
-portrait: 'uploads/alex-lagesse.jpg'
+sort_number: 1
+portrait: uploads/alex-lagesse.jpg
 phone:
 email:
 ---
