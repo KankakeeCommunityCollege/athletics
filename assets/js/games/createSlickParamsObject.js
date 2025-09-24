@@ -6,8 +6,8 @@ function slickParamsObject() {
     slidesToShow: 3, // 3 visible
     slidesToScroll: 1, // scroll one at a time
     adaptiveHeight: false,
-    prevArrow:'<img class="a-left control-c prev slick-prev" src="../assets/img/blue-prev.svg">', // custom prev/next buttons
-    nextArrow:'<img class="a-right control-c next slick-next" src="../assets/img/blue-next.svg">',
+    prevArrow:'<img class="a-left control-c prev slick-prev" src="../assets/img/blue-prev.svg" alt="previous">', // custom prev/next buttons
+    nextArrow:'<img class="a-right control-c next slick-next" src="../assets/img/blue-next.svg" alt="next">',
     responsive: [ // Change slides to show and slides to scroll at different device sizes
       {
         breakpoint: 1024,
