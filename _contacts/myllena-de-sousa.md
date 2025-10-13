@@ -3,7 +3,7 @@ name: Myllena De Sousa
 contacts_title: Assistant Coach
 contacts_sport: women's basketball
 sort_number: 4
-portrait: uploads/coach-meister.jpg
+portrait: uploads/myllena-de-sousa-assistant-coach.jpg
 phone:
 email:
 ---
