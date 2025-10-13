@@ -3,7 +3,7 @@ name: Keion Whittaker
 contacts_title: Assistant Coach
 contacts_sport: women's basketball
 sort_number: 3
-portrait: uploads/coach-whittaker.jpg
+portrait: uploads/keion-whittaker-assistant-coach.jpg
 phone:
 email:
 ---
