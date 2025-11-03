@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkcc_athletics=self.webpackChunkkcc_athletics||[]).push([[102],{102:function(e,t){const n=document.getElementById("currentYear");t.default=function(){const e=(new Date).getFullYear();n.innerHTML!==`${e}`&&(n.innerHTML=e)}}}]);

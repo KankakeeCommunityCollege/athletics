@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkcc_athletics=self.webpackChunkkcc_athletics||[]).push([[753],{753:function(e,t){const c=document.getElementById("videoModal");t.default=function(e){c.addEventListener("hide.bs.modal",t=>e.src="")}}}]);
