@@ -7,7 +7,7 @@ portrait: uploads/mbasketball-asst-coach_roosevelt-green_dsc_0522.jpg
 phone: 815-802-8600
 email: rgreen@kcc.edu
 ---
-Roosevelt Green is in his fifth season as an assistant coach for KCC. Last season, Coach Green helped the team finish with 24-9 record and an appearance in the Region IV championship game.
+Roosevelt Green has been an assistant coach for KCC since the 2021-22 season. Last season, Coach Green helped the team finish with 24-9 record and an appearance in the Region IV championship game.
 
 He joined the Cavaliers after two seasons as an assistant coach at Saint Xavier University in Chicago. As the lead recruiter, Green helped coach multiple players to achieve all-conference recognition while also achieving a 20-win season.
 

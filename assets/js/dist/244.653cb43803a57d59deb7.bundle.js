@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkcc_athletics=self.webpackChunkkcc_athletics||[]).push([[244],{244:function(e,n){const t=document.querySelector(".js-more-btn");n.default=function(){t.addEventListener("click",e=>{const n=e.target;"More ..."==n.innerHTML?n.innerHTML="Close":n.innerHTML="More ..."})}}}]);
