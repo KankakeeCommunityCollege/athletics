@@ -7,7 +7,7 @@ portrait: uploads/mbasketball_coach-michael-brown.jpg
 phone: 815‑802‑8609
 email: mbrown@kcc.edu
 ---
-Mike Brown is in his 5th season as the head coach of the KCC men’s basketball program in 2025-26. Last season, the Cavs finished with a 24-9 record and played in the Region IV championship game, losing by 3. In NJCAA Division I, the Cavs finished in the top 25 for steals, blocks and field goal percentage.
+Mike Brown has been head coach of the KCC men’s basketball program since the 2021-22 season. Last season, the Cavs finished with a 24-9 record and played in the Region IV championship game, losing by 3. In NJCAA Division I, the Cavs finished in the top 25 for steals, blocks and field goal percentage.
 
 In 2023-24, the Cavs had a 19-12 record and appeared in the Region IV semifinals. In NJCAA Division I, the Cavs finished in the top 30 for steals, blocks, field goal percentage, free throws made per game, and free throw percentage. The 73.9% team free throw percentage set a program record.
 
