@@ -97,8 +97,6 @@ Students enrolling in the Personal Fitness course for the first time must schedu
 
 Orientations usually begin about a week before the semester begins and must be complete to begin using the Fitness Center. To be considered enrolled in the course, students must begin Fitness Center sessions within the first week of the semester start date.
 
-To re-enroll, complete the [re-enrollment form](/uploads/fitnesscenter-re-enroll.pdf){: target='_blank' rel='noopener noreferrer' } (fill in online or print a copy), print and bring it with you to register. Forms are also available in the Fitness Center and Student Affairs Division.
-
 #### Personal fitness assessment and orientation
 {: .typography__h4 }
 
