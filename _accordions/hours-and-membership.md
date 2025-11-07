@@ -61,7 +61,7 @@ KCC offers the following membership packages to non-student members of the commu
 KCC students can:
 
 - Sign up as a member
-- Enroll in the [Personal Fitness](http://kcc.smartcatalogiq.com/current/Academic-Catalog/Courses/PHEC-Physical-Education-PHEC/PHEC-1611){: target='_blank' rel='noopener noreferrer' } course (PHEC 1611) and earn college credit
+- Enroll in the [Personal Fitness](https://catalog.kcc.edu/physical-fitness-education/phec-1611){: target='_blank' rel='noopener' } course (PHEC 1611) and earn college credit
 
 | Option​​ | Spring or Fall | Summer |
 |--------|----------------|--------|
@@ -77,13 +77,13 @@ You can earn college credit for working out. Your workout schedule is up to you.
 #### Cost
 {: .typography__h4 }
 
-The [Personal Fitness class](http://kcc.smartcatalogiq.com/current/Academic-Catalog/Courses/PHEC-Physical-Education-PHEC/PHEC-1611){: target='_blank' rel='noopener noreferrer' } is the cost of one semester of college credit plus a $20 course fee. Enrollment semesters are:
+The [Personal Fitness class](https://catalog.kcc.edu/physical-fitness-education/phec-1611){: target='_blank' rel='noopener' } is the cost of one semester of college credit plus a $20 course fee. Enrollment semesters are:
 
 - Fall: August - December
 - Spring: January - May
 - Summer: June - July
 
-For high school students, the [Personal Fitness class](http://kcc.smartcatalogiq.com/current/Academic-Catalog/Courses/PHEC-Physical-Education-PHEC/PHEC-1611){: target='_blank' rel='noopener noreferrer' } credits can be held in escrow until you graduate, then the credits can be applied as college credits at KCC or another college.
+For high school students, the [Personal Fitness class](https://catalog.kcc.edu/physical-fitness-education/phec-1611){: target='_blank' rel='noopener' } credits can be held in escrow until you graduate, then the credits can be applied as college credits at KCC or another college.
 
 #### Registration
 {: .typography__h4 }
