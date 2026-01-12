@@ -139,22 +139,22 @@ button#load-more {
  }
 }
 
-.slick-next {
+.slick-next:not(.yt-list__next) {
   right: -21px;
   z-index: 999;
 }
 
-.slick-prev {
+.slick-prev:not(.yt-list__prev) {
   left: -21px;
   z-index: 999;
 }
 
 @media screen and (min-width: 600px) {
-  .slick-next {
+  .slick-next:not(.yt-list__next) {
     right: -42px;
   }
 
-  .slick-prev {
+  .slick-prev:not(.yt-list__prev) {
     left: -42px;
   }
 }

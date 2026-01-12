@@ -95,22 +95,7 @@ slides:
         </div>
       </div>
       <div class="row news-social-row">
-        <div class="col-md-8 news-feed">
-          <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&nbsp;News  <a href="{{ page.baseurl }}baseball/news/" class="btn btn-primary schedule__button-margin">View All News</a></h2>
-            <div class="news__scroll">
-              <ul class="news__list">
-                {% assign baseball_posts = site.posts | where_exp: "item", "item.categories contains 'baseball' or item.categories contains 'general'" %}
-                {% for post in baseball_posts limit: 7 %}
-                  {% include news-item.html %}
-                  {% include news-item-modal.html %}
-                {% endfor %}
-              </ul>
-              <div class="text-center mb-3">
-                <a href="{{ page.baseurl }}baseball/news/" class="btn btn-primary">More Articles</a>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-4">
+        <div class="col-12 col-md-4 offset-md-4">
           <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
           {% include facebook-widget.html %}
         </div>

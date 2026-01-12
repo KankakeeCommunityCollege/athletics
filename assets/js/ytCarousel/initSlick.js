@@ -4,7 +4,7 @@ function initSlick(slickElement, baseUrl) {
     dots: false, // No indicator dots along the bottom
     infinite: false, // Do not loop when end of slides is reached
     autoplay: false, // Do not autoplay the slides
-    slidesToShow: 3, // Default number of slides to show
+    slidesToShow: 2, // Default number of slides to show
     slidesToScroll: 1, // Number of slides to advance per click/scroll
     adaptiveHeight: false,
     // Custom prev/next arrows
@@ -14,12 +14,12 @@ function initSlick(slickElement, baseUrl) {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       },
       { // Show 1 slide for screens under 992px wide
-        breakpoint: 992,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
