@@ -1,18 +1,16 @@
 ---
-name: Ian Sanders
+name: Ryan Eiermann
 contacts_title: Assistant Coach
 contacts_sport: baseball
 sort_number: 3
-portrait: uploads/basball_ian-sanders-CLB_5191_HS.jpg
+portrait: uploads/ryan-eiermann-new26.JPG
 phone:
 email:
 ---
-Assistant Coach Ian Sanders specializes in baserunning, outfield players, and leading strength and conditioning efforts. A former Cavalier, Ian brings a wealth of experience and success as both a player and a coach.
+2026 is Ryan Eiermann’s first season on the KCC coaching staff. Eiermann works primarily with the pitching staff, bringing firsthand experience as an elite strike-thrower and summer-league coach.
 
-As a Cavalier player, Sanders had an impressive playing career, earning 2nd Team All-Region honors in 2021.
+As a Cavalier during the 2022 season, Eiermann was one of the most dominant arms in program history and earned First Team All-Region honors. He is the Cavaliers single-season strikeout record holder, posting 113 strikeouts in 12 appearances (12 starts) in 2022. Also in YEAR, he issued just 13 walks, held opponents to a .192 batting average, recorded a 2.34 ERA, an 8-2 record, three complete games and one shutout across 77.0 innings.
 
-Sanders continued at Ashland University in Ohio, where he made an immediate impact as the starting second baseman. Over two seasons, Sanders showcased his offensive and defensive prowess. His 2022 highlights include a .337 batting average, 36 runs scored, 12 doubles, five home runs, and 45 RBI. In 2023, Sanders followed up with a .308 batting average, 38 runs scored, 11 doubles, four home runs, and 30 RBI.
+Eiermann continued his career at NAIA powerhouse Southeastern University, competing at a high level and further sharpening his approach to pitching and preparation. He launched his coaching career in the Prospect League with the Illinois Valley Pistol Shrimp, and will return as their pitching coach in the summer of 2026.
 
-In high school, Sanders set a program record for triples, earned four varsity letters, and was named all-conference twice.
-
-Off the field, Sanders is committed to player development and excellence, working closely with student-athletes to improve their baserunning efficiency and overall athletic performance. His experience as a player provides valuable insights for current Cavaliers.
+With his blend of pitching experience and a rising coaching profile, Eiermann adds instant energy and credibility to the Cavaliers. He plays a key role in maintaining the staff’s focus on execution, competitiveness, and elite standards.
