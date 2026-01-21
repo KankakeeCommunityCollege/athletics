@@ -1,0 +1,198 @@
+##     Pa11y CI results     ##
+
+Running Pa11y on 155 URLs:
+ > https://athletics.kcc.edu/404.html - 0 errors
+ > https://athletics.kcc.edu/about/ - 0 errors
+ > https://athletics.kcc.edu/baseball/ - 0 errors
+ > https://athletics.kcc.edu/support/cash-bash/ - 0 errors
+ > https://athletics.kcc.edu/support/cavalier-club/ - 0 errors
+ > https://athletics.kcc.edu/support/donate/ - 0 errors
+ > https://athletics.kcc.edu/about/equity/ - 0 errors
+ > https://athletics.kcc.edu/facilities/ - 0 errors
+ > https://athletics.kcc.edu/facilities/fitness-center/ - 0 errors
+ > https://athletics.kcc.edu/support/golf-outing/ - 0 errors
+ > https://athletics.kcc.edu/ - 3 errors
+ > https://athletics.kcc.edu/mens-basketball/ - 0 errors
+ > https://athletics.kcc.edu/womens-soccer/news/ - 0 errors
+ > https://athletics.kcc.edu/soccer/news/ - 0 errors
+ > https://athletics.kcc.edu/mens-basketball/news/ - 0 errors
+ > https://athletics.kcc.edu/volleyball/news/ - 0 errors
+ > https://athletics.kcc.edu/softball/news/ - 0 errors
+ > https://athletics.kcc.edu/womens-basketball/news/ - 0 errors
+ > https://athletics.kcc.edu/baseball/news/ - 0 errors
+ > https://athletics.kcc.edu/news/ - 0 errors
+ > https://athletics.kcc.edu/facilities/police-officer-fitness-test/ - 0 errors
+ > https://athletics.kcc.edu/recruitment/ - 0 errors
+ > https://athletics.kcc.edu/womens-soccer/roster/ - 0 errors
+ > https://athletics.kcc.edu/soccer/roster/ - 0 errors
+ > https://athletics.kcc.edu/mens-basketball/roster/ - 0 errors
+ > https://athletics.kcc.edu/volleyball/roster/ - 0 errors
+ > https://athletics.kcc.edu/softball/roster/ - 0 errors
+ > https://athletics.kcc.edu/womens-basketball/roster/ - 0 errors
+ > https://athletics.kcc.edu/baseball/roster/ - 0 errors
+ > https://athletics.kcc.edu/womens-soccer/schedule/ - 0 errors
+ > https://athletics.kcc.edu/soccer/schedule/ - 0 errors
+ > https://athletics.kcc.edu/mens-basketball/schedule/ - 0 errors
+ > https://athletics.kcc.edu/volleyball/schedule/ - 0 errors
+ > https://athletics.kcc.edu/softball/schedule/ - 0 errors
+ > https://athletics.kcc.edu/womens-basketball/schedule/ - 0 errors
+ > https://athletics.kcc.edu/baseball/schedule/ - 0 errors
+ > https://athletics.kcc.edu/soccer/ - 0 errors
+ > https://athletics.kcc.edu/softball/ - 0 errors
+ > https://athletics.kcc.edu/facilities/sports-facilities/ - 0 errors
+ > https://athletics.kcc.edu/sports/ - 0 errors
+ > https://athletics.kcc.edu/about/staff/ - 0 errors
+ > https://athletics.kcc.edu/womens-soccer/stats/ - 0 errors
+ > https://athletics.kcc.edu/soccer/stats/ - 0 errors
+ > https://athletics.kcc.edu/mens-basketball/stats/ - 0 errors
+ > https://athletics.kcc.edu/volleyball/stats/ - 0 errors
+ > https://athletics.kcc.edu/softball/stats/ - 0 errors
+ > https://athletics.kcc.edu/womens-basketball/stats/ - 0 errors
+ > https://athletics.kcc.edu/baseball/stats/ - 0 errors
+ > https://athletics.kcc.edu/stream-games/ - 0 errors
+ > https://athletics.kcc.edu/about/student-athletes/ - 0 errors
+ > https://athletics.kcc.edu/support/ - 0 errors
+ > https://athletics.kcc.edu/volleyball/ - 0 errors
+ > https://athletics.kcc.edu/womens-basketball/ - 0 errors
+ > https://athletics.kcc.edu/womens-soccer/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/09/09/kcc-soccer-vs-carl-sandburg/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/04/20/kcc-vs-ssc-04-20-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/04/16/kcc-vs-harper-college-04-16-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/04/10/kcc-vs-psc-04-10-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/03/21/kcc-vs-mvcc-03-21-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/03/19/kcc-vs-morton-college-03-19-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/03/02/kcc-vs-swic-03-02-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/02/29/quarterfinal-kcc-vs-occ-02-29-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/02/29/kcc-vs-svcc-02-29-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/02/22/kcc-vs-wright-college-02-22-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/02/19/kcc-basketball-vs-kishwaukee-college-02-19-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/02/13/kcc-womens-basketball-vs-jjc-02-13-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/02/13/kcc-mens-basketball-vs-jjc-02-13-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/02/10/kcc-basketball-vs-wcc-02-10-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/01/18/kcc-basketball-vs-gsu-jv-1-18-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/01/17/kcc-basketball-vs-triton-college-1-17-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/01/13/kcc-basketball-vs-mvcc-1-13-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2024/01/13/kcc-basketball-vs-kkc-1-13-2024/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/12/07/kcc-basketball-vs-morton-college-12-7-2023/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/12/05/kcc-basketball-vs-daley-college-12-5-2023/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/11/21/kcc-basketball-vs-kvcc-11-21-2023/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/11/11/kcc-basketball-vs-lmc-11-11-2023/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/11/01/kcc-basketball-vs-ltc-11-1-2023/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/10/21/kcc-soccer-vs-bsc-10-21-2023/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/10/14/kcc-soccer-vs-college-of-dupage-10-14/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/09/28/kcc-volleyball-vs-psc-9-28-2023/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/09/28/kcc-soccer-vs-kishwaukee-college/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/09/20/kcc-volleyball-vs-jjc-9-20/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/09/16/kcc-volleyball-vs-highland-cc-9-16/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/09/12/kcc-volleyball-vs-moraine-valley-cc-9-12/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/09/09/kcc-soccer-vs-waubonsee-cc-9-9/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/09/09/kcc-soccer-vs-northeast-cc/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/08/29/kcc-soccer-vs-rvc-8-29/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/03/28/kcc-vs-olive-harvey/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/03/26/kcc-vs-oakton-3-26/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/03/24/kcc-vs-rvc-3-24/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/03/23/kcc-baseball-vs-prairie-state-3-23/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/03/15/kcc-baseball-vs-cod/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/03/01/region-4-quarterfinals-kcc-vs-kishwaukee/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/26/softball-vs-southeastern-ia/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/26/lady-cavs-vs-niacc/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/25/softball-vs-dmacc-2-25/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/25/lady-cavs-vs-highland-2-25/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/25/kcc-vs-highland-men-s-basketball/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/25/kcc-softball-vs-north-platte/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/21/lady-cavs-vs-olive-harvey/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/18/women-s-basketball-vs-b-s/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/18/kcc-mbb-vs-daley-college/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/15/kcc-mbb-vs-aurora-university-jv-2-12-23/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/15/kcc-wbb-vs-bhc-2-11-23/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/15/kcc-mens-basketball-victory-over-malcolm-x-college/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/13/mbb-game-highlights-2-7-23/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/13/kcc-wbb-game-highlights-2-9-23/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/09/kcc-wbb-vs-rvc-2-8-23-game/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/07/wbb-game-highlights-2-4-23/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/07/mbb-game-highlights-2-4-23/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/02/wbb-game-highlight-stats-1-28-23/ - 0 errors
+ > https://athletics.kcc.edu/news/2023/02/01/kcc-cavaliers-rivalry-clash/ - 0 errors
+ > https://athletics.kcc.edu/news/2022/04/17/matt-litrell-news-release/ - 0 errors
+ > https://athletics.kcc.edu/news/2022/04/17/kcc-signing-day-player-profiles/ - 0 errors
+ > https://athletics.kcc.edu/news/2022/04/17/jbb-award-given-to-owen-jackson/ - 0 errors
+ > https://athletics.kcc.edu/news/2021/07/20/cavaliers-move-on/ - 0 errors
+ > https://athletics.kcc.edu/news/2021/06/13/njcaa-academic-honors/ - 0 errors
+ > https://athletics.kcc.edu/news/2021/04/12/wbb-all-region-team/ - 0 errors
+ > https://athletics.kcc.edu/news/2021/02/02/live-streaming/ - 0 errors
+ > https://athletics.kcc.edu/news/2021/01/30/our-very-own-vern-turner/ - 0 errors
+ > https://athletics.kcc.edu/news/2020/07/16/sports-competition-will-resume-in-2021/ - 0 errors
+ > https://athletics.kcc.edu/news/2020/06/10/kcc-athletes-earn-honors/ - 0 errors
+ > https://athletics.kcc.edu/news/2020/05/06/2020-baseball-sophomores/ - 0 errors
+ > https://athletics.kcc.edu/news/2020/04/15/first-womens-soccer-post/ - 0 errors
+ > https://athletics.kcc.edu/news/2020/02/26/sophomore-jonte-coleman/ - 0 errors
+ > https://athletics.kcc.edu/news/2020/01/07/region-iv-hall-of-fame/ - 0 errors
+ > https://athletics.kcc.edu/news/2019/11/18/ashley-harwood/ - 0 errors
+ > https://athletics.kcc.edu/news/2019/10/30/all-region-team/ - 0 errors
+ > https://athletics.kcc.edu/news/2019/10/16/baseball-guest-speaker-steve-springer/ - 0 errors
+ > https://athletics.kcc.edu/news/2019/05/23/softball-region-awards/ - 0 errors
+ > https://athletics.kcc.edu/news/2019/05/23/rawlings-gold-glove-team/ - 0 errors
+ > https://athletics.kcc.edu/news/2019/04/15/player-of-the-week/ - 0 errors
+ > https://athletics.kcc.edu/news/2019/02/18/softball-season-preview/ - 0 errors
+ > https://athletics.kcc.edu/news/2019/01/17/baseball-season-preview/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/11/06/all-tournament-team/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/09/26/national-wbca-day-of-service/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/09/07/former-kcc-softball-player/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/07/18/athletic-all-americans/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/07/18/team-academic-achievements/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/07/18/all-americans/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/06/26/butler-all-american/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/06/21/kcc-facebook/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/06/21/gold-glove-award-winner/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/06/12/congrats-kiara/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/06/06/baseball-where-are-they-now/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/05/23/congrats-jasmine/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/05/23/baseball/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/05/21/new-website/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/05/21/rebuilding-a-legacy/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/05/21/baseball-comes-to-a-close/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/05/21/soccer-pride/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/05/14/volleyball-honor-roll-list/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/05/06/congratulations-softball/ - 0 errors
+ > https://athletics.kcc.edu/news/2018/04/30/womens-basketball-supports-local-fundraiser/ - 0 errors
+ > https://athletics.kcc.edu/news/2017/06/07/cavs-win/ - 0 errors
+
+Errors in https://athletics.kcc.edu/:
+
+ ✅ WZ fixed on 1/21/26:
+    * Add aria-labelledby to button elements for referencing heading as button's label/name.
+
+ • This button element does not have a name available to an accessibility API.
+   Valid names are: title undefined, element content, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#yt_list > div > div > div:nth-child(1) > button)
+
+   <button class="yt-list__a jsYtBtn btn btn-link d-flex mx-auto"
+   data-videoid="NJ0yUk3ieZQ" data-video-title="KCC Women's Basketball vs.
+   MATC" data-bs-toggle="modal" data-bs-target="#videoModal" tabindex="0"> <img
+   class="img-fluid" src...</button>
+
+ • This button element does not have a name available to an accessibility API.
+   Valid names are: title undefined, element content, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#yt_list > div > div > div:nth-child(2) > button)
+
+   <button class="yt-list__a jsYtBtn btn btn-link d-flex mx-auto"
+   data-videoid="qxjr0upwizE" data-video-title="KCC Women's Basketball vs.
+   Prairie State" data-bs-toggle="modal" data-bs-target="#videoModal"
+   tabindex="0"> <img class="img-fluid" src...<...
+
+ • This button element does not have a name available to an accessibility API.
+   Valid names are: title undefined, element content, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#yt_list > div > div > div:nth-child(3) > button)
+
+   <button class="yt-list__a jsYtBtn btn btn-link d-flex mx-auto"
+   data-videoid="ZnKF1SEAYI4" data-video-title="KCC Women's Basketball vs.
+   Muskegon Community College" data-bs-toggle="modal"
+   data-bs-target="#videoModal" tabindex="0"> <img class="img-f...
+
+✘ 154/155 URLs passed
