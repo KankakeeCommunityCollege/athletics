@@ -34,15 +34,26 @@ async function fetchJSON(url) {
   return await response.json();
 }
 
+function convertToSafeId(str) {
+  return str
+    .toLowerCase()
+    .trim()
+    .normalize('NFD') // Remove accents/diacritics (e.g., "é" becomes "e")
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-') // Replace any non-alphanumeric character with a hyphen
+    .replace(/^-+|-+$/g, '') // Remove leading or trailing hyphens
+    .replace(/^(\d)/, 'id-$1'); // Ensure it starts with a letter
+}
+
 function createSlideHTML(item) {
   let [, , title, desc, thumbs, , , , vid,] = Object.values(item.snippet);
 
   return `
 <div class="yt-list__item">
-  <button class="yt-list__a jsYtBtn btn btn-link d-flex mx-auto" data-videoid="${vid.videoId}" data-video-title="${title}" data-bs-toggle="modal" data-bs-target="#videoModal" tabindex="-1">
+  <button class="yt-list__a jsYtBtn btn btn-link d-flex mx-auto" aria-labelledby="${convertToSafeId(title)}" data-videoid="${vid.videoId}" data-video-title="${title}" data-bs-toggle="modal" data-bs-target="#videoModal" tabindex="-1">
     <img class="img-fluid" src="${baseUrl}/assets/img/yt-loading.png" data-src="${thumbs.medium.url}" alt="${desc.replace('\n', '')}">
   </button>
-  <h3 class="yt-list__title">${title}</h3>
+  <h3 id="${convertToSafeId(title)}" class="yt-list__title">${title}</h3>
 </div>`;
 }
 
