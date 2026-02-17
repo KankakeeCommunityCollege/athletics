@@ -1,5 +1,5 @@
 ---
-name: Alex Lagesse
+name: Tony Martin
 contacts_title: Assistant Coach
 contacts_sport: softball
 sort_number: 2
