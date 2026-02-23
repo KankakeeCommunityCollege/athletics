@@ -38,12 +38,12 @@ th {
 
 .tables--red {
   text-align: center;
-  background-color: $primary-red;
-  color: $white;
+  background-color: $primary-red !important;
+  color: $white !important;
 }
 
 .tables--blue {
   text-align: center;
-  background-color: $primary-blue;
-  color: $white;
+  background-color: $primary-blue !important;
+  color: $white !important;
 }
