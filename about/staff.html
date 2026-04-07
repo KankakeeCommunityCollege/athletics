@@ -19,16 +19,16 @@ staff_directory:
     email: bshafer@kcc.edu
   - name: Casey Meister
     job_title: >-
-      Assistant Athletic Director/Fitness Center Supervisor<br>
-      Head Women's Basketball Coach
+      Assistant Athletic Director/Fitness Center Supervisor<br> Head Women's
+      Basketball Coach
     phone_number: 815-802-8614
     additional_phone_number: 815-802-8610
     email: cmeister@kcc.edu
-  - name: Keith Cooper
-    job_title: Head Softball Coach
-    phone_number: 815-802-8606
+  - name: Alex Lagesse
+    job_title: Retention Success Navigator/Head Softball Coach
+    phone_number: 815-802-8608
     additional_phone_number:
-    email: kcooper@kcc.edu
+    email: alagesse@kcc.edu
   - name: Michael Brown
     job_title: Head Men's Basketball Coach
     phone_number: 815-802-8609
@@ -54,11 +54,6 @@ staff_directory:
     phone_number:
     additional_phone_number:
     email: bmcdowell@kcc.edu
-  - name: Alex Lagesse
-    job_title: Retention Success Navigator/Assistant Softball Coach
-    phone_number: 815-802-8608
-    additional_phone_number:
-    email: alagesse@kcc.edu
   - name: Francine Castongia
     job_title: Administrative Assistant
     phone_number: 815-802-8604
@@ -85,7 +80,7 @@ staff_directory:
           <div itemscope itemtype="https://schema.org/Person">
             <h6 class="h6 mb-0" itemprop="name">{{ contact.name }}</h6>
             <p>
-              {% if contact.job_title %}<span itemprop="jobTitle">{{ contact.job_title }}</span><br>{% endif %}
+              {% if contact.job_title %}<span itemprop="jobTitle">{{ contact.job_title }}</span><br />{% endif %}
               {% if contact.phone_number %}
               {% assign phone = contact.phone_number | strip %}
               {% assign first_digit = phone | slice: 0 %}
@@ -102,9 +97,9 @@ staff_directory:
               {% else %}
                 {% assign phone_href_2 = phone_2 | remove: '-' | prepend: 'tel:+1' %}
               {% endif %}
-              <a href="{{ phone_href }}" itemprop="telephone">{{ phone }}</a> / <a href="{{ phone_href_2 }}" itemprop="telephone">{{ phone_2 }}</a><br>
+              <a href="{{ phone_href }}" itemprop="telephone">{{ phone }}</a> / <a href="{{ phone_href_2 }}" itemprop="telephone">{{ phone_2 }}</a><br />
               {% else %}
-              <a href="{{ phone_href }}" itemprop="telephone">{{ phone }}</a><br>
+              <a href="{{ phone_href }}" itemprop="telephone">{{ phone }}</a><br />
               {% endif %}
               {% endif %}
               {% if contact.email %}<a itemprop="email" href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% endif %}
